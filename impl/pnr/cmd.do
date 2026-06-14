@@ -1,0 +1,19 @@
+-d F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2.vg
+-p GW2AR-18C-QFN88-8
+-pn GW2AR-LV18QN88C8/I7
+-cst F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2.cst
+-cfg F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\device.cfg
+-gao_crc 0111101101000010
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-rtl_gao

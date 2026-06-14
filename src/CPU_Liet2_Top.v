@@ -120,7 +120,7 @@ module CPU_Liet2_Top(
 
     RegFiles RegFiles_inst(
         .clk(sys_clk),
-        .rst(~rst),
+        .rst(rst),
         .Write_EN(1'b1),
         .Write_Address(Destination),
         .Write_Data(WR_BUS),

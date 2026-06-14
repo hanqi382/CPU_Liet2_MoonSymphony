@@ -1,0 +1,37 @@
+Reading netlist file: "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2.vg"
+Parsing netlist file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2.vg" completed
+Processing netlist completed
+Reading constraint file: "F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'clk_modk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+WARN  (TA1132) :  'Mode[1]' was determined to be a clock but was not created.
+WARN  (TA1132) :  'n66_4' was determined to be a clock but was not created.
+WARN  (TA1132) :  'ALU_inst/n555_21' was determined to be a clock but was not created.
+WARN  (TA1132) :  'ALU_inst/n642_21' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_modk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_in_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.power.html" completed
+Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.pin.html" completed
+Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.rpt.html" completed
+Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.rpt.txt" completed
+Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.tr.html" completed
+Mon Jun 15 01:33:03 2026
+

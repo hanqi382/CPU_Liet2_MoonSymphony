@@ -1,0 +1,556 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="0" module_name="CPU_Liet2_Top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Signal capture_enable="true">clk_in</Signal>
+            <Bus capture_enable="true" name="clk_inst/clk_mod[1:0]">
+                <Signal>clk_inst/clk_mod[1]</Signal>
+                <Signal>clk_inst/clk_mod[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="PC_Liet2_0/pc_out[25:0]">
+                <Signal>PC_Liet2_0/pc_out[25]</Signal>
+                <Signal>PC_Liet2_0/pc_out[24]</Signal>
+                <Signal>PC_Liet2_0/pc_out[23]</Signal>
+                <Signal>PC_Liet2_0/pc_out[22]</Signal>
+                <Signal>PC_Liet2_0/pc_out[21]</Signal>
+                <Signal>PC_Liet2_0/pc_out[20]</Signal>
+                <Signal>PC_Liet2_0/pc_out[19]</Signal>
+                <Signal>PC_Liet2_0/pc_out[18]</Signal>
+                <Signal>PC_Liet2_0/pc_out[17]</Signal>
+                <Signal>PC_Liet2_0/pc_out[16]</Signal>
+                <Signal>PC_Liet2_0/pc_out[15]</Signal>
+                <Signal>PC_Liet2_0/pc_out[14]</Signal>
+                <Signal>PC_Liet2_0/pc_out[13]</Signal>
+                <Signal>PC_Liet2_0/pc_out[12]</Signal>
+                <Signal>PC_Liet2_0/pc_out[11]</Signal>
+                <Signal>PC_Liet2_0/pc_out[10]</Signal>
+                <Signal>PC_Liet2_0/pc_out[9]</Signal>
+                <Signal>PC_Liet2_0/pc_out[8]</Signal>
+                <Signal>PC_Liet2_0/pc_out[7]</Signal>
+                <Signal>PC_Liet2_0/pc_out[6]</Signal>
+                <Signal>PC_Liet2_0/pc_out[5]</Signal>
+                <Signal>PC_Liet2_0/pc_out[4]</Signal>
+                <Signal>PC_Liet2_0/pc_out[3]</Signal>
+                <Signal>PC_Liet2_0/pc_out[2]</Signal>
+                <Signal>PC_Liet2_0/pc_out[1]</Signal>
+                <Signal>PC_Liet2_0/pc_out[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="Mode[1:0]">
+                <Signal>Mode[1]</Signal>
+                <Signal>Mode[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="Opcode[3:0]">
+                <Signal>Opcode[3]</Signal>
+                <Signal>Opcode[2]</Signal>
+                <Signal>Opcode[1]</Signal>
+                <Signal>Opcode[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="Destination[4:0]">
+                <Signal>Destination[4]</Signal>
+                <Signal>Destination[3]</Signal>
+                <Signal>Destination[2]</Signal>
+                <Signal>Destination[1]</Signal>
+                <Signal>Destination[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="Argument_A[4:0]">
+                <Signal>Argument_A[4]</Signal>
+                <Signal>Argument_A[3]</Signal>
+                <Signal>Argument_A[2]</Signal>
+                <Signal>Argument_A[1]</Signal>
+                <Signal>Argument_A[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="Argument_B[4:0]">
+                <Signal>Argument_B[4]</Signal>
+                <Signal>Argument_B[3]</Signal>
+                <Signal>Argument_B[2]</Signal>
+                <Signal>Argument_B[1]</Signal>
+                <Signal>Argument_B[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">Is_Immedia</Signal>
+            <Bus capture_enable="true" name="Immediate[15:0]">
+                <Signal>Immediate[15]</Signal>
+                <Signal>Immediate[14]</Signal>
+                <Signal>Immediate[13]</Signal>
+                <Signal>Immediate[12]</Signal>
+                <Signal>Immediate[11]</Signal>
+                <Signal>Immediate[10]</Signal>
+                <Signal>Immediate[9]</Signal>
+                <Signal>Immediate[8]</Signal>
+                <Signal>Immediate[7]</Signal>
+                <Signal>Immediate[6]</Signal>
+                <Signal>Immediate[5]</Signal>
+                <Signal>Immediate[4]</Signal>
+                <Signal>Immediate[3]</Signal>
+                <Signal>Immediate[2]</Signal>
+                <Signal>Immediate[1]</Signal>
+                <Signal>Immediate[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="INSTR[31:0]">
+                <Signal>INSTR[31]</Signal>
+                <Signal>INSTR[30]</Signal>
+                <Signal>INSTR[29]</Signal>
+                <Signal>INSTR[28]</Signal>
+                <Signal>INSTR[27]</Signal>
+                <Signal>INSTR[26]</Signal>
+                <Signal>INSTR[25]</Signal>
+                <Signal>INSTR[24]</Signal>
+                <Signal>INSTR[23]</Signal>
+                <Signal>INSTR[22]</Signal>
+                <Signal>INSTR[21]</Signal>
+                <Signal>INSTR[20]</Signal>
+                <Signal>INSTR[19]</Signal>
+                <Signal>INSTR[18]</Signal>
+                <Signal>INSTR[17]</Signal>
+                <Signal>INSTR[16]</Signal>
+                <Signal>INSTR[15]</Signal>
+                <Signal>INSTR[14]</Signal>
+                <Signal>INSTR[13]</Signal>
+                <Signal>INSTR[12]</Signal>
+                <Signal>INSTR[11]</Signal>
+                <Signal>INSTR[10]</Signal>
+                <Signal>INSTR[9]</Signal>
+                <Signal>INSTR[8]</Signal>
+                <Signal>INSTR[7]</Signal>
+                <Signal>INSTR[6]</Signal>
+                <Signal>INSTR[5]</Signal>
+                <Signal>INSTR[4]</Signal>
+                <Signal>INSTR[3]</Signal>
+                <Signal>INSTR[2]</Signal>
+                <Signal>INSTR[1]</Signal>
+                <Signal>INSTR[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[0][31:0]">
+                <Signal>RegFiles_inst/registers[0][31]</Signal>
+                <Signal>RegFiles_inst/registers[0][30]</Signal>
+                <Signal>RegFiles_inst/registers[0][29]</Signal>
+                <Signal>RegFiles_inst/registers[0][28]</Signal>
+                <Signal>RegFiles_inst/registers[0][27]</Signal>
+                <Signal>RegFiles_inst/registers[0][26]</Signal>
+                <Signal>RegFiles_inst/registers[0][25]</Signal>
+                <Signal>RegFiles_inst/registers[0][24]</Signal>
+                <Signal>RegFiles_inst/registers[0][23]</Signal>
+                <Signal>RegFiles_inst/registers[0][22]</Signal>
+                <Signal>RegFiles_inst/registers[0][21]</Signal>
+                <Signal>RegFiles_inst/registers[0][20]</Signal>
+                <Signal>RegFiles_inst/registers[0][19]</Signal>
+                <Signal>RegFiles_inst/registers[0][18]</Signal>
+                <Signal>RegFiles_inst/registers[0][17]</Signal>
+                <Signal>RegFiles_inst/registers[0][16]</Signal>
+                <Signal>RegFiles_inst/registers[0][15]</Signal>
+                <Signal>RegFiles_inst/registers[0][14]</Signal>
+                <Signal>RegFiles_inst/registers[0][13]</Signal>
+                <Signal>RegFiles_inst/registers[0][12]</Signal>
+                <Signal>RegFiles_inst/registers[0][11]</Signal>
+                <Signal>RegFiles_inst/registers[0][10]</Signal>
+                <Signal>RegFiles_inst/registers[0][9]</Signal>
+                <Signal>RegFiles_inst/registers[0][8]</Signal>
+                <Signal>RegFiles_inst/registers[0][7]</Signal>
+                <Signal>RegFiles_inst/registers[0][6]</Signal>
+                <Signal>RegFiles_inst/registers[0][5]</Signal>
+                <Signal>RegFiles_inst/registers[0][4]</Signal>
+                <Signal>RegFiles_inst/registers[0][3]</Signal>
+                <Signal>RegFiles_inst/registers[0][2]</Signal>
+                <Signal>RegFiles_inst/registers[0][1]</Signal>
+                <Signal>RegFiles_inst/registers[0][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[1][31:0]">
+                <Signal>RegFiles_inst/registers[1][31]</Signal>
+                <Signal>RegFiles_inst/registers[1][30]</Signal>
+                <Signal>RegFiles_inst/registers[1][29]</Signal>
+                <Signal>RegFiles_inst/registers[1][28]</Signal>
+                <Signal>RegFiles_inst/registers[1][27]</Signal>
+                <Signal>RegFiles_inst/registers[1][26]</Signal>
+                <Signal>RegFiles_inst/registers[1][25]</Signal>
+                <Signal>RegFiles_inst/registers[1][24]</Signal>
+                <Signal>RegFiles_inst/registers[1][23]</Signal>
+                <Signal>RegFiles_inst/registers[1][22]</Signal>
+                <Signal>RegFiles_inst/registers[1][21]</Signal>
+                <Signal>RegFiles_inst/registers[1][20]</Signal>
+                <Signal>RegFiles_inst/registers[1][19]</Signal>
+                <Signal>RegFiles_inst/registers[1][18]</Signal>
+                <Signal>RegFiles_inst/registers[1][17]</Signal>
+                <Signal>RegFiles_inst/registers[1][16]</Signal>
+                <Signal>RegFiles_inst/registers[1][15]</Signal>
+                <Signal>RegFiles_inst/registers[1][14]</Signal>
+                <Signal>RegFiles_inst/registers[1][13]</Signal>
+                <Signal>RegFiles_inst/registers[1][12]</Signal>
+                <Signal>RegFiles_inst/registers[1][11]</Signal>
+                <Signal>RegFiles_inst/registers[1][10]</Signal>
+                <Signal>RegFiles_inst/registers[1][9]</Signal>
+                <Signal>RegFiles_inst/registers[1][8]</Signal>
+                <Signal>RegFiles_inst/registers[1][7]</Signal>
+                <Signal>RegFiles_inst/registers[1][6]</Signal>
+                <Signal>RegFiles_inst/registers[1][5]</Signal>
+                <Signal>RegFiles_inst/registers[1][4]</Signal>
+                <Signal>RegFiles_inst/registers[1][3]</Signal>
+                <Signal>RegFiles_inst/registers[1][2]</Signal>
+                <Signal>RegFiles_inst/registers[1][1]</Signal>
+                <Signal>RegFiles_inst/registers[1][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[2][31:0]">
+                <Signal>RegFiles_inst/registers[2][31]</Signal>
+                <Signal>RegFiles_inst/registers[2][30]</Signal>
+                <Signal>RegFiles_inst/registers[2][29]</Signal>
+                <Signal>RegFiles_inst/registers[2][28]</Signal>
+                <Signal>RegFiles_inst/registers[2][27]</Signal>
+                <Signal>RegFiles_inst/registers[2][26]</Signal>
+                <Signal>RegFiles_inst/registers[2][25]</Signal>
+                <Signal>RegFiles_inst/registers[2][24]</Signal>
+                <Signal>RegFiles_inst/registers[2][23]</Signal>
+                <Signal>RegFiles_inst/registers[2][22]</Signal>
+                <Signal>RegFiles_inst/registers[2][21]</Signal>
+                <Signal>RegFiles_inst/registers[2][20]</Signal>
+                <Signal>RegFiles_inst/registers[2][19]</Signal>
+                <Signal>RegFiles_inst/registers[2][18]</Signal>
+                <Signal>RegFiles_inst/registers[2][17]</Signal>
+                <Signal>RegFiles_inst/registers[2][16]</Signal>
+                <Signal>RegFiles_inst/registers[2][15]</Signal>
+                <Signal>RegFiles_inst/registers[2][14]</Signal>
+                <Signal>RegFiles_inst/registers[2][13]</Signal>
+                <Signal>RegFiles_inst/registers[2][12]</Signal>
+                <Signal>RegFiles_inst/registers[2][11]</Signal>
+                <Signal>RegFiles_inst/registers[2][10]</Signal>
+                <Signal>RegFiles_inst/registers[2][9]</Signal>
+                <Signal>RegFiles_inst/registers[2][8]</Signal>
+                <Signal>RegFiles_inst/registers[2][7]</Signal>
+                <Signal>RegFiles_inst/registers[2][6]</Signal>
+                <Signal>RegFiles_inst/registers[2][5]</Signal>
+                <Signal>RegFiles_inst/registers[2][4]</Signal>
+                <Signal>RegFiles_inst/registers[2][3]</Signal>
+                <Signal>RegFiles_inst/registers[2][2]</Signal>
+                <Signal>RegFiles_inst/registers[2][1]</Signal>
+                <Signal>RegFiles_inst/registers[2][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[3][31:0]">
+                <Signal>RegFiles_inst/registers[3][31]</Signal>
+                <Signal>RegFiles_inst/registers[3][30]</Signal>
+                <Signal>RegFiles_inst/registers[3][29]</Signal>
+                <Signal>RegFiles_inst/registers[3][28]</Signal>
+                <Signal>RegFiles_inst/registers[3][27]</Signal>
+                <Signal>RegFiles_inst/registers[3][26]</Signal>
+                <Signal>RegFiles_inst/registers[3][25]</Signal>
+                <Signal>RegFiles_inst/registers[3][24]</Signal>
+                <Signal>RegFiles_inst/registers[3][23]</Signal>
+                <Signal>RegFiles_inst/registers[3][22]</Signal>
+                <Signal>RegFiles_inst/registers[3][21]</Signal>
+                <Signal>RegFiles_inst/registers[3][20]</Signal>
+                <Signal>RegFiles_inst/registers[3][19]</Signal>
+                <Signal>RegFiles_inst/registers[3][18]</Signal>
+                <Signal>RegFiles_inst/registers[3][17]</Signal>
+                <Signal>RegFiles_inst/registers[3][16]</Signal>
+                <Signal>RegFiles_inst/registers[3][15]</Signal>
+                <Signal>RegFiles_inst/registers[3][14]</Signal>
+                <Signal>RegFiles_inst/registers[3][13]</Signal>
+                <Signal>RegFiles_inst/registers[3][12]</Signal>
+                <Signal>RegFiles_inst/registers[3][11]</Signal>
+                <Signal>RegFiles_inst/registers[3][10]</Signal>
+                <Signal>RegFiles_inst/registers[3][9]</Signal>
+                <Signal>RegFiles_inst/registers[3][8]</Signal>
+                <Signal>RegFiles_inst/registers[3][7]</Signal>
+                <Signal>RegFiles_inst/registers[3][6]</Signal>
+                <Signal>RegFiles_inst/registers[3][5]</Signal>
+                <Signal>RegFiles_inst/registers[3][4]</Signal>
+                <Signal>RegFiles_inst/registers[3][3]</Signal>
+                <Signal>RegFiles_inst/registers[3][2]</Signal>
+                <Signal>RegFiles_inst/registers[3][1]</Signal>
+                <Signal>RegFiles_inst/registers[3][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[4][31:0]">
+                <Signal>RegFiles_inst/registers[4][31]</Signal>
+                <Signal>RegFiles_inst/registers[4][30]</Signal>
+                <Signal>RegFiles_inst/registers[4][29]</Signal>
+                <Signal>RegFiles_inst/registers[4][28]</Signal>
+                <Signal>RegFiles_inst/registers[4][27]</Signal>
+                <Signal>RegFiles_inst/registers[4][26]</Signal>
+                <Signal>RegFiles_inst/registers[4][25]</Signal>
+                <Signal>RegFiles_inst/registers[4][24]</Signal>
+                <Signal>RegFiles_inst/registers[4][23]</Signal>
+                <Signal>RegFiles_inst/registers[4][22]</Signal>
+                <Signal>RegFiles_inst/registers[4][21]</Signal>
+                <Signal>RegFiles_inst/registers[4][20]</Signal>
+                <Signal>RegFiles_inst/registers[4][19]</Signal>
+                <Signal>RegFiles_inst/registers[4][18]</Signal>
+                <Signal>RegFiles_inst/registers[4][17]</Signal>
+                <Signal>RegFiles_inst/registers[4][16]</Signal>
+                <Signal>RegFiles_inst/registers[4][15]</Signal>
+                <Signal>RegFiles_inst/registers[4][14]</Signal>
+                <Signal>RegFiles_inst/registers[4][13]</Signal>
+                <Signal>RegFiles_inst/registers[4][12]</Signal>
+                <Signal>RegFiles_inst/registers[4][11]</Signal>
+                <Signal>RegFiles_inst/registers[4][10]</Signal>
+                <Signal>RegFiles_inst/registers[4][9]</Signal>
+                <Signal>RegFiles_inst/registers[4][8]</Signal>
+                <Signal>RegFiles_inst/registers[4][7]</Signal>
+                <Signal>RegFiles_inst/registers[4][6]</Signal>
+                <Signal>RegFiles_inst/registers[4][5]</Signal>
+                <Signal>RegFiles_inst/registers[4][4]</Signal>
+                <Signal>RegFiles_inst/registers[4][3]</Signal>
+                <Signal>RegFiles_inst/registers[4][2]</Signal>
+                <Signal>RegFiles_inst/registers[4][1]</Signal>
+                <Signal>RegFiles_inst/registers[4][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[5][31:0]">
+                <Signal>RegFiles_inst/registers[5][31]</Signal>
+                <Signal>RegFiles_inst/registers[5][30]</Signal>
+                <Signal>RegFiles_inst/registers[5][29]</Signal>
+                <Signal>RegFiles_inst/registers[5][28]</Signal>
+                <Signal>RegFiles_inst/registers[5][27]</Signal>
+                <Signal>RegFiles_inst/registers[5][26]</Signal>
+                <Signal>RegFiles_inst/registers[5][25]</Signal>
+                <Signal>RegFiles_inst/registers[5][24]</Signal>
+                <Signal>RegFiles_inst/registers[5][23]</Signal>
+                <Signal>RegFiles_inst/registers[5][22]</Signal>
+                <Signal>RegFiles_inst/registers[5][21]</Signal>
+                <Signal>RegFiles_inst/registers[5][20]</Signal>
+                <Signal>RegFiles_inst/registers[5][19]</Signal>
+                <Signal>RegFiles_inst/registers[5][18]</Signal>
+                <Signal>RegFiles_inst/registers[5][17]</Signal>
+                <Signal>RegFiles_inst/registers[5][16]</Signal>
+                <Signal>RegFiles_inst/registers[5][15]</Signal>
+                <Signal>RegFiles_inst/registers[5][14]</Signal>
+                <Signal>RegFiles_inst/registers[5][13]</Signal>
+                <Signal>RegFiles_inst/registers[5][12]</Signal>
+                <Signal>RegFiles_inst/registers[5][11]</Signal>
+                <Signal>RegFiles_inst/registers[5][10]</Signal>
+                <Signal>RegFiles_inst/registers[5][9]</Signal>
+                <Signal>RegFiles_inst/registers[5][8]</Signal>
+                <Signal>RegFiles_inst/registers[5][7]</Signal>
+                <Signal>RegFiles_inst/registers[5][6]</Signal>
+                <Signal>RegFiles_inst/registers[5][5]</Signal>
+                <Signal>RegFiles_inst/registers[5][4]</Signal>
+                <Signal>RegFiles_inst/registers[5][3]</Signal>
+                <Signal>RegFiles_inst/registers[5][2]</Signal>
+                <Signal>RegFiles_inst/registers[5][1]</Signal>
+                <Signal>RegFiles_inst/registers[5][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[6][31:0]">
+                <Signal>RegFiles_inst/registers[6][31]</Signal>
+                <Signal>RegFiles_inst/registers[6][30]</Signal>
+                <Signal>RegFiles_inst/registers[6][29]</Signal>
+                <Signal>RegFiles_inst/registers[6][28]</Signal>
+                <Signal>RegFiles_inst/registers[6][27]</Signal>
+                <Signal>RegFiles_inst/registers[6][26]</Signal>
+                <Signal>RegFiles_inst/registers[6][25]</Signal>
+                <Signal>RegFiles_inst/registers[6][24]</Signal>
+                <Signal>RegFiles_inst/registers[6][23]</Signal>
+                <Signal>RegFiles_inst/registers[6][22]</Signal>
+                <Signal>RegFiles_inst/registers[6][21]</Signal>
+                <Signal>RegFiles_inst/registers[6][20]</Signal>
+                <Signal>RegFiles_inst/registers[6][19]</Signal>
+                <Signal>RegFiles_inst/registers[6][18]</Signal>
+                <Signal>RegFiles_inst/registers[6][17]</Signal>
+                <Signal>RegFiles_inst/registers[6][16]</Signal>
+                <Signal>RegFiles_inst/registers[6][15]</Signal>
+                <Signal>RegFiles_inst/registers[6][14]</Signal>
+                <Signal>RegFiles_inst/registers[6][13]</Signal>
+                <Signal>RegFiles_inst/registers[6][12]</Signal>
+                <Signal>RegFiles_inst/registers[6][11]</Signal>
+                <Signal>RegFiles_inst/registers[6][10]</Signal>
+                <Signal>RegFiles_inst/registers[6][9]</Signal>
+                <Signal>RegFiles_inst/registers[6][8]</Signal>
+                <Signal>RegFiles_inst/registers[6][7]</Signal>
+                <Signal>RegFiles_inst/registers[6][6]</Signal>
+                <Signal>RegFiles_inst/registers[6][5]</Signal>
+                <Signal>RegFiles_inst/registers[6][4]</Signal>
+                <Signal>RegFiles_inst/registers[6][3]</Signal>
+                <Signal>RegFiles_inst/registers[6][2]</Signal>
+                <Signal>RegFiles_inst/registers[6][1]</Signal>
+                <Signal>RegFiles_inst/registers[6][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[7][31:0]">
+                <Signal>RegFiles_inst/registers[7][31]</Signal>
+                <Signal>RegFiles_inst/registers[7][30]</Signal>
+                <Signal>RegFiles_inst/registers[7][29]</Signal>
+                <Signal>RegFiles_inst/registers[7][28]</Signal>
+                <Signal>RegFiles_inst/registers[7][27]</Signal>
+                <Signal>RegFiles_inst/registers[7][26]</Signal>
+                <Signal>RegFiles_inst/registers[7][25]</Signal>
+                <Signal>RegFiles_inst/registers[7][24]</Signal>
+                <Signal>RegFiles_inst/registers[7][23]</Signal>
+                <Signal>RegFiles_inst/registers[7][22]</Signal>
+                <Signal>RegFiles_inst/registers[7][21]</Signal>
+                <Signal>RegFiles_inst/registers[7][20]</Signal>
+                <Signal>RegFiles_inst/registers[7][19]</Signal>
+                <Signal>RegFiles_inst/registers[7][18]</Signal>
+                <Signal>RegFiles_inst/registers[7][17]</Signal>
+                <Signal>RegFiles_inst/registers[7][16]</Signal>
+                <Signal>RegFiles_inst/registers[7][15]</Signal>
+                <Signal>RegFiles_inst/registers[7][14]</Signal>
+                <Signal>RegFiles_inst/registers[7][13]</Signal>
+                <Signal>RegFiles_inst/registers[7][12]</Signal>
+                <Signal>RegFiles_inst/registers[7][11]</Signal>
+                <Signal>RegFiles_inst/registers[7][10]</Signal>
+                <Signal>RegFiles_inst/registers[7][9]</Signal>
+                <Signal>RegFiles_inst/registers[7][8]</Signal>
+                <Signal>RegFiles_inst/registers[7][7]</Signal>
+                <Signal>RegFiles_inst/registers[7][6]</Signal>
+                <Signal>RegFiles_inst/registers[7][5]</Signal>
+                <Signal>RegFiles_inst/registers[7][4]</Signal>
+                <Signal>RegFiles_inst/registers[7][3]</Signal>
+                <Signal>RegFiles_inst/registers[7][2]</Signal>
+                <Signal>RegFiles_inst/registers[7][1]</Signal>
+                <Signal>RegFiles_inst/registers[7][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/registers[8][31:0]">
+                <Signal>RegFiles_inst/registers[8][31]</Signal>
+                <Signal>RegFiles_inst/registers[8][30]</Signal>
+                <Signal>RegFiles_inst/registers[8][29]</Signal>
+                <Signal>RegFiles_inst/registers[8][28]</Signal>
+                <Signal>RegFiles_inst/registers[8][27]</Signal>
+                <Signal>RegFiles_inst/registers[8][26]</Signal>
+                <Signal>RegFiles_inst/registers[8][25]</Signal>
+                <Signal>RegFiles_inst/registers[8][24]</Signal>
+                <Signal>RegFiles_inst/registers[8][23]</Signal>
+                <Signal>RegFiles_inst/registers[8][22]</Signal>
+                <Signal>RegFiles_inst/registers[8][21]</Signal>
+                <Signal>RegFiles_inst/registers[8][20]</Signal>
+                <Signal>RegFiles_inst/registers[8][19]</Signal>
+                <Signal>RegFiles_inst/registers[8][18]</Signal>
+                <Signal>RegFiles_inst/registers[8][17]</Signal>
+                <Signal>RegFiles_inst/registers[8][16]</Signal>
+                <Signal>RegFiles_inst/registers[8][15]</Signal>
+                <Signal>RegFiles_inst/registers[8][14]</Signal>
+                <Signal>RegFiles_inst/registers[8][13]</Signal>
+                <Signal>RegFiles_inst/registers[8][12]</Signal>
+                <Signal>RegFiles_inst/registers[8][11]</Signal>
+                <Signal>RegFiles_inst/registers[8][10]</Signal>
+                <Signal>RegFiles_inst/registers[8][9]</Signal>
+                <Signal>RegFiles_inst/registers[8][8]</Signal>
+                <Signal>RegFiles_inst/registers[8][7]</Signal>
+                <Signal>RegFiles_inst/registers[8][6]</Signal>
+                <Signal>RegFiles_inst/registers[8][5]</Signal>
+                <Signal>RegFiles_inst/registers[8][4]</Signal>
+                <Signal>RegFiles_inst/registers[8][3]</Signal>
+                <Signal>RegFiles_inst/registers[8][2]</Signal>
+                <Signal>RegFiles_inst/registers[8][1]</Signal>
+                <Signal>RegFiles_inst/registers[8][0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="ALU_inst/Result[31:0]">
+                <Signal>ALU_inst/Result[31]</Signal>
+                <Signal>ALU_inst/Result[30]</Signal>
+                <Signal>ALU_inst/Result[29]</Signal>
+                <Signal>ALU_inst/Result[28]</Signal>
+                <Signal>ALU_inst/Result[27]</Signal>
+                <Signal>ALU_inst/Result[26]</Signal>
+                <Signal>ALU_inst/Result[25]</Signal>
+                <Signal>ALU_inst/Result[24]</Signal>
+                <Signal>ALU_inst/Result[23]</Signal>
+                <Signal>ALU_inst/Result[22]</Signal>
+                <Signal>ALU_inst/Result[21]</Signal>
+                <Signal>ALU_inst/Result[20]</Signal>
+                <Signal>ALU_inst/Result[19]</Signal>
+                <Signal>ALU_inst/Result[18]</Signal>
+                <Signal>ALU_inst/Result[17]</Signal>
+                <Signal>ALU_inst/Result[16]</Signal>
+                <Signal>ALU_inst/Result[15]</Signal>
+                <Signal>ALU_inst/Result[14]</Signal>
+                <Signal>ALU_inst/Result[13]</Signal>
+                <Signal>ALU_inst/Result[12]</Signal>
+                <Signal>ALU_inst/Result[11]</Signal>
+                <Signal>ALU_inst/Result[10]</Signal>
+                <Signal>ALU_inst/Result[9]</Signal>
+                <Signal>ALU_inst/Result[8]</Signal>
+                <Signal>ALU_inst/Result[7]</Signal>
+                <Signal>ALU_inst/Result[6]</Signal>
+                <Signal>ALU_inst/Result[5]</Signal>
+                <Signal>ALU_inst/Result[4]</Signal>
+                <Signal>ALU_inst/Result[3]</Signal>
+                <Signal>ALU_inst/Result[2]</Signal>
+                <Signal>ALU_inst/Result[1]</Signal>
+                <Signal>ALU_inst/Result[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RegFiles_inst/Write_Address[4:0]">
+                <Signal>RegFiles_inst/Write_Address[4]</Signal>
+                <Signal>RegFiles_inst/Write_Address[3]</Signal>
+                <Signal>RegFiles_inst/Write_Address[2]</Signal>
+                <Signal>RegFiles_inst/Write_Address[1]</Signal>
+                <Signal>RegFiles_inst/Write_Address[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="WR_BUS[31:0]">
+                <Signal>WR_BUS[31]</Signal>
+                <Signal>WR_BUS[30]</Signal>
+                <Signal>WR_BUS[29]</Signal>
+                <Signal>WR_BUS[28]</Signal>
+                <Signal>WR_BUS[27]</Signal>
+                <Signal>WR_BUS[26]</Signal>
+                <Signal>WR_BUS[25]</Signal>
+                <Signal>WR_BUS[24]</Signal>
+                <Signal>WR_BUS[23]</Signal>
+                <Signal>WR_BUS[22]</Signal>
+                <Signal>WR_BUS[21]</Signal>
+                <Signal>WR_BUS[20]</Signal>
+                <Signal>WR_BUS[19]</Signal>
+                <Signal>WR_BUS[18]</Signal>
+                <Signal>WR_BUS[17]</Signal>
+                <Signal>WR_BUS[16]</Signal>
+                <Signal>WR_BUS[15]</Signal>
+                <Signal>WR_BUS[14]</Signal>
+                <Signal>WR_BUS[13]</Signal>
+                <Signal>WR_BUS[12]</Signal>
+                <Signal>WR_BUS[11]</Signal>
+                <Signal>WR_BUS[10]</Signal>
+                <Signal>WR_BUS[9]</Signal>
+                <Signal>WR_BUS[8]</Signal>
+                <Signal>WR_BUS[7]</Signal>
+                <Signal>WR_BUS[6]</Signal>
+                <Signal>WR_BUS[5]</Signal>
+                <Signal>WR_BUS[4]</Signal>
+                <Signal>WR_BUS[3]</Signal>
+                <Signal>WR_BUS[2]</Signal>
+                <Signal>WR_BUS[1]</Signal>
+                <Signal>WR_BUS[0]</Signal>
+            </Bus>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>clk_inst/divided_clk</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1">
+                <SignalList>
+                    <Signal>PC_Liet2_0/pc_out[0]</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="1" counter="1" countinuous="1" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="1" value0="0" value1="0" trigger="1"/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M1</Expression>
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0111101101000010</GAO_ID>
+</GAO_CONFIG>

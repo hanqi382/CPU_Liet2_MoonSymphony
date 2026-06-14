@@ -1,0 +1,126 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\Assembly line level 5.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CU.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v'
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
+Analyzing included file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
+Analyzing included file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_expression.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing included file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_parameter.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\gw_jtag.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
+Compiling module 'CPU_Liet2_Top'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":1)
+Compiling module 'SYS_CLK'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v":1)
+Compiling module 'Gowin_OSC'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v":10)
+Compiling module 'Gowin_rPLL'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v":10)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 23("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v":26)
+WARN  (EX2420) : Latch inferred for net 'clk_out'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v":41)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v":43)
+Compiling module 'PC'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 26("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":13)
+Compiling module 'CU'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CU.v":1)
+Compiling module 'Gowin_DPB'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v":10)
+WARN  (EX3670) : Actual bit length 3 differs from formal bit length 10 for port 'ada'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":78)
+WARN  (EX2420) : Latch inferred for net 'RAM_MODE'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":106)
+Compiling module 'ALU'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":1)
+WARN  (EX2420) : Latch inferred for net 'Result[31]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'Immediate'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":115)
+Compiling module 'RegFiles'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v":1)
+WARN  (EX2420) : Latch inferred for net 'RDA[31]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v":76)
+WARN  (EX1998) : Net 'jump_en' does not have a driver("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":13)
+WARN  (EX1998) : Net 'jump_addr[31]' does not have a driver("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":14)
+Compiling module 'gw_gao'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+Compiling module 'GW_JTAG'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\gw_jtag.v":1)
+Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Extracting RAM for identifier '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
+Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Trying to combine GAO to RTL design
+NOTE  (EX0101) : Current top module is "CPU_Liet2_Top"
+WARN  (EX0211) : The output port "clk_out" of module "CPU_Liet2_Top" has no driver, assigning undriven bits to Z, simulation mismatch possible("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":6)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+WARN  (DI0003) : Latch inferred for net 'clk_out';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v":41)
+WARN  (DI0003) : Latch inferred for net 'Result[30]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[29]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[28]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[27]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[26]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[25]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[24]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[23]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[22]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[21]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[20]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[19]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[18]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[17]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[16]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[15]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[14]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[13]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[12]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[11]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[10]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[9]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[8]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[7]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[6]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[5]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[4]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[3]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[2]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'Result[31]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
+WARN  (DI0003) : Latch inferred for net 'ALU_MODE';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":106)
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "CU" instantiated to "CU_inst" is swept in optimizing("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":67)
+[95%] Generate netlist file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2.vg" completed
+[100%] Generate report file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2_syn.rpt.html" completed
+GowinSynthesis finish

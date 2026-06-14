@@ -18,11 +18,12 @@ module RegFiles(
     // 定义32个32位寄存器
     reg [31:0] registers [0:31];
     
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         if (rst) begin
             registers[0] <= 32'b0;
             registers[1] <= 32'b0;
             registers[2] <= 32'b0;
+            registers[3] <= 32'b0;
             registers[4] <= 32'b0;
             registers[5] <= 32'b0;
             registers[6] <= 32'b0;

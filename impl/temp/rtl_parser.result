@@ -1,0 +1,78 @@
+[
+ {
+  "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+  "InstLine" : 1,
+  "InstName" : "CPU_Liet2_Top",
+  "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "CPU_Liet2_Top",
+  "SubInsts" : [
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 39,
+    "InstName" : "clk_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/SYS_CLK.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "SYS_CLK",
+    "SubInsts" : [
+     {
+      "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/SYS_CLK.v",
+      "InstLine" : 10,
+      "InstName" : "osc_inst",
+      "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_osc/gowin_osc.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_OSC"
+     },
+     {
+      "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/SYS_CLK.v",
+      "InstLine" : 14,
+      "InstName" : "HighClk",
+      "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_rpll/gowin_rpll.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_rPLL"
+     }
+    ]
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 47,
+    "InstName" : "PC_Liet2_0",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/PC.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "PC"
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 58,
+    "InstName" : "CU_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CU.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "CU"
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 71,
+    "InstName" : "dpb_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_dpb/gowin_dpb.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_DPB"
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 109,
+    "InstName" : "ALU_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/ALU.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ALU"
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
+    "InstLine" : 121,
+    "InstName" : "RegFiles_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RegFile.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "RegFiles"
+   }
+  ]
+ }
+]
