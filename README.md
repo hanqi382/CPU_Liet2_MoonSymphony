@@ -93,7 +93,7 @@
 2. **模块化设计**: 各功能模块独立实现，易于维护和扩展
 3. **图灵完备性验证**: 设计目标是实现图灵完备的计算能力
 4. **FPGA友好**: 针对Gowin FPGA架构优化设计
-5. **受Turing Complete游戏启发**: 架构设计受到Turing Complete游戏中的Overture架构启发
+5. **受Turing Complete游戏启发**: 架构设计受到Turing Complete游戏中的Overture/LEG/Symphony架构启发
 
 ## 使用方法
 
@@ -140,7 +140,7 @@
 
 感谢Gowin半导体提供的开发工具和FPGA器件支持。
 感谢 [customasm](https://github.com/hlorenzi/customasm.git) 项目的开发者，为我们提供了优秀的汇编器工具。
-感谢Turing Complete游戏的开发者，为我们提供了构建CPU的教育性指导。
+感谢Turing Complete游戏的开发者，为我提供了构建CPU的教育性指导。
 
 ## 联系方式
 
