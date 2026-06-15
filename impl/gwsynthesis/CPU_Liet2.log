@@ -5,11 +5,12 @@ Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\Assembly line le
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CU.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\SYS_CLK.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v'
-Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v'
 Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
 Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
 Analyzing included file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
@@ -49,16 +50,22 @@ WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("F:\project
 Compiling module 'PC'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":1)
 WARN  (EX3791) : Expression size 32 truncated to fit in target size 26("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":13)
 Compiling module 'CU'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CU.v":1)
+WARN  (EX3670) : Actual bit length 2 differs from formal bit length 3 for port 'Mode'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":62)
 Compiling module 'Gowin_DPB'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v":10)
-WARN  (EX3670) : Actual bit length 3 differs from formal bit length 10 for port 'ada'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":78)
-WARN  (EX2420) : Latch inferred for net 'RAM_MODE'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":106)
+WARN  (EX3670) : Actual bit length 3 differs from formal bit length 10 for port 'ada'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":80)
+WARN  (EX3834) : Case condition never applies("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":101)
+WARN  (EX2420) : Latch inferred for net 'RAM_MODE'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":110)
 Compiling module 'ALU'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":1)
 WARN  (EX2420) : Latch inferred for net 'Result[31]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
-WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'Immediate'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":115)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'Immediate'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":119)
 Compiling module 'RegFiles'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v":1)
-WARN  (EX2420) : Latch inferred for net 'RDA[31]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v":76)
-WARN  (EX1998) : Net 'jump_en' does not have a driver("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":13)
-WARN  (EX1998) : Net 'jump_addr[31]' does not have a driver("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":14)
+WARN  (EX2420) : Latch inferred for net 'RDA[31]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v":79)
+Compiling module 'cond'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 1("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v":14)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 1("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v":16)
+WARN  (EX2420) : Latch inferred for net 'jump'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v":38)
+WARN  (EX3670) : Actual bit length 2 differs from formal bit length 1 for port 'Mode'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":140)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'jump_addr'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":147)
 Compiling module 'gw_gao'("F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
@@ -116,11 +123,17 @@ WARN  (DI0003) : Latch inferred for net 'Result[2]';We do not recommend the use 
 WARN  (DI0003) : Latch inferred for net 'Result[1]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
 WARN  (DI0003) : Latch inferred for net 'Result[0]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
 WARN  (DI0003) : Latch inferred for net 'Result[31]';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\ALU.v":39)
-WARN  (DI0003) : Latch inferred for net 'ALU_MODE';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":106)
+WARN  (DI0003) : Latch inferred for net 'jump';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v":38)
+WARN  (DI0003) : Latch inferred for net 'JUMP_MODE';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":110)
+WARN  (DI0003) : Latch inferred for net 'ALU_MODE';We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":110)
 [75%] Tech-Mapping Phase 2 completed
+WARN  (AG0100) : Find logical loop signal : "pc_out[0]"("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":16)
+WARN  (AG0100) : Find logical loop signal : "pc_out[0]"("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":16)
+WARN  (AG0100) : Find logical loop signal : "pc_out[0]"("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v":16)
+WARN  (AG0101) : The netlist is not one directed acyclic graph
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "CU" instantiated to "CU_inst" is swept in optimizing("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":67)
+WARN  (NL0002) : The module "CU" instantiated to "CU_inst" is swept in optimizing("F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v":69)
 [95%] Generate netlist file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2.vg" completed
 [100%] Generate report file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\CPU_Liet2_syn.rpt.html" completed
 GowinSynthesis finish

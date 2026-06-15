@@ -7,6 +7,7 @@
     <FileList>
         <File path="src/ALU.v" type="file.verilog" enable="1"/>
         <File path="src/Assembly line level 5.v" type="file.verilog" enable="1"/>
+        <File path="src/COND.v" type="file.verilog" enable="1"/>
         <File path="src/CPU_Liet2_Top.v" type="file.verilog" enable="1"/>
         <File path="src/CU.v" type="file.verilog" enable="1"/>
         <File path="src/PC.v" type="file.verilog" enable="1"/>

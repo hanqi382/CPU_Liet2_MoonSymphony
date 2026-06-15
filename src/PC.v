@@ -6,7 +6,7 @@ module PC(
     output reg [25:0] pc_out
 );
     //reg [31:0] pc_out;
-    always @(posedge clk or negedge rst) begin
+    always @(posedge clk or negedge rst or posedge pc_jump_en) begin
         if (!rst) begin
             pc_out <= 25'b0;
         end else if (pc_jump_en==1'b1) begin

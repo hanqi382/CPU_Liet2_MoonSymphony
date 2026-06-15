@@ -22,6 +22,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RegFile.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/SYS_CLK.v",
    "Type" : "verilog"
   },
@@ -38,7 +42,7 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RegFile.v",
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/COND.v",
    "Type" : "verilog"
   }
  ],

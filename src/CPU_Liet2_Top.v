@@ -10,7 +10,7 @@ module CPU_Liet2_Top(
     //指令
     wire sys_clk;
     //跳转信号线
-    wire jump_en;
+    wire jump;
     wire [31:0] jump_addr;
     //
     wire [1:0] Mode;
@@ -24,11 +24,13 @@ module CPU_Liet2_Top(
     wire [31:0] WR_BUS;
     wire [31:0] A_DBUS;
     wire [31:0] B_DBUS;
+    wire [31:0] J_wr_data_inst;
 
     reg IO_MODE;
     reg ALU_MODE;
     reg JUMP_MODE;
     reg RAM_MODE;
+    reg CPU_Mode_cfg;
     //译码信号
 
 
@@ -48,7 +50,7 @@ module CPU_Liet2_Top(
         .clk(sys_clk),
         .rst(~rst),
         .pc_out(PC_ADDR),
-        .pc_jump_en(jump_en),
+        .pc_jump_en(jump),
         .pc_in(jump_addr)
     );
     assign OUT[7:0]=~PC_ADDR[7:0];
@@ -92,11 +94,13 @@ module CPU_Liet2_Top(
     //RAM
     always @(*) begin
         case (Mode)
-            2'b00: IO_MODE = 1'b1;
-            2'b01: ALU_MODE = 1'b1;
-            2'b10: JUMP_MODE = 1'b1;
-            2'b11: RAM_MODE = 1'b1;
+            3'b000: IO_MODE = 1'b1;
+            2'b001: ALU_MODE = 1'b1;
+            3'b010: JUMP_MODE = 1'b1;
+            3'b011: RAM_MODE = 1'b1;
+            3'b100: CPU_Mode_cfg = 1'b1;
             default: begin
+                CPU_Mode_cfg = 1'b0;
                 IO_MODE = 1'b0;
                 ALU_MODE = 1'b0;
                 JUMP_MODE = 1'b0;
@@ -113,7 +117,6 @@ module CPU_Liet2_Top(
         .A(A_DBUS),
         .B(B_DBUS),
         .Immediate(Immediate),
-
         .Result(WR_BUS)
     );
     //ALU
@@ -129,9 +132,20 @@ module CPU_Liet2_Top(
         .RDA(A_DBUS),
         .RDB_EN(1'b1),
         .Address_B(Argument_B),
-        .RDB(B_DBUS)
+        .RDB(B_DBUS),
+        .wr_data(J_wr_data_inst)
         );
 
+    cond cond_inst(
+        .Mode(Mode),
+        .jump_en(JUMP_MODE),
+        .Flags(A_DBUS),
+        .DATA_B(B_DBUS),
+        .Condition(Opcode),
+        .jump(jump),
+        .wr_data(J_wr_data_inst),
+        .jump_addr(jump_addr)
+    );
 
 
 

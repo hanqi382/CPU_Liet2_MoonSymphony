@@ -12,27 +12,27 @@
   <Part Number>: GW2AR-LV18QN88C8/I7
   <Device>: GW2AR-18
   <Device Version>: C
-  <Created Time>:Mon Jun 15 01:33:03 2026
+  <Created Time>:Tue Jun 16 00:39:03 2026
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.714s, Elapsed time = 0h 0m 0.714s
-    Placement Phase 1: CPU time = 0h 0m 0.355s, Elapsed time = 0h 0m 0.356s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Total Placement: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
+    Placement Phase 0: CPU time = 0h 0m 0.339s, Elapsed time = 0h 0m 0.339s
+    Placement Phase 1: CPU time = 0h 0m 0.165s, Elapsed time = 0h 0m 0.165s
+    Placement Phase 2: CPU time = 0h 0m 0.969s, Elapsed time = 0h 0m 0.968s
+    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 0.248s, Elapsed time = 0h 0m 0.248s
-    Routing Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
+    Routing Phase 1: CPU time = 0h 0m 0.116s, Elapsed time = 0h 0m 0.115s
+    Routing Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Total Routing: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
  Generate output files:
-    CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
 
- Total Time and Memory Usage: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 750MB
+ Total Time and Memory Usage: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 604MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 2104/20736                          |  11%
-    --LUT,ALU,ROM16           | 2104(1971 LUT, 133 ALU, 0 ROM16)    | -
+  Logic                       | 2297/20736                          |  12%
+    --LUT,ALU,ROM16           | 2297(2056 LUT, 241 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 2667/15750                          |  17%
-    --Logic Register as Latch | 33/15552                            |  <1%
-    --Logic Register as FF    | 2633/15552                          |  17%
+  Register                    | 2670/15750                          |  17%
+    --Logic Register as Latch | 35/15552                            |  <1%
+    --Logic Register as FF    | 2634/15552                          |  17%
     --I/O Register as Latch   | 0/198                               |  0%
     --I/O Register as FF      | 1/198                               |  <1%
-  CLS                         | 2234/10368                          |  22%
+  CLS                         | 2287/10368                          |  23%
   I/O Port                    | 16/66                               |  25%
   I/O Buf                     | 16                                  | -
     --Input Buf               | 6                                   | -
@@ -66,11 +66,11 @@
   --------------------------------------
   I/O Bank  | Usage       | Utilization 
   --------------------------------------
-  bank 0   | 2/8         | 25%         
+  bank 0   | 3/8         | 38%         
   bank 1   | 0/9         | 0%          
   bank 2   | 4/4         | 100%        
   bank 3   | 2/17        | 12%         
-  bank 4   | 1/8         | 13%         
+  bank 4   | 0/8         | 0%          
   bank 5   | 0/10        | 0%          
   bank 6   | 6/9         | 67%         
   bank 7   | 1/1         | 100%        
@@ -97,7 +97,7 @@
   -------------------------------------------
   clk_modk_d     | PRIMARY        |  TL
   n66_4          | PRIMARY        |  TR TL BR BL
-  clk_inst/High_CLK| PRIMARY        |  BL
+  clk_inst/High_CLK| PRIMARY        |  TL
   gw_gao_inst_0/control0[0]| PRIMARY        |  TR TL BR BL
   ALU_inst/n555_21| PRIMARY        |  BL
   clk_in_d       | LW             |  -
@@ -105,9 +105,9 @@
   Mode[1]        | LW             |  -
   gw_gao_inst_0/gao_jtag_reset| LW             |  -
   gw_gao_inst_0/u_la0_top/n20_3| LW             |  -
-  gw_gao_inst_0/u_la0_top/data_out_shift_reg_455_9| LW             |  -
+  gw_gao_inst_0/u_la0_top/data_out_shift_reg_455_7| LW             |  -
   ALU_inst/n642_21| LW             |  -
-  RegFiles_inst/registers[0]_30_6| LW             |  -
+  cond_inst/n114_7| LW             |  -
   ===========================================
 
 
@@ -122,7 +122,7 @@ rst        | -         | 88/3          | Y          | in    | IOR30[A] | MODE0  
 tms_pad_i  | -         | 5/2           | N          | in    | IOR25[B] | TMS             | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 3.3       
 tck_pad_i  | -         | 6/2           | N          | in    | IOR26[A] | TCK             | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 3.3       
 tdi_pad_i  | -         | 7/2           | N          | in    | IOR26[B] | TDI             | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 3.3       
-clk_out    | -         | 41/4          | N          | out   | IOB43[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
+clk_out    | -         | 82/0          | N          | out   | IOT17[A] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 OUT[0]     | -         | 15/6          | Y          | out   | IOL47[A] | LPLL2_T_fb      | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 3.3       
 OUT[1]     | -         | 16/6          | Y          | out   | IOL47[B] | LPLL2_C_fb      | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 3.3       
 OUT[2]     | -         | 17/6          | Y          | out   | IOL49[A] | -               | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 3.3       
@@ -146,7 +146,7 @@ Loc./Bank| Signal     | Dir.  | Site     | CFG             | IO Type  | Drive | 
 85/0     | OUT[7]     | out   | IOT4[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 84/0     | -          | in    | IOT6[A]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 83/0     | -          | in    | IOT6[B]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-82/0     | -          | in    | IOT17[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+82/0     | clk_out    | out   | IOT17[A] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 81/0     | -          | in    | IOT17[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 80/0     | -          | in    | IOT27[A] | GCLKT_0         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 79/0     | -          | in    | IOT27[B] | GCLKC_0         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
@@ -177,7 +177,7 @@ Loc./Bank| Signal     | Dir.  | Site     | CFG             | IO Type  | Drive | 
 39/4     | -          | in    | IOB40[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 40/4     | -          | in    | IOB40[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 42/4     | -          | in    | IOB42[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-41/4     | clk_out    | out   | IOB43[A] | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
+41/4     | -          | in    | IOB43[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 p1/7     | -          | in    | IOL3[A]  | -               | LVCMOS33 | -     | UP        | -         | -          | -          | -          | -               | -             | -    
 p2/7     | -          | in    | IOL3[B]  | -               | LVCMOS33 | -     | UP        | -         | -          | -          | -          | -               | -             | -    

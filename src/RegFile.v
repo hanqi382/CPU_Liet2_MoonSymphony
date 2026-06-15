@@ -12,7 +12,9 @@ module RegFiles(
     
     input RDB_EN,
     input [4:0] Address_B,//读寄存器B地址
-    output reg [31:0] RDB//读寄存器B数据
+    output reg [31:0] RDB,//读寄存器B数据
+
+    output reg [31:0] wr_data
 );
 
     // 定义32个32位寄存器
@@ -73,6 +75,7 @@ module RegFiles(
         if (RDB_EN) begin
             RDB <= registers[Address_B];
         end
+        wr_data<=registers[Write_Address];
     end
     
 endmodule

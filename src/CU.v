@@ -1,6 +1,6 @@
 module CU(
     input [31:0]Instructio,
-    output reg [1:0]Mode,
+    output reg [2:0]Mode,
     output reg [3:0]Opcode,
     output reg [4:0] Destination,
     output reg [4:0] Argument_A,
@@ -9,7 +9,7 @@ module CU(
     output reg [15:0] Immediate
 );
     always @(*) begin
-        Mode <= Instructio[30:29];
+        Mode <= Instructio[31:29];
         Opcode <= Instructio[27:24];         //操作码
         Destination <= Instructio[23:20];     //目标寄存器
         Argument_A <= Instructio[19:16];     //源寄存器A
