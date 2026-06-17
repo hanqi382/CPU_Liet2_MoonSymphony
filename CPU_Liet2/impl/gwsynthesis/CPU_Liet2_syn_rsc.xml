@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="CPU_Liet2_Top" Lut="9" T_Register="3912(0)" T_Alu="225(0)" T_Lut="2582(9)" T_Bsram="45(0)">
- <SubModule name="gw_gao_inst_0" Register="3290" Alu="13" Lut="1171" Bsram="43" T_Register="3290(3290)" T_Alu="13(13)" T_Lut="1171(1171)" T_Bsram="43(43)"/>
+<Module name="CPU_Liet2_Top" Lut="10" T_Register="3912(0)" T_Alu="225(0)" T_Lut="2582(10)" T_Bsram="45(0)">
+ <SubModule name="gw_gao_inst_0" Register="3290" Alu="13" Lut="1170" Bsram="43" T_Register="3290(3290)" T_Alu="13(13)" T_Lut="1170(1170)" T_Bsram="43(43)"/>
  <SubModule name="clk_inst" Register="25" Alu="22" Lut="5" T_Register="25(25)" T_Alu="22(22)" T_Lut="5(5)">
   <SubModule name="osc_inst"/>
   <SubModule name="HighClk"/>

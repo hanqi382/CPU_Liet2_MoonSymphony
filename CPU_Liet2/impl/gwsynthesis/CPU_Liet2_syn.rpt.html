@@ -70,6 +70,9 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_prom\gowin_prom.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart_rx.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uatr_tx.v<br>
 F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v<br>
 F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
 F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v<br>
@@ -101,7 +104,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Wed Jun 17 18:34:04 2026
+<td>Thu Jun 18 00:16:41 2026
 </td>
 </tr>
 <tr>
@@ -117,11 +120,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.656s, Elapsed time = 0h 0m 0.652s, Peak memory usage = 577.246MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.203s, Elapsed time = 0h 0m 0.176s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.069s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.185s, Peak memory usage = 577.246MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.055s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.012s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 577.246MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.168s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.039s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.03s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 577.246MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.145s, Peak memory usage = 577.246MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.182s, Peak memory usage = 577.246MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.656s, Elapsed time = 0h 0m 0.731s, Peak memory usage = 358.781MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.186s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.071s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.194s, Peak memory usage = 358.781MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.063s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 358.781MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.182s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.04s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.031s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 373.242MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.145s, Peak memory usage = 373.242MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.216s, Peak memory usage = 373.242MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 577.246MB</td>
+<td>CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 373.242MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -471,8 +474,8 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>3</td>
 <td>clk_inst/n66_4</td>
 <td>100.000(MHz)</td>
-<td>98.309(MHz)</td>
-<td>9</td>
+<td>69.943(MHz)</td>
+<td>5</td>
 <td>TOP</td>
 </tr>
 </table>

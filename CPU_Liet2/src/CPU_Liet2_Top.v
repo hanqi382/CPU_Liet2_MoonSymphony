@@ -91,7 +91,7 @@ module CPU_Liet2_Top(
         .douta(INSTR),       // 指令输出
 
 	        // B口：全部接0，完全不用
-        .clkb(sys_clk),
+        .clkb(~sys_clk),
         .oceb(1'b1),
         .ceb(1'b1),
         .resetb(1'b0),

@@ -114,5 +114,31 @@
   "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_prom/gowin_prom.v",
   "ModuleLine" : 10,
   "ModuleName" : "Gowin_pROM"
+ },
+ {
+  "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+  "InstLine" : 1,
+  "InstName" : "uart",
+  "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "uart",
+  "SubInsts" : [
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+    "InstLine" : 30,
+    "InstName" : "tx_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uatr_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx"
+   },
+   {
+    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+    "InstLine" : 41,
+    "InstName" : "rx_inst",
+    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_rx"
+   }
+  ]
  }
 ]

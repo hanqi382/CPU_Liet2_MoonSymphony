@@ -60,6 +60,18 @@
   {
    "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_rpll/gowin_rpll.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uatr_tx.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [

@@ -15,6 +15,9 @@ Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_prom\gowin_prom.v'
 Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart_rx.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart.v'
+Analyzing Verilog file 'F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uatr_tx.v'
 Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
 Analyzing Verilog file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
 Analyzing included file 'F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
