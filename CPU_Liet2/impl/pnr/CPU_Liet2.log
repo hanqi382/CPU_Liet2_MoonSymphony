@@ -9,7 +9,6 @@ Running placement......
 [30%] Placement Phase 2 completed
 WARN  (TA1132) :  'clk_modk' was determined to be a clock but was not created.
 WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
-WARN  (TA1132) :  'Mode[1]' was determined to be a clock but was not created.
 WARN  (TA1132) :  'n66_4' was determined to be a clock but was not created.
 WARN  (TA1132) :  'ALU_inst/n555_21' was determined to be a clock but was not created.
 WARN  (TA1132) :  'ALU_inst/n642_21' was determined to be a clock but was not created.
@@ -34,5 +33,5 @@ Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.pin.html" 
 Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.rpt.html" completed
 Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.rpt.txt" completed
 Generate file "F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\CPU_Liet2.tr.html" completed
-Tue Jun 16 00:39:03 2026
+Wed Jun 17 18:34:16 2026
 

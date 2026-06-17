@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="CPU_Liet2_Top" Register="2" Lut="9" T_Register="2670(2)" T_Alu="225(0)" T_Lut="2063(9)" T_Bsram="28(0)">
+<Module name="CPU_Liet2_Top" Lut="9" T_Register="3912(0)" T_Alu="225(0)" T_Lut="2582(9)" T_Bsram="45(0)">
+ <SubModule name="gw_gao_inst_0" Register="3290" Alu="13" Lut="1171" Bsram="43" T_Register="3290(3290)" T_Alu="13(13)" T_Lut="1171(1171)" T_Bsram="43(43)"/>
  <SubModule name="clk_inst" Register="25" Alu="22" Lut="5" T_Register="25(25)" T_Alu="22(22)" T_Lut="5(5)">
   <SubModule name="osc_inst"/>
   <SubModule name="HighClk"/>
  </SubModule>
- <SubModule name="PC_Liet2_0" Register="27" Lut="44" T_Register="27(27)" T_Lut="44(44)"/>
- <SubModule name="dpb_inst" Lut="1" Bsram="2" T_Lut="1(1)" T_Bsram="2(2)"/>
- <SubModule name="gw_gao_inst_0" Register="2071" Alu="13" Lut="874" Bsram="26" T_Register="2071(2071)" T_Alu="13(13)" T_Lut="874(874)" T_Bsram="26(26)"/>
- <SubModule name="ALU_inst" Register="32" Alu="64" Lut="543" T_Register="32(32)" T_Alu="64(64)" T_Lut="543(543)"/>
+ <SubModule name="PC_Liet2_0" Register="52" Lut="150" T_Register="52(52)" T_Lut="150(150)"/>
+ <SubModule name="DP_inst" Lut="1" Bsram="2" T_Lut="1(1)" T_Bsram="2(2)"/>
+ <SubModule name="ALU_inst" Register="32" Alu="64" Lut="521" T_Register="32(32)" T_Alu="64(64)" T_Lut="521(521)"/>
  <SubModule name="RegFiles_inst" Register="512" Lut="576" T_Register="512(512)" T_Lut="576(576)"/>
- <SubModule name="cond_inst" Register="1" Alu="126" Lut="11" T_Register="1(1)" T_Alu="126(126)" T_Lut="11(11)"/>
+ <SubModule name="cond_inst" Register="1" Alu="126" Lut="13" T_Register="1(1)" T_Alu="126(126)" T_Lut="13(13)"/>
+ <SubModule name="RAM_inst" Lut="103" T_Lut="103(103)"/>
+ <SubModule name="WR_BUS_inst" Lut="33" T_Lut="33(33)"/>
 </Module>

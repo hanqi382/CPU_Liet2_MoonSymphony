@@ -502,11 +502,335 @@
                 <Signal>WR_BUS[1]</Signal>
                 <Signal>WR_BUS[0]</Signal>
             </Bus>
+            <Signal capture_enable="true">jump</Signal>
+            <Bus capture_enable="true" name="RAM_ADDR[31:0]">
+                <Signal>RAM_ADDR[31]</Signal>
+                <Signal>RAM_ADDR[30]</Signal>
+                <Signal>RAM_ADDR[29]</Signal>
+                <Signal>RAM_ADDR[28]</Signal>
+                <Signal>RAM_ADDR[27]</Signal>
+                <Signal>RAM_ADDR[26]</Signal>
+                <Signal>RAM_ADDR[25]</Signal>
+                <Signal>RAM_ADDR[24]</Signal>
+                <Signal>RAM_ADDR[23]</Signal>
+                <Signal>RAM_ADDR[22]</Signal>
+                <Signal>RAM_ADDR[21]</Signal>
+                <Signal>RAM_ADDR[20]</Signal>
+                <Signal>RAM_ADDR[19]</Signal>
+                <Signal>RAM_ADDR[18]</Signal>
+                <Signal>RAM_ADDR[17]</Signal>
+                <Signal>RAM_ADDR[16]</Signal>
+                <Signal>RAM_ADDR[15]</Signal>
+                <Signal>RAM_ADDR[14]</Signal>
+                <Signal>RAM_ADDR[13]</Signal>
+                <Signal>RAM_ADDR[12]</Signal>
+                <Signal>RAM_ADDR[11]</Signal>
+                <Signal>RAM_ADDR[10]</Signal>
+                <Signal>RAM_ADDR[9]</Signal>
+                <Signal>RAM_ADDR[8]</Signal>
+                <Signal>RAM_ADDR[7]</Signal>
+                <Signal>RAM_ADDR[6]</Signal>
+                <Signal>RAM_ADDR[5]</Signal>
+                <Signal>RAM_ADDR[4]</Signal>
+                <Signal>RAM_ADDR[3]</Signal>
+                <Signal>RAM_ADDR[2]</Signal>
+                <Signal>RAM_ADDR[1]</Signal>
+                <Signal>RAM_ADDR[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RAM_IN_DATA[31:0]">
+                <Signal>RAM_IN_DATA[31]</Signal>
+                <Signal>RAM_IN_DATA[30]</Signal>
+                <Signal>RAM_IN_DATA[29]</Signal>
+                <Signal>RAM_IN_DATA[28]</Signal>
+                <Signal>RAM_IN_DATA[27]</Signal>
+                <Signal>RAM_IN_DATA[26]</Signal>
+                <Signal>RAM_IN_DATA[25]</Signal>
+                <Signal>RAM_IN_DATA[24]</Signal>
+                <Signal>RAM_IN_DATA[23]</Signal>
+                <Signal>RAM_IN_DATA[22]</Signal>
+                <Signal>RAM_IN_DATA[21]</Signal>
+                <Signal>RAM_IN_DATA[20]</Signal>
+                <Signal>RAM_IN_DATA[19]</Signal>
+                <Signal>RAM_IN_DATA[18]</Signal>
+                <Signal>RAM_IN_DATA[17]</Signal>
+                <Signal>RAM_IN_DATA[16]</Signal>
+                <Signal>RAM_IN_DATA[15]</Signal>
+                <Signal>RAM_IN_DATA[14]</Signal>
+                <Signal>RAM_IN_DATA[13]</Signal>
+                <Signal>RAM_IN_DATA[12]</Signal>
+                <Signal>RAM_IN_DATA[11]</Signal>
+                <Signal>RAM_IN_DATA[10]</Signal>
+                <Signal>RAM_IN_DATA[9]</Signal>
+                <Signal>RAM_IN_DATA[8]</Signal>
+                <Signal>RAM_IN_DATA[7]</Signal>
+                <Signal>RAM_IN_DATA[6]</Signal>
+                <Signal>RAM_IN_DATA[5]</Signal>
+                <Signal>RAM_IN_DATA[4]</Signal>
+                <Signal>RAM_IN_DATA[3]</Signal>
+                <Signal>RAM_IN_DATA[2]</Signal>
+                <Signal>RAM_IN_DATA[1]</Signal>
+                <Signal>RAM_IN_DATA[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="DP_inst/adb[9:0]">
+                <Signal>DP_inst/adb[9]</Signal>
+                <Signal>DP_inst/adb[8]</Signal>
+                <Signal>DP_inst/adb[7]</Signal>
+                <Signal>DP_inst/adb[6]</Signal>
+                <Signal>DP_inst/adb[5]</Signal>
+                <Signal>DP_inst/adb[4]</Signal>
+                <Signal>DP_inst/adb[3]</Signal>
+                <Signal>DP_inst/adb[2]</Signal>
+                <Signal>DP_inst/adb[1]</Signal>
+                <Signal>DP_inst/adb[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">RAM_inst/RAM_RE</Signal>
+            <Signal capture_enable="true">RAM_inst/RAM_WE</Signal>
+            <Signal capture_enable="true">JUMP_MODE</Signal>
+            <Bus capture_enable="true" name="RAM_inst/data_out[31:0]">
+                <Signal>RAM_inst/data_out[31]</Signal>
+                <Signal>RAM_inst/data_out[30]</Signal>
+                <Signal>RAM_inst/data_out[29]</Signal>
+                <Signal>RAM_inst/data_out[28]</Signal>
+                <Signal>RAM_inst/data_out[27]</Signal>
+                <Signal>RAM_inst/data_out[26]</Signal>
+                <Signal>RAM_inst/data_out[25]</Signal>
+                <Signal>RAM_inst/data_out[24]</Signal>
+                <Signal>RAM_inst/data_out[23]</Signal>
+                <Signal>RAM_inst/data_out[22]</Signal>
+                <Signal>RAM_inst/data_out[21]</Signal>
+                <Signal>RAM_inst/data_out[20]</Signal>
+                <Signal>RAM_inst/data_out[19]</Signal>
+                <Signal>RAM_inst/data_out[18]</Signal>
+                <Signal>RAM_inst/data_out[17]</Signal>
+                <Signal>RAM_inst/data_out[16]</Signal>
+                <Signal>RAM_inst/data_out[15]</Signal>
+                <Signal>RAM_inst/data_out[14]</Signal>
+                <Signal>RAM_inst/data_out[13]</Signal>
+                <Signal>RAM_inst/data_out[12]</Signal>
+                <Signal>RAM_inst/data_out[11]</Signal>
+                <Signal>RAM_inst/data_out[10]</Signal>
+                <Signal>RAM_inst/data_out[9]</Signal>
+                <Signal>RAM_inst/data_out[8]</Signal>
+                <Signal>RAM_inst/data_out[7]</Signal>
+                <Signal>RAM_inst/data_out[6]</Signal>
+                <Signal>RAM_inst/data_out[5]</Signal>
+                <Signal>RAM_inst/data_out[4]</Signal>
+                <Signal>RAM_inst/data_out[3]</Signal>
+                <Signal>RAM_inst/data_out[2]</Signal>
+                <Signal>RAM_inst/data_out[1]</Signal>
+                <Signal>RAM_inst/data_out[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RAM_inst/addr_in[31:0]">
+                <Signal>RAM_inst/addr_in[31]</Signal>
+                <Signal>RAM_inst/addr_in[30]</Signal>
+                <Signal>RAM_inst/addr_in[29]</Signal>
+                <Signal>RAM_inst/addr_in[28]</Signal>
+                <Signal>RAM_inst/addr_in[27]</Signal>
+                <Signal>RAM_inst/addr_in[26]</Signal>
+                <Signal>RAM_inst/addr_in[25]</Signal>
+                <Signal>RAM_inst/addr_in[24]</Signal>
+                <Signal>RAM_inst/addr_in[23]</Signal>
+                <Signal>RAM_inst/addr_in[22]</Signal>
+                <Signal>RAM_inst/addr_in[21]</Signal>
+                <Signal>RAM_inst/addr_in[20]</Signal>
+                <Signal>RAM_inst/addr_in[19]</Signal>
+                <Signal>RAM_inst/addr_in[18]</Signal>
+                <Signal>RAM_inst/addr_in[17]</Signal>
+                <Signal>RAM_inst/addr_in[16]</Signal>
+                <Signal>RAM_inst/addr_in[15]</Signal>
+                <Signal>RAM_inst/addr_in[14]</Signal>
+                <Signal>RAM_inst/addr_in[13]</Signal>
+                <Signal>RAM_inst/addr_in[12]</Signal>
+                <Signal>RAM_inst/addr_in[11]</Signal>
+                <Signal>RAM_inst/addr_in[10]</Signal>
+                <Signal>RAM_inst/addr_in[9]</Signal>
+                <Signal>RAM_inst/addr_in[8]</Signal>
+                <Signal>RAM_inst/addr_in[7]</Signal>
+                <Signal>RAM_inst/addr_in[6]</Signal>
+                <Signal>RAM_inst/addr_in[5]</Signal>
+                <Signal>RAM_inst/addr_in[4]</Signal>
+                <Signal>RAM_inst/addr_in[3]</Signal>
+                <Signal>RAM_inst/addr_in[2]</Signal>
+                <Signal>RAM_inst/addr_in[1]</Signal>
+                <Signal>RAM_inst/addr_in[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="B_DBUS[31:0]">
+                <Signal>B_DBUS[31]</Signal>
+                <Signal>B_DBUS[30]</Signal>
+                <Signal>B_DBUS[29]</Signal>
+                <Signal>B_DBUS[28]</Signal>
+                <Signal>B_DBUS[27]</Signal>
+                <Signal>B_DBUS[26]</Signal>
+                <Signal>B_DBUS[25]</Signal>
+                <Signal>B_DBUS[24]</Signal>
+                <Signal>B_DBUS[23]</Signal>
+                <Signal>B_DBUS[22]</Signal>
+                <Signal>B_DBUS[21]</Signal>
+                <Signal>B_DBUS[20]</Signal>
+                <Signal>B_DBUS[19]</Signal>
+                <Signal>B_DBUS[18]</Signal>
+                <Signal>B_DBUS[17]</Signal>
+                <Signal>B_DBUS[16]</Signal>
+                <Signal>B_DBUS[15]</Signal>
+                <Signal>B_DBUS[14]</Signal>
+                <Signal>B_DBUS[13]</Signal>
+                <Signal>B_DBUS[12]</Signal>
+                <Signal>B_DBUS[11]</Signal>
+                <Signal>B_DBUS[10]</Signal>
+                <Signal>B_DBUS[9]</Signal>
+                <Signal>B_DBUS[8]</Signal>
+                <Signal>B_DBUS[7]</Signal>
+                <Signal>B_DBUS[6]</Signal>
+                <Signal>B_DBUS[5]</Signal>
+                <Signal>B_DBUS[4]</Signal>
+                <Signal>B_DBUS[3]</Signal>
+                <Signal>B_DBUS[2]</Signal>
+                <Signal>B_DBUS[1]</Signal>
+                <Signal>B_DBUS[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RAM_OUT_DATA[31:0]">
+                <Signal>RAM_OUT_DATA[31]</Signal>
+                <Signal>RAM_OUT_DATA[30]</Signal>
+                <Signal>RAM_OUT_DATA[29]</Signal>
+                <Signal>RAM_OUT_DATA[28]</Signal>
+                <Signal>RAM_OUT_DATA[27]</Signal>
+                <Signal>RAM_OUT_DATA[26]</Signal>
+                <Signal>RAM_OUT_DATA[25]</Signal>
+                <Signal>RAM_OUT_DATA[24]</Signal>
+                <Signal>RAM_OUT_DATA[23]</Signal>
+                <Signal>RAM_OUT_DATA[22]</Signal>
+                <Signal>RAM_OUT_DATA[21]</Signal>
+                <Signal>RAM_OUT_DATA[20]</Signal>
+                <Signal>RAM_OUT_DATA[19]</Signal>
+                <Signal>RAM_OUT_DATA[18]</Signal>
+                <Signal>RAM_OUT_DATA[17]</Signal>
+                <Signal>RAM_OUT_DATA[16]</Signal>
+                <Signal>RAM_OUT_DATA[15]</Signal>
+                <Signal>RAM_OUT_DATA[14]</Signal>
+                <Signal>RAM_OUT_DATA[13]</Signal>
+                <Signal>RAM_OUT_DATA[12]</Signal>
+                <Signal>RAM_OUT_DATA[11]</Signal>
+                <Signal>RAM_OUT_DATA[10]</Signal>
+                <Signal>RAM_OUT_DATA[9]</Signal>
+                <Signal>RAM_OUT_DATA[8]</Signal>
+                <Signal>RAM_OUT_DATA[7]</Signal>
+                <Signal>RAM_OUT_DATA[6]</Signal>
+                <Signal>RAM_OUT_DATA[5]</Signal>
+                <Signal>RAM_OUT_DATA[4]</Signal>
+                <Signal>RAM_OUT_DATA[3]</Signal>
+                <Signal>RAM_OUT_DATA[2]</Signal>
+                <Signal>RAM_OUT_DATA[1]</Signal>
+                <Signal>RAM_OUT_DATA[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="WR_BUS_inst/ALU_Result[31:0]">
+                <Signal>WR_BUS_inst/ALU_Result[31]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[30]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[29]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[28]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[27]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[26]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[25]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[24]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[23]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[22]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[21]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[20]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[19]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[18]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[17]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[16]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[15]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[14]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[13]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[12]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[11]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[10]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[9]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[8]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[7]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[6]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[5]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[4]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[3]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[2]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[1]</Signal>
+                <Signal>WR_BUS_inst/ALU_Result[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="WR_BUS_inst/RAM_out[31:0]">
+                <Signal>WR_BUS_inst/RAM_out[31]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[30]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[29]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[28]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[27]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[26]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[25]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[24]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[23]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[22]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[21]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[20]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[19]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[18]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[17]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[16]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[15]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[14]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[13]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[12]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[11]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[10]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[9]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[8]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[7]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[6]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[5]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[4]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[3]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[2]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[1]</Signal>
+                <Signal>WR_BUS_inst/RAM_out[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="WR_BUS_inst/wr_out[31:0]">
+                <Signal>WR_BUS_inst/wr_out[31]</Signal>
+                <Signal>WR_BUS_inst/wr_out[30]</Signal>
+                <Signal>WR_BUS_inst/wr_out[29]</Signal>
+                <Signal>WR_BUS_inst/wr_out[28]</Signal>
+                <Signal>WR_BUS_inst/wr_out[27]</Signal>
+                <Signal>WR_BUS_inst/wr_out[26]</Signal>
+                <Signal>WR_BUS_inst/wr_out[25]</Signal>
+                <Signal>WR_BUS_inst/wr_out[24]</Signal>
+                <Signal>WR_BUS_inst/wr_out[23]</Signal>
+                <Signal>WR_BUS_inst/wr_out[22]</Signal>
+                <Signal>WR_BUS_inst/wr_out[21]</Signal>
+                <Signal>WR_BUS_inst/wr_out[20]</Signal>
+                <Signal>WR_BUS_inst/wr_out[19]</Signal>
+                <Signal>WR_BUS_inst/wr_out[18]</Signal>
+                <Signal>WR_BUS_inst/wr_out[17]</Signal>
+                <Signal>WR_BUS_inst/wr_out[16]</Signal>
+                <Signal>WR_BUS_inst/wr_out[15]</Signal>
+                <Signal>WR_BUS_inst/wr_out[14]</Signal>
+                <Signal>WR_BUS_inst/wr_out[13]</Signal>
+                <Signal>WR_BUS_inst/wr_out[12]</Signal>
+                <Signal>WR_BUS_inst/wr_out[11]</Signal>
+                <Signal>WR_BUS_inst/wr_out[10]</Signal>
+                <Signal>WR_BUS_inst/wr_out[9]</Signal>
+                <Signal>WR_BUS_inst/wr_out[8]</Signal>
+                <Signal>WR_BUS_inst/wr_out[7]</Signal>
+                <Signal>WR_BUS_inst/wr_out[6]</Signal>
+                <Signal>WR_BUS_inst/wr_out[5]</Signal>
+                <Signal>WR_BUS_inst/wr_out[4]</Signal>
+                <Signal>WR_BUS_inst/wr_out[3]</Signal>
+                <Signal>WR_BUS_inst/wr_out[2]</Signal>
+                <Signal>WR_BUS_inst/wr_out[1]</Signal>
+                <Signal>WR_BUS_inst/wr_out[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">WR_BUS_inst/mux_1</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
                 <SignalList>
                     <Signal>clk_inst/divided_clk</Signal>
+                    <Signal>clk_inst/OSC_CLK</Signal>
                 </SignalList>
             </Trigger>
             <Trigger index="1">
@@ -530,7 +854,7 @@
             <Trigger index="15"/>
         </Triggers>
         <MatchUnits>
-            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="1" counter="1" countinuous="1" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="1" counter="1" countinuous="1" func="0" value0="00" value1="00" trigger="0"/>
             <MatchUnit index="1" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="1" value0="0" value1="0" trigger="1"/>
             <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
             <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
@@ -552,5 +876,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0111101101000010</GAO_ID>
+    <GAO_ID>0100000000101100</GAO_ID>
 </GAO_CONFIG>

@@ -1,11 +1,11 @@
 module SYS_CLK(
     input clk_in,
     input clk_modk,
-
+    output High_CLK,
     output reg clk_out
 );
     wire OSC_CLK;
-    wire High_CLK;
+    //wire High_CLK;
     reg [1:0] clk_mod;
     Gowin_OSC osc_inst(
         .oscout(OSC_CLK)

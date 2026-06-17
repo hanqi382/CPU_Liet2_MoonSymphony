@@ -11,10 +11,14 @@
         <File path="src/CPU_Liet2_Top.v" type="file.verilog" enable="1"/>
         <File path="src/CU.v" type="file.verilog" enable="1"/>
         <File path="src/PC.v" type="file.verilog" enable="1"/>
+        <File path="src/RAM controller.v" type="file.verilog" enable="1"/>
         <File path="src/RegFile.v" type="file.verilog" enable="1"/>
         <File path="src/SYS_CLK.v" type="file.verilog" enable="1"/>
+        <File path="src/WR_BUS.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_dp/gowin_dp.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_dpb/gowin_dpb.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_osc/gowin_osc.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_prom/gowin_prom.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
         <File path="src/CPU_Liet2.cst" type="file.cst" enable="1"/>
         <File path="src/CPU_Liet2.rao" type="file.gao" enable="1"/>
