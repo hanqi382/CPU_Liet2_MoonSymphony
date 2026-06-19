@@ -22,5 +22,5 @@
 -write_mode_0 normal
 -write_mode_1 normal
 -reset_mode sync
--init_file F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\Project.mi
+-init_file F:\project\FPGA\CPU_Liet2\ASM\Project.mi
 -init_match port_A

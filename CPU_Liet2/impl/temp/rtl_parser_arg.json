@@ -22,6 +22,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/IO.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/PC.v",
    "Type" : "verilog"
   },
@@ -62,11 +66,19 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/spi_master/spi_master.v",
    "Type" : "verilog"
   },
   {
    "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
    "Type" : "verilog"
   },
   {

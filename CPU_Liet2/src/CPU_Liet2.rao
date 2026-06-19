@@ -2,7 +2,7 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="0" module_name="CPU_Liet2_Top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="15" capture_amount="64" implementation="0" trigger_pos="0" module_name="CPU_Liet2_Top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
             <Signal capture_enable="true">clk_in</Signal>
             <Bus capture_enable="true" name="clk_inst/clk_mod[1:0]">
@@ -654,40 +654,6 @@
                 <Signal>RAM_inst/addr_in[1]</Signal>
                 <Signal>RAM_inst/addr_in[0]</Signal>
             </Bus>
-            <Bus capture_enable="true" name="B_DBUS[31:0]">
-                <Signal>B_DBUS[31]</Signal>
-                <Signal>B_DBUS[30]</Signal>
-                <Signal>B_DBUS[29]</Signal>
-                <Signal>B_DBUS[28]</Signal>
-                <Signal>B_DBUS[27]</Signal>
-                <Signal>B_DBUS[26]</Signal>
-                <Signal>B_DBUS[25]</Signal>
-                <Signal>B_DBUS[24]</Signal>
-                <Signal>B_DBUS[23]</Signal>
-                <Signal>B_DBUS[22]</Signal>
-                <Signal>B_DBUS[21]</Signal>
-                <Signal>B_DBUS[20]</Signal>
-                <Signal>B_DBUS[19]</Signal>
-                <Signal>B_DBUS[18]</Signal>
-                <Signal>B_DBUS[17]</Signal>
-                <Signal>B_DBUS[16]</Signal>
-                <Signal>B_DBUS[15]</Signal>
-                <Signal>B_DBUS[14]</Signal>
-                <Signal>B_DBUS[13]</Signal>
-                <Signal>B_DBUS[12]</Signal>
-                <Signal>B_DBUS[11]</Signal>
-                <Signal>B_DBUS[10]</Signal>
-                <Signal>B_DBUS[9]</Signal>
-                <Signal>B_DBUS[8]</Signal>
-                <Signal>B_DBUS[7]</Signal>
-                <Signal>B_DBUS[6]</Signal>
-                <Signal>B_DBUS[5]</Signal>
-                <Signal>B_DBUS[4]</Signal>
-                <Signal>B_DBUS[3]</Signal>
-                <Signal>B_DBUS[2]</Signal>
-                <Signal>B_DBUS[1]</Signal>
-                <Signal>B_DBUS[0]</Signal>
-            </Bus>
             <Bus capture_enable="true" name="RAM_OUT_DATA[31:0]">
                 <Signal>RAM_OUT_DATA[31]</Signal>
                 <Signal>RAM_OUT_DATA[30]</Signal>
@@ -790,7 +756,87 @@
                 <Signal>WR_BUS_inst/RAM_out[1]</Signal>
                 <Signal>WR_BUS_inst/RAM_out[0]</Signal>
             </Bus>
-            <Bus capture_enable="true" name="WR_BUS_inst/wr_out[31:0]">
+            <Signal capture_enable="true">WR_BUS_inst/mux_1</Signal>
+            <Signal capture_enable="true">IO_inst/DIO_OUT_EN</Signal>
+            <Bus capture_enable="true" name="DIO_OUT[7:0]">
+                <Signal>DIO_OUT[7]</Signal>
+                <Signal>DIO_OUT[6]</Signal>
+                <Signal>DIO_OUT[5]</Signal>
+                <Signal>DIO_OUT[4]</Signal>
+                <Signal>DIO_OUT[3]</Signal>
+                <Signal>DIO_OUT[2]</Signal>
+                <Signal>DIO_OUT[1]</Signal>
+                <Signal>DIO_OUT[0]</Signal>
+            </Bus>
+            <Bus capture_enable="false" name="B_DBUS[31:0]">
+                <Signal>B_DBUS[31]</Signal>
+                <Signal>B_DBUS[30]</Signal>
+                <Signal>B_DBUS[29]</Signal>
+                <Signal>B_DBUS[28]</Signal>
+                <Signal>B_DBUS[27]</Signal>
+                <Signal>B_DBUS[26]</Signal>
+                <Signal>B_DBUS[25]</Signal>
+                <Signal>B_DBUS[24]</Signal>
+                <Signal>B_DBUS[23]</Signal>
+                <Signal>B_DBUS[22]</Signal>
+                <Signal>B_DBUS[21]</Signal>
+                <Signal>B_DBUS[20]</Signal>
+                <Signal>B_DBUS[19]</Signal>
+                <Signal>B_DBUS[18]</Signal>
+                <Signal>B_DBUS[17]</Signal>
+                <Signal>B_DBUS[16]</Signal>
+                <Signal>B_DBUS[15]</Signal>
+                <Signal>B_DBUS[14]</Signal>
+                <Signal>B_DBUS[13]</Signal>
+                <Signal>B_DBUS[12]</Signal>
+                <Signal>B_DBUS[11]</Signal>
+                <Signal>B_DBUS[10]</Signal>
+                <Signal>B_DBUS[9]</Signal>
+                <Signal>B_DBUS[8]</Signal>
+                <Signal>B_DBUS[7]</Signal>
+                <Signal>B_DBUS[6]</Signal>
+                <Signal>B_DBUS[5]</Signal>
+                <Signal>B_DBUS[4]</Signal>
+                <Signal>B_DBUS[3]</Signal>
+                <Signal>B_DBUS[2]</Signal>
+                <Signal>B_DBUS[1]</Signal>
+                <Signal>B_DBUS[0]</Signal>
+            </Bus>
+            <Bus capture_enable="false" name="IO_inst/OUT_CPU[31:0]">
+                <Signal>IO_inst/OUT_CPU[31]</Signal>
+                <Signal>IO_inst/OUT_CPU[30]</Signal>
+                <Signal>IO_inst/OUT_CPU[29]</Signal>
+                <Signal>IO_inst/OUT_CPU[28]</Signal>
+                <Signal>IO_inst/OUT_CPU[27]</Signal>
+                <Signal>IO_inst/OUT_CPU[26]</Signal>
+                <Signal>IO_inst/OUT_CPU[25]</Signal>
+                <Signal>IO_inst/OUT_CPU[24]</Signal>
+                <Signal>IO_inst/OUT_CPU[23]</Signal>
+                <Signal>IO_inst/OUT_CPU[22]</Signal>
+                <Signal>IO_inst/OUT_CPU[21]</Signal>
+                <Signal>IO_inst/OUT_CPU[20]</Signal>
+                <Signal>IO_inst/OUT_CPU[19]</Signal>
+                <Signal>IO_inst/OUT_CPU[18]</Signal>
+                <Signal>IO_inst/OUT_CPU[17]</Signal>
+                <Signal>IO_inst/OUT_CPU[16]</Signal>
+                <Signal>IO_inst/OUT_CPU[15]</Signal>
+                <Signal>IO_inst/OUT_CPU[14]</Signal>
+                <Signal>IO_inst/OUT_CPU[13]</Signal>
+                <Signal>IO_inst/OUT_CPU[12]</Signal>
+                <Signal>IO_inst/OUT_CPU[11]</Signal>
+                <Signal>IO_inst/OUT_CPU[10]</Signal>
+                <Signal>IO_inst/OUT_CPU[9]</Signal>
+                <Signal>IO_inst/OUT_CPU[8]</Signal>
+                <Signal>IO_inst/OUT_CPU[7]</Signal>
+                <Signal>IO_inst/OUT_CPU[6]</Signal>
+                <Signal>IO_inst/OUT_CPU[5]</Signal>
+                <Signal>IO_inst/OUT_CPU[4]</Signal>
+                <Signal>IO_inst/OUT_CPU[3]</Signal>
+                <Signal>IO_inst/OUT_CPU[2]</Signal>
+                <Signal>IO_inst/OUT_CPU[1]</Signal>
+                <Signal>IO_inst/OUT_CPU[0]</Signal>
+            </Bus>
+            <Bus capture_enable="false" name="WR_BUS_inst/wr_out[31:0]">
                 <Signal>WR_BUS_inst/wr_out[31]</Signal>
                 <Signal>WR_BUS_inst/wr_out[30]</Signal>
                 <Signal>WR_BUS_inst/wr_out[29]</Signal>
@@ -824,7 +870,6 @@
                 <Signal>WR_BUS_inst/wr_out[1]</Signal>
                 <Signal>WR_BUS_inst/wr_out[0]</Signal>
             </Bus>
-            <Signal capture_enable="true">WR_BUS_inst/mux_1</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -876,5 +921,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0100000000101100</GAO_ID>
+    <GAO_ID>1010010010101110</GAO_ID>
 </GAO_CONFIG>

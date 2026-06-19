@@ -597,38 +597,6 @@ module gw_gao(
     \RAM_inst/addr_in[2] ,
     \RAM_inst/addr_in[1] ,
     \RAM_inst/addr_in[0] ,
-    \B_DBUS[31] ,
-    \B_DBUS[30] ,
-    \B_DBUS[29] ,
-    \B_DBUS[28] ,
-    \B_DBUS[27] ,
-    \B_DBUS[26] ,
-    \B_DBUS[25] ,
-    \B_DBUS[24] ,
-    \B_DBUS[23] ,
-    \B_DBUS[22] ,
-    \B_DBUS[21] ,
-    \B_DBUS[20] ,
-    \B_DBUS[19] ,
-    \B_DBUS[18] ,
-    \B_DBUS[17] ,
-    \B_DBUS[16] ,
-    \B_DBUS[15] ,
-    \B_DBUS[14] ,
-    \B_DBUS[13] ,
-    \B_DBUS[12] ,
-    \B_DBUS[11] ,
-    \B_DBUS[10] ,
-    \B_DBUS[9] ,
-    \B_DBUS[8] ,
-    \B_DBUS[7] ,
-    \B_DBUS[6] ,
-    \B_DBUS[5] ,
-    \B_DBUS[4] ,
-    \B_DBUS[3] ,
-    \B_DBUS[2] ,
-    \B_DBUS[1] ,
-    \B_DBUS[0] ,
     \RAM_OUT_DATA[31] ,
     \RAM_OUT_DATA[30] ,
     \RAM_OUT_DATA[29] ,
@@ -725,39 +693,16 @@ module gw_gao(
     \WR_BUS_inst/RAM_out[2] ,
     \WR_BUS_inst/RAM_out[1] ,
     \WR_BUS_inst/RAM_out[0] ,
-    \WR_BUS_inst/wr_out[31] ,
-    \WR_BUS_inst/wr_out[30] ,
-    \WR_BUS_inst/wr_out[29] ,
-    \WR_BUS_inst/wr_out[28] ,
-    \WR_BUS_inst/wr_out[27] ,
-    \WR_BUS_inst/wr_out[26] ,
-    \WR_BUS_inst/wr_out[25] ,
-    \WR_BUS_inst/wr_out[24] ,
-    \WR_BUS_inst/wr_out[23] ,
-    \WR_BUS_inst/wr_out[22] ,
-    \WR_BUS_inst/wr_out[21] ,
-    \WR_BUS_inst/wr_out[20] ,
-    \WR_BUS_inst/wr_out[19] ,
-    \WR_BUS_inst/wr_out[18] ,
-    \WR_BUS_inst/wr_out[17] ,
-    \WR_BUS_inst/wr_out[16] ,
-    \WR_BUS_inst/wr_out[15] ,
-    \WR_BUS_inst/wr_out[14] ,
-    \WR_BUS_inst/wr_out[13] ,
-    \WR_BUS_inst/wr_out[12] ,
-    \WR_BUS_inst/wr_out[11] ,
-    \WR_BUS_inst/wr_out[10] ,
-    \WR_BUS_inst/wr_out[9] ,
-    \WR_BUS_inst/wr_out[8] ,
-    \WR_BUS_inst/wr_out[7] ,
-    \WR_BUS_inst/wr_out[6] ,
-    \WR_BUS_inst/wr_out[5] ,
-    \WR_BUS_inst/wr_out[4] ,
-    \WR_BUS_inst/wr_out[3] ,
-    \WR_BUS_inst/wr_out[2] ,
-    \WR_BUS_inst/wr_out[1] ,
-    \WR_BUS_inst/wr_out[0] ,
     \WR_BUS_inst/mux_1 ,
+    \IO_inst/DIO_OUT_EN ,
+    \DIO_OUT[7] ,
+    \DIO_OUT[6] ,
+    \DIO_OUT[5] ,
+    \DIO_OUT[4] ,
+    \DIO_OUT[3] ,
+    \DIO_OUT[2] ,
+    \DIO_OUT[1] ,
+    \DIO_OUT[0] ,
     \clk_inst/divided_clk ,
     \clk_inst/OSC_CLK ,
     sys_clk,
@@ -1365,38 +1310,6 @@ input \RAM_inst/addr_in[3] ;
 input \RAM_inst/addr_in[2] ;
 input \RAM_inst/addr_in[1] ;
 input \RAM_inst/addr_in[0] ;
-input \B_DBUS[31] ;
-input \B_DBUS[30] ;
-input \B_DBUS[29] ;
-input \B_DBUS[28] ;
-input \B_DBUS[27] ;
-input \B_DBUS[26] ;
-input \B_DBUS[25] ;
-input \B_DBUS[24] ;
-input \B_DBUS[23] ;
-input \B_DBUS[22] ;
-input \B_DBUS[21] ;
-input \B_DBUS[20] ;
-input \B_DBUS[19] ;
-input \B_DBUS[18] ;
-input \B_DBUS[17] ;
-input \B_DBUS[16] ;
-input \B_DBUS[15] ;
-input \B_DBUS[14] ;
-input \B_DBUS[13] ;
-input \B_DBUS[12] ;
-input \B_DBUS[11] ;
-input \B_DBUS[10] ;
-input \B_DBUS[9] ;
-input \B_DBUS[8] ;
-input \B_DBUS[7] ;
-input \B_DBUS[6] ;
-input \B_DBUS[5] ;
-input \B_DBUS[4] ;
-input \B_DBUS[3] ;
-input \B_DBUS[2] ;
-input \B_DBUS[1] ;
-input \B_DBUS[0] ;
 input \RAM_OUT_DATA[31] ;
 input \RAM_OUT_DATA[30] ;
 input \RAM_OUT_DATA[29] ;
@@ -1493,39 +1406,16 @@ input \WR_BUS_inst/RAM_out[3] ;
 input \WR_BUS_inst/RAM_out[2] ;
 input \WR_BUS_inst/RAM_out[1] ;
 input \WR_BUS_inst/RAM_out[0] ;
-input \WR_BUS_inst/wr_out[31] ;
-input \WR_BUS_inst/wr_out[30] ;
-input \WR_BUS_inst/wr_out[29] ;
-input \WR_BUS_inst/wr_out[28] ;
-input \WR_BUS_inst/wr_out[27] ;
-input \WR_BUS_inst/wr_out[26] ;
-input \WR_BUS_inst/wr_out[25] ;
-input \WR_BUS_inst/wr_out[24] ;
-input \WR_BUS_inst/wr_out[23] ;
-input \WR_BUS_inst/wr_out[22] ;
-input \WR_BUS_inst/wr_out[21] ;
-input \WR_BUS_inst/wr_out[20] ;
-input \WR_BUS_inst/wr_out[19] ;
-input \WR_BUS_inst/wr_out[18] ;
-input \WR_BUS_inst/wr_out[17] ;
-input \WR_BUS_inst/wr_out[16] ;
-input \WR_BUS_inst/wr_out[15] ;
-input \WR_BUS_inst/wr_out[14] ;
-input \WR_BUS_inst/wr_out[13] ;
-input \WR_BUS_inst/wr_out[12] ;
-input \WR_BUS_inst/wr_out[11] ;
-input \WR_BUS_inst/wr_out[10] ;
-input \WR_BUS_inst/wr_out[9] ;
-input \WR_BUS_inst/wr_out[8] ;
-input \WR_BUS_inst/wr_out[7] ;
-input \WR_BUS_inst/wr_out[6] ;
-input \WR_BUS_inst/wr_out[5] ;
-input \WR_BUS_inst/wr_out[4] ;
-input \WR_BUS_inst/wr_out[3] ;
-input \WR_BUS_inst/wr_out[2] ;
-input \WR_BUS_inst/wr_out[1] ;
-input \WR_BUS_inst/wr_out[0] ;
 input \WR_BUS_inst/mux_1 ;
+input \IO_inst/DIO_OUT_EN ;
+input \DIO_OUT[7] ;
+input \DIO_OUT[6] ;
+input \DIO_OUT[5] ;
+input \DIO_OUT[4] ;
+input \DIO_OUT[3] ;
+input \DIO_OUT[2] ;
+input \DIO_OUT[1] ;
+input \DIO_OUT[0] ;
 input \clk_inst/divided_clk ;
 input \clk_inst/OSC_CLK ;
 input sys_clk;
@@ -2132,38 +2022,6 @@ wire \RAM_inst/addr_in[3] ;
 wire \RAM_inst/addr_in[2] ;
 wire \RAM_inst/addr_in[1] ;
 wire \RAM_inst/addr_in[0] ;
-wire \B_DBUS[31] ;
-wire \B_DBUS[30] ;
-wire \B_DBUS[29] ;
-wire \B_DBUS[28] ;
-wire \B_DBUS[27] ;
-wire \B_DBUS[26] ;
-wire \B_DBUS[25] ;
-wire \B_DBUS[24] ;
-wire \B_DBUS[23] ;
-wire \B_DBUS[22] ;
-wire \B_DBUS[21] ;
-wire \B_DBUS[20] ;
-wire \B_DBUS[19] ;
-wire \B_DBUS[18] ;
-wire \B_DBUS[17] ;
-wire \B_DBUS[16] ;
-wire \B_DBUS[15] ;
-wire \B_DBUS[14] ;
-wire \B_DBUS[13] ;
-wire \B_DBUS[12] ;
-wire \B_DBUS[11] ;
-wire \B_DBUS[10] ;
-wire \B_DBUS[9] ;
-wire \B_DBUS[8] ;
-wire \B_DBUS[7] ;
-wire \B_DBUS[6] ;
-wire \B_DBUS[5] ;
-wire \B_DBUS[4] ;
-wire \B_DBUS[3] ;
-wire \B_DBUS[2] ;
-wire \B_DBUS[1] ;
-wire \B_DBUS[0] ;
 wire \RAM_OUT_DATA[31] ;
 wire \RAM_OUT_DATA[30] ;
 wire \RAM_OUT_DATA[29] ;
@@ -2260,39 +2118,16 @@ wire \WR_BUS_inst/RAM_out[3] ;
 wire \WR_BUS_inst/RAM_out[2] ;
 wire \WR_BUS_inst/RAM_out[1] ;
 wire \WR_BUS_inst/RAM_out[0] ;
-wire \WR_BUS_inst/wr_out[31] ;
-wire \WR_BUS_inst/wr_out[30] ;
-wire \WR_BUS_inst/wr_out[29] ;
-wire \WR_BUS_inst/wr_out[28] ;
-wire \WR_BUS_inst/wr_out[27] ;
-wire \WR_BUS_inst/wr_out[26] ;
-wire \WR_BUS_inst/wr_out[25] ;
-wire \WR_BUS_inst/wr_out[24] ;
-wire \WR_BUS_inst/wr_out[23] ;
-wire \WR_BUS_inst/wr_out[22] ;
-wire \WR_BUS_inst/wr_out[21] ;
-wire \WR_BUS_inst/wr_out[20] ;
-wire \WR_BUS_inst/wr_out[19] ;
-wire \WR_BUS_inst/wr_out[18] ;
-wire \WR_BUS_inst/wr_out[17] ;
-wire \WR_BUS_inst/wr_out[16] ;
-wire \WR_BUS_inst/wr_out[15] ;
-wire \WR_BUS_inst/wr_out[14] ;
-wire \WR_BUS_inst/wr_out[13] ;
-wire \WR_BUS_inst/wr_out[12] ;
-wire \WR_BUS_inst/wr_out[11] ;
-wire \WR_BUS_inst/wr_out[10] ;
-wire \WR_BUS_inst/wr_out[9] ;
-wire \WR_BUS_inst/wr_out[8] ;
-wire \WR_BUS_inst/wr_out[7] ;
-wire \WR_BUS_inst/wr_out[6] ;
-wire \WR_BUS_inst/wr_out[5] ;
-wire \WR_BUS_inst/wr_out[4] ;
-wire \WR_BUS_inst/wr_out[3] ;
-wire \WR_BUS_inst/wr_out[2] ;
-wire \WR_BUS_inst/wr_out[1] ;
-wire \WR_BUS_inst/wr_out[0] ;
 wire \WR_BUS_inst/mux_1 ;
+wire \IO_inst/DIO_OUT_EN ;
+wire \DIO_OUT[7] ;
+wire \DIO_OUT[6] ;
+wire \DIO_OUT[5] ;
+wire \DIO_OUT[4] ;
+wire \DIO_OUT[3] ;
+wire \DIO_OUT[2] ;
+wire \DIO_OUT[1] ;
+wire \DIO_OUT[0] ;
 wire \clk_inst/divided_clk ;
 wire \clk_inst/OSC_CLK ;
 wire sys_clk;
@@ -2371,7 +2206,7 @@ ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i({\clk_inst/divided_clk ,\clk_inst/OSC_CLK }),
     .trig1_i(\PC_Liet2_0/pc_out[0] ),
-    .data_i({clk_in,\clk_inst/clk_mod[1] ,\clk_inst/clk_mod[0] ,\PC_Liet2_0/pc_out[25] ,\PC_Liet2_0/pc_out[24] ,\PC_Liet2_0/pc_out[23] ,\PC_Liet2_0/pc_out[22] ,\PC_Liet2_0/pc_out[21] ,\PC_Liet2_0/pc_out[20] ,\PC_Liet2_0/pc_out[19] ,\PC_Liet2_0/pc_out[18] ,\PC_Liet2_0/pc_out[17] ,\PC_Liet2_0/pc_out[16] ,\PC_Liet2_0/pc_out[15] ,\PC_Liet2_0/pc_out[14] ,\PC_Liet2_0/pc_out[13] ,\PC_Liet2_0/pc_out[12] ,\PC_Liet2_0/pc_out[11] ,\PC_Liet2_0/pc_out[10] ,\PC_Liet2_0/pc_out[9] ,\PC_Liet2_0/pc_out[8] ,\PC_Liet2_0/pc_out[7] ,\PC_Liet2_0/pc_out[6] ,\PC_Liet2_0/pc_out[5] ,\PC_Liet2_0/pc_out[4] ,\PC_Liet2_0/pc_out[3] ,\PC_Liet2_0/pc_out[2] ,\PC_Liet2_0/pc_out[1] ,\PC_Liet2_0/pc_out[0] ,\Mode[1] ,\Mode[0] ,\Opcode[3] ,\Opcode[2] ,\Opcode[1] ,\Opcode[0] ,\Destination[4] ,\Destination[3] ,\Destination[2] ,\Destination[1] ,\Destination[0] ,\Argument_A[4] ,\Argument_A[3] ,\Argument_A[2] ,\Argument_A[1] ,\Argument_A[0] ,\Argument_B[4] ,\Argument_B[3] ,\Argument_B[2] ,\Argument_B[1] ,\Argument_B[0] ,Is_Immedia,\Immediate[15] ,\Immediate[14] ,\Immediate[13] ,\Immediate[12] ,\Immediate[11] ,\Immediate[10] ,\Immediate[9] ,\Immediate[8] ,\Immediate[7] ,\Immediate[6] ,\Immediate[5] ,\Immediate[4] ,\Immediate[3] ,\Immediate[2] ,\Immediate[1] ,\Immediate[0] ,\INSTR[31] ,\INSTR[30] ,\INSTR[29] ,\INSTR[28] ,\INSTR[27] ,\INSTR[26] ,\INSTR[25] ,\INSTR[24] ,\INSTR[23] ,\INSTR[22] ,\INSTR[21] ,\INSTR[20] ,\INSTR[19] ,\INSTR[18] ,\INSTR[17] ,\INSTR[16] ,\INSTR[15] ,\INSTR[14] ,\INSTR[13] ,\INSTR[12] ,\INSTR[11] ,\INSTR[10] ,\INSTR[9] ,\INSTR[8] ,\INSTR[7] ,\INSTR[6] ,\INSTR[5] ,\INSTR[4] ,\INSTR[3] ,\INSTR[2] ,\INSTR[1] ,\INSTR[0] ,\RegFiles_inst/registers[0][31] ,\RegFiles_inst/registers[0][30] ,\RegFiles_inst/registers[0][29] ,\RegFiles_inst/registers[0][28] ,\RegFiles_inst/registers[0][27] ,\RegFiles_inst/registers[0][26] ,\RegFiles_inst/registers[0][25] ,\RegFiles_inst/registers[0][24] ,\RegFiles_inst/registers[0][23] ,\RegFiles_inst/registers[0][22] ,\RegFiles_inst/registers[0][21] ,\RegFiles_inst/registers[0][20] ,\RegFiles_inst/registers[0][19] ,\RegFiles_inst/registers[0][18] ,\RegFiles_inst/registers[0][17] ,\RegFiles_inst/registers[0][16] ,\RegFiles_inst/registers[0][15] ,\RegFiles_inst/registers[0][14] ,\RegFiles_inst/registers[0][13] ,\RegFiles_inst/registers[0][12] ,\RegFiles_inst/registers[0][11] ,\RegFiles_inst/registers[0][10] ,\RegFiles_inst/registers[0][9] ,\RegFiles_inst/registers[0][8] ,\RegFiles_inst/registers[0][7] ,\RegFiles_inst/registers[0][6] ,\RegFiles_inst/registers[0][5] ,\RegFiles_inst/registers[0][4] ,\RegFiles_inst/registers[0][3] ,\RegFiles_inst/registers[0][2] ,\RegFiles_inst/registers[0][1] ,\RegFiles_inst/registers[0][0] ,\RegFiles_inst/registers[1][31] ,\RegFiles_inst/registers[1][30] ,\RegFiles_inst/registers[1][29] ,\RegFiles_inst/registers[1][28] ,\RegFiles_inst/registers[1][27] ,\RegFiles_inst/registers[1][26] ,\RegFiles_inst/registers[1][25] ,\RegFiles_inst/registers[1][24] ,\RegFiles_inst/registers[1][23] ,\RegFiles_inst/registers[1][22] ,\RegFiles_inst/registers[1][21] ,\RegFiles_inst/registers[1][20] ,\RegFiles_inst/registers[1][19] ,\RegFiles_inst/registers[1][18] ,\RegFiles_inst/registers[1][17] ,\RegFiles_inst/registers[1][16] ,\RegFiles_inst/registers[1][15] ,\RegFiles_inst/registers[1][14] ,\RegFiles_inst/registers[1][13] ,\RegFiles_inst/registers[1][12] ,\RegFiles_inst/registers[1][11] ,\RegFiles_inst/registers[1][10] ,\RegFiles_inst/registers[1][9] ,\RegFiles_inst/registers[1][8] ,\RegFiles_inst/registers[1][7] ,\RegFiles_inst/registers[1][6] ,\RegFiles_inst/registers[1][5] ,\RegFiles_inst/registers[1][4] ,\RegFiles_inst/registers[1][3] ,\RegFiles_inst/registers[1][2] ,\RegFiles_inst/registers[1][1] ,\RegFiles_inst/registers[1][0] ,\RegFiles_inst/registers[2][31] ,\RegFiles_inst/registers[2][30] ,\RegFiles_inst/registers[2][29] ,\RegFiles_inst/registers[2][28] ,\RegFiles_inst/registers[2][27] ,\RegFiles_inst/registers[2][26] ,\RegFiles_inst/registers[2][25] ,\RegFiles_inst/registers[2][24] ,\RegFiles_inst/registers[2][23] ,\RegFiles_inst/registers[2][22] ,\RegFiles_inst/registers[2][21] ,\RegFiles_inst/registers[2][20] ,\RegFiles_inst/registers[2][19] ,\RegFiles_inst/registers[2][18] ,\RegFiles_inst/registers[2][17] ,\RegFiles_inst/registers[2][16] ,\RegFiles_inst/registers[2][15] ,\RegFiles_inst/registers[2][14] ,\RegFiles_inst/registers[2][13] ,\RegFiles_inst/registers[2][12] ,\RegFiles_inst/registers[2][11] ,\RegFiles_inst/registers[2][10] ,\RegFiles_inst/registers[2][9] ,\RegFiles_inst/registers[2][8] ,\RegFiles_inst/registers[2][7] ,\RegFiles_inst/registers[2][6] ,\RegFiles_inst/registers[2][5] ,\RegFiles_inst/registers[2][4] ,\RegFiles_inst/registers[2][3] ,\RegFiles_inst/registers[2][2] ,\RegFiles_inst/registers[2][1] ,\RegFiles_inst/registers[2][0] ,\RegFiles_inst/registers[3][31] ,\RegFiles_inst/registers[3][30] ,\RegFiles_inst/registers[3][29] ,\RegFiles_inst/registers[3][28] ,\RegFiles_inst/registers[3][27] ,\RegFiles_inst/registers[3][26] ,\RegFiles_inst/registers[3][25] ,\RegFiles_inst/registers[3][24] ,\RegFiles_inst/registers[3][23] ,\RegFiles_inst/registers[3][22] ,\RegFiles_inst/registers[3][21] ,\RegFiles_inst/registers[3][20] ,\RegFiles_inst/registers[3][19] ,\RegFiles_inst/registers[3][18] ,\RegFiles_inst/registers[3][17] ,\RegFiles_inst/registers[3][16] ,\RegFiles_inst/registers[3][15] ,\RegFiles_inst/registers[3][14] ,\RegFiles_inst/registers[3][13] ,\RegFiles_inst/registers[3][12] ,\RegFiles_inst/registers[3][11] ,\RegFiles_inst/registers[3][10] ,\RegFiles_inst/registers[3][9] ,\RegFiles_inst/registers[3][8] ,\RegFiles_inst/registers[3][7] ,\RegFiles_inst/registers[3][6] ,\RegFiles_inst/registers[3][5] ,\RegFiles_inst/registers[3][4] ,\RegFiles_inst/registers[3][3] ,\RegFiles_inst/registers[3][2] ,\RegFiles_inst/registers[3][1] ,\RegFiles_inst/registers[3][0] ,\RegFiles_inst/registers[4][31] ,\RegFiles_inst/registers[4][30] ,\RegFiles_inst/registers[4][29] ,\RegFiles_inst/registers[4][28] ,\RegFiles_inst/registers[4][27] ,\RegFiles_inst/registers[4][26] ,\RegFiles_inst/registers[4][25] ,\RegFiles_inst/registers[4][24] ,\RegFiles_inst/registers[4][23] ,\RegFiles_inst/registers[4][22] ,\RegFiles_inst/registers[4][21] ,\RegFiles_inst/registers[4][20] ,\RegFiles_inst/registers[4][19] ,\RegFiles_inst/registers[4][18] ,\RegFiles_inst/registers[4][17] ,\RegFiles_inst/registers[4][16] ,\RegFiles_inst/registers[4][15] ,\RegFiles_inst/registers[4][14] ,\RegFiles_inst/registers[4][13] ,\RegFiles_inst/registers[4][12] ,\RegFiles_inst/registers[4][11] ,\RegFiles_inst/registers[4][10] ,\RegFiles_inst/registers[4][9] ,\RegFiles_inst/registers[4][8] ,\RegFiles_inst/registers[4][7] ,\RegFiles_inst/registers[4][6] ,\RegFiles_inst/registers[4][5] ,\RegFiles_inst/registers[4][4] ,\RegFiles_inst/registers[4][3] ,\RegFiles_inst/registers[4][2] ,\RegFiles_inst/registers[4][1] ,\RegFiles_inst/registers[4][0] ,\RegFiles_inst/registers[5][31] ,\RegFiles_inst/registers[5][30] ,\RegFiles_inst/registers[5][29] ,\RegFiles_inst/registers[5][28] ,\RegFiles_inst/registers[5][27] ,\RegFiles_inst/registers[5][26] ,\RegFiles_inst/registers[5][25] ,\RegFiles_inst/registers[5][24] ,\RegFiles_inst/registers[5][23] ,\RegFiles_inst/registers[5][22] ,\RegFiles_inst/registers[5][21] ,\RegFiles_inst/registers[5][20] ,\RegFiles_inst/registers[5][19] ,\RegFiles_inst/registers[5][18] ,\RegFiles_inst/registers[5][17] ,\RegFiles_inst/registers[5][16] ,\RegFiles_inst/registers[5][15] ,\RegFiles_inst/registers[5][14] ,\RegFiles_inst/registers[5][13] ,\RegFiles_inst/registers[5][12] ,\RegFiles_inst/registers[5][11] ,\RegFiles_inst/registers[5][10] ,\RegFiles_inst/registers[5][9] ,\RegFiles_inst/registers[5][8] ,\RegFiles_inst/registers[5][7] ,\RegFiles_inst/registers[5][6] ,\RegFiles_inst/registers[5][5] ,\RegFiles_inst/registers[5][4] ,\RegFiles_inst/registers[5][3] ,\RegFiles_inst/registers[5][2] ,\RegFiles_inst/registers[5][1] ,\RegFiles_inst/registers[5][0] ,\RegFiles_inst/registers[6][31] ,\RegFiles_inst/registers[6][30] ,\RegFiles_inst/registers[6][29] ,\RegFiles_inst/registers[6][28] ,\RegFiles_inst/registers[6][27] ,\RegFiles_inst/registers[6][26] ,\RegFiles_inst/registers[6][25] ,\RegFiles_inst/registers[6][24] ,\RegFiles_inst/registers[6][23] ,\RegFiles_inst/registers[6][22] ,\RegFiles_inst/registers[6][21] ,\RegFiles_inst/registers[6][20] ,\RegFiles_inst/registers[6][19] ,\RegFiles_inst/registers[6][18] ,\RegFiles_inst/registers[6][17] ,\RegFiles_inst/registers[6][16] ,\RegFiles_inst/registers[6][15] ,\RegFiles_inst/registers[6][14] ,\RegFiles_inst/registers[6][13] ,\RegFiles_inst/registers[6][12] ,\RegFiles_inst/registers[6][11] ,\RegFiles_inst/registers[6][10] ,\RegFiles_inst/registers[6][9] ,\RegFiles_inst/registers[6][8] ,\RegFiles_inst/registers[6][7] ,\RegFiles_inst/registers[6][6] ,\RegFiles_inst/registers[6][5] ,\RegFiles_inst/registers[6][4] ,\RegFiles_inst/registers[6][3] ,\RegFiles_inst/registers[6][2] ,\RegFiles_inst/registers[6][1] ,\RegFiles_inst/registers[6][0] ,\RegFiles_inst/registers[7][31] ,\RegFiles_inst/registers[7][30] ,\RegFiles_inst/registers[7][29] ,\RegFiles_inst/registers[7][28] ,\RegFiles_inst/registers[7][27] ,\RegFiles_inst/registers[7][26] ,\RegFiles_inst/registers[7][25] ,\RegFiles_inst/registers[7][24] ,\RegFiles_inst/registers[7][23] ,\RegFiles_inst/registers[7][22] ,\RegFiles_inst/registers[7][21] ,\RegFiles_inst/registers[7][20] ,\RegFiles_inst/registers[7][19] ,\RegFiles_inst/registers[7][18] ,\RegFiles_inst/registers[7][17] ,\RegFiles_inst/registers[7][16] ,\RegFiles_inst/registers[7][15] ,\RegFiles_inst/registers[7][14] ,\RegFiles_inst/registers[7][13] ,\RegFiles_inst/registers[7][12] ,\RegFiles_inst/registers[7][11] ,\RegFiles_inst/registers[7][10] ,\RegFiles_inst/registers[7][9] ,\RegFiles_inst/registers[7][8] ,\RegFiles_inst/registers[7][7] ,\RegFiles_inst/registers[7][6] ,\RegFiles_inst/registers[7][5] ,\RegFiles_inst/registers[7][4] ,\RegFiles_inst/registers[7][3] ,\RegFiles_inst/registers[7][2] ,\RegFiles_inst/registers[7][1] ,\RegFiles_inst/registers[7][0] ,\RegFiles_inst/registers[8][31] ,\RegFiles_inst/registers[8][30] ,\RegFiles_inst/registers[8][29] ,\RegFiles_inst/registers[8][28] ,\RegFiles_inst/registers[8][27] ,\RegFiles_inst/registers[8][26] ,\RegFiles_inst/registers[8][25] ,\RegFiles_inst/registers[8][24] ,\RegFiles_inst/registers[8][23] ,\RegFiles_inst/registers[8][22] ,\RegFiles_inst/registers[8][21] ,\RegFiles_inst/registers[8][20] ,\RegFiles_inst/registers[8][19] ,\RegFiles_inst/registers[8][18] ,\RegFiles_inst/registers[8][17] ,\RegFiles_inst/registers[8][16] ,\RegFiles_inst/registers[8][15] ,\RegFiles_inst/registers[8][14] ,\RegFiles_inst/registers[8][13] ,\RegFiles_inst/registers[8][12] ,\RegFiles_inst/registers[8][11] ,\RegFiles_inst/registers[8][10] ,\RegFiles_inst/registers[8][9] ,\RegFiles_inst/registers[8][8] ,\RegFiles_inst/registers[8][7] ,\RegFiles_inst/registers[8][6] ,\RegFiles_inst/registers[8][5] ,\RegFiles_inst/registers[8][4] ,\RegFiles_inst/registers[8][3] ,\RegFiles_inst/registers[8][2] ,\RegFiles_inst/registers[8][1] ,\RegFiles_inst/registers[8][0] ,\ALU_inst/Result[31] ,\ALU_inst/Result[30] ,\ALU_inst/Result[29] ,\ALU_inst/Result[28] ,\ALU_inst/Result[27] ,\ALU_inst/Result[26] ,\ALU_inst/Result[25] ,\ALU_inst/Result[24] ,\ALU_inst/Result[23] ,\ALU_inst/Result[22] ,\ALU_inst/Result[21] ,\ALU_inst/Result[20] ,\ALU_inst/Result[19] ,\ALU_inst/Result[18] ,\ALU_inst/Result[17] ,\ALU_inst/Result[16] ,\ALU_inst/Result[15] ,\ALU_inst/Result[14] ,\ALU_inst/Result[13] ,\ALU_inst/Result[12] ,\ALU_inst/Result[11] ,\ALU_inst/Result[10] ,\ALU_inst/Result[9] ,\ALU_inst/Result[8] ,\ALU_inst/Result[7] ,\ALU_inst/Result[6] ,\ALU_inst/Result[5] ,\ALU_inst/Result[4] ,\ALU_inst/Result[3] ,\ALU_inst/Result[2] ,\ALU_inst/Result[1] ,\ALU_inst/Result[0] ,\RegFiles_inst/Write_Address[4] ,\RegFiles_inst/Write_Address[3] ,\RegFiles_inst/Write_Address[2] ,\RegFiles_inst/Write_Address[1] ,\RegFiles_inst/Write_Address[0] ,\WR_BUS[31] ,\WR_BUS[30] ,\WR_BUS[29] ,\WR_BUS[28] ,\WR_BUS[27] ,\WR_BUS[26] ,\WR_BUS[25] ,\WR_BUS[24] ,\WR_BUS[23] ,\WR_BUS[22] ,\WR_BUS[21] ,\WR_BUS[20] ,\WR_BUS[19] ,\WR_BUS[18] ,\WR_BUS[17] ,\WR_BUS[16] ,\WR_BUS[15] ,\WR_BUS[14] ,\WR_BUS[13] ,\WR_BUS[12] ,\WR_BUS[11] ,\WR_BUS[10] ,\WR_BUS[9] ,\WR_BUS[8] ,\WR_BUS[7] ,\WR_BUS[6] ,\WR_BUS[5] ,\WR_BUS[4] ,\WR_BUS[3] ,\WR_BUS[2] ,\WR_BUS[1] ,\WR_BUS[0] ,jump,\RAM_ADDR[31] ,\RAM_ADDR[30] ,\RAM_ADDR[29] ,\RAM_ADDR[28] ,\RAM_ADDR[27] ,\RAM_ADDR[26] ,\RAM_ADDR[25] ,\RAM_ADDR[24] ,\RAM_ADDR[23] ,\RAM_ADDR[22] ,\RAM_ADDR[21] ,\RAM_ADDR[20] ,\RAM_ADDR[19] ,\RAM_ADDR[18] ,\RAM_ADDR[17] ,\RAM_ADDR[16] ,\RAM_ADDR[15] ,\RAM_ADDR[14] ,\RAM_ADDR[13] ,\RAM_ADDR[12] ,\RAM_ADDR[11] ,\RAM_ADDR[10] ,\RAM_ADDR[9] ,\RAM_ADDR[8] ,\RAM_ADDR[7] ,\RAM_ADDR[6] ,\RAM_ADDR[5] ,\RAM_ADDR[4] ,\RAM_ADDR[3] ,\RAM_ADDR[2] ,\RAM_ADDR[1] ,\RAM_ADDR[0] ,\RAM_IN_DATA[31] ,\RAM_IN_DATA[30] ,\RAM_IN_DATA[29] ,\RAM_IN_DATA[28] ,\RAM_IN_DATA[27] ,\RAM_IN_DATA[26] ,\RAM_IN_DATA[25] ,\RAM_IN_DATA[24] ,\RAM_IN_DATA[23] ,\RAM_IN_DATA[22] ,\RAM_IN_DATA[21] ,\RAM_IN_DATA[20] ,\RAM_IN_DATA[19] ,\RAM_IN_DATA[18] ,\RAM_IN_DATA[17] ,\RAM_IN_DATA[16] ,\RAM_IN_DATA[15] ,\RAM_IN_DATA[14] ,\RAM_IN_DATA[13] ,\RAM_IN_DATA[12] ,\RAM_IN_DATA[11] ,\RAM_IN_DATA[10] ,\RAM_IN_DATA[9] ,\RAM_IN_DATA[8] ,\RAM_IN_DATA[7] ,\RAM_IN_DATA[6] ,\RAM_IN_DATA[5] ,\RAM_IN_DATA[4] ,\RAM_IN_DATA[3] ,\RAM_IN_DATA[2] ,\RAM_IN_DATA[1] ,\RAM_IN_DATA[0] ,\DP_inst/adb[9] ,\DP_inst/adb[8] ,\DP_inst/adb[7] ,\DP_inst/adb[6] ,\DP_inst/adb[5] ,\DP_inst/adb[4] ,\DP_inst/adb[3] ,\DP_inst/adb[2] ,\DP_inst/adb[1] ,\DP_inst/adb[0] ,\RAM_inst/RAM_RE ,\RAM_inst/RAM_WE ,JUMP_MODE,\RAM_inst/data_out[31] ,\RAM_inst/data_out[30] ,\RAM_inst/data_out[29] ,\RAM_inst/data_out[28] ,\RAM_inst/data_out[27] ,\RAM_inst/data_out[26] ,\RAM_inst/data_out[25] ,\RAM_inst/data_out[24] ,\RAM_inst/data_out[23] ,\RAM_inst/data_out[22] ,\RAM_inst/data_out[21] ,\RAM_inst/data_out[20] ,\RAM_inst/data_out[19] ,\RAM_inst/data_out[18] ,\RAM_inst/data_out[17] ,\RAM_inst/data_out[16] ,\RAM_inst/data_out[15] ,\RAM_inst/data_out[14] ,\RAM_inst/data_out[13] ,\RAM_inst/data_out[12] ,\RAM_inst/data_out[11] ,\RAM_inst/data_out[10] ,\RAM_inst/data_out[9] ,\RAM_inst/data_out[8] ,\RAM_inst/data_out[7] ,\RAM_inst/data_out[6] ,\RAM_inst/data_out[5] ,\RAM_inst/data_out[4] ,\RAM_inst/data_out[3] ,\RAM_inst/data_out[2] ,\RAM_inst/data_out[1] ,\RAM_inst/data_out[0] ,\RAM_inst/addr_in[31] ,\RAM_inst/addr_in[30] ,\RAM_inst/addr_in[29] ,\RAM_inst/addr_in[28] ,\RAM_inst/addr_in[27] ,\RAM_inst/addr_in[26] ,\RAM_inst/addr_in[25] ,\RAM_inst/addr_in[24] ,\RAM_inst/addr_in[23] ,\RAM_inst/addr_in[22] ,\RAM_inst/addr_in[21] ,\RAM_inst/addr_in[20] ,\RAM_inst/addr_in[19] ,\RAM_inst/addr_in[18] ,\RAM_inst/addr_in[17] ,\RAM_inst/addr_in[16] ,\RAM_inst/addr_in[15] ,\RAM_inst/addr_in[14] ,\RAM_inst/addr_in[13] ,\RAM_inst/addr_in[12] ,\RAM_inst/addr_in[11] ,\RAM_inst/addr_in[10] ,\RAM_inst/addr_in[9] ,\RAM_inst/addr_in[8] ,\RAM_inst/addr_in[7] ,\RAM_inst/addr_in[6] ,\RAM_inst/addr_in[5] ,\RAM_inst/addr_in[4] ,\RAM_inst/addr_in[3] ,\RAM_inst/addr_in[2] ,\RAM_inst/addr_in[1] ,\RAM_inst/addr_in[0] ,\B_DBUS[31] ,\B_DBUS[30] ,\B_DBUS[29] ,\B_DBUS[28] ,\B_DBUS[27] ,\B_DBUS[26] ,\B_DBUS[25] ,\B_DBUS[24] ,\B_DBUS[23] ,\B_DBUS[22] ,\B_DBUS[21] ,\B_DBUS[20] ,\B_DBUS[19] ,\B_DBUS[18] ,\B_DBUS[17] ,\B_DBUS[16] ,\B_DBUS[15] ,\B_DBUS[14] ,\B_DBUS[13] ,\B_DBUS[12] ,\B_DBUS[11] ,\B_DBUS[10] ,\B_DBUS[9] ,\B_DBUS[8] ,\B_DBUS[7] ,\B_DBUS[6] ,\B_DBUS[5] ,\B_DBUS[4] ,\B_DBUS[3] ,\B_DBUS[2] ,\B_DBUS[1] ,\B_DBUS[0] ,\RAM_OUT_DATA[31] ,\RAM_OUT_DATA[30] ,\RAM_OUT_DATA[29] ,\RAM_OUT_DATA[28] ,\RAM_OUT_DATA[27] ,\RAM_OUT_DATA[26] ,\RAM_OUT_DATA[25] ,\RAM_OUT_DATA[24] ,\RAM_OUT_DATA[23] ,\RAM_OUT_DATA[22] ,\RAM_OUT_DATA[21] ,\RAM_OUT_DATA[20] ,\RAM_OUT_DATA[19] ,\RAM_OUT_DATA[18] ,\RAM_OUT_DATA[17] ,\RAM_OUT_DATA[16] ,\RAM_OUT_DATA[15] ,\RAM_OUT_DATA[14] ,\RAM_OUT_DATA[13] ,\RAM_OUT_DATA[12] ,\RAM_OUT_DATA[11] ,\RAM_OUT_DATA[10] ,\RAM_OUT_DATA[9] ,\RAM_OUT_DATA[8] ,\RAM_OUT_DATA[7] ,\RAM_OUT_DATA[6] ,\RAM_OUT_DATA[5] ,\RAM_OUT_DATA[4] ,\RAM_OUT_DATA[3] ,\RAM_OUT_DATA[2] ,\RAM_OUT_DATA[1] ,\RAM_OUT_DATA[0] ,\WR_BUS_inst/ALU_Result[31] ,\WR_BUS_inst/ALU_Result[30] ,\WR_BUS_inst/ALU_Result[29] ,\WR_BUS_inst/ALU_Result[28] ,\WR_BUS_inst/ALU_Result[27] ,\WR_BUS_inst/ALU_Result[26] ,\WR_BUS_inst/ALU_Result[25] ,\WR_BUS_inst/ALU_Result[24] ,\WR_BUS_inst/ALU_Result[23] ,\WR_BUS_inst/ALU_Result[22] ,\WR_BUS_inst/ALU_Result[21] ,\WR_BUS_inst/ALU_Result[20] ,\WR_BUS_inst/ALU_Result[19] ,\WR_BUS_inst/ALU_Result[18] ,\WR_BUS_inst/ALU_Result[17] ,\WR_BUS_inst/ALU_Result[16] ,\WR_BUS_inst/ALU_Result[15] ,\WR_BUS_inst/ALU_Result[14] ,\WR_BUS_inst/ALU_Result[13] ,\WR_BUS_inst/ALU_Result[12] ,\WR_BUS_inst/ALU_Result[11] ,\WR_BUS_inst/ALU_Result[10] ,\WR_BUS_inst/ALU_Result[9] ,\WR_BUS_inst/ALU_Result[8] ,\WR_BUS_inst/ALU_Result[7] ,\WR_BUS_inst/ALU_Result[6] ,\WR_BUS_inst/ALU_Result[5] ,\WR_BUS_inst/ALU_Result[4] ,\WR_BUS_inst/ALU_Result[3] ,\WR_BUS_inst/ALU_Result[2] ,\WR_BUS_inst/ALU_Result[1] ,\WR_BUS_inst/ALU_Result[0] ,\WR_BUS_inst/RAM_out[31] ,\WR_BUS_inst/RAM_out[30] ,\WR_BUS_inst/RAM_out[29] ,\WR_BUS_inst/RAM_out[28] ,\WR_BUS_inst/RAM_out[27] ,\WR_BUS_inst/RAM_out[26] ,\WR_BUS_inst/RAM_out[25] ,\WR_BUS_inst/RAM_out[24] ,\WR_BUS_inst/RAM_out[23] ,\WR_BUS_inst/RAM_out[22] ,\WR_BUS_inst/RAM_out[21] ,\WR_BUS_inst/RAM_out[20] ,\WR_BUS_inst/RAM_out[19] ,\WR_BUS_inst/RAM_out[18] ,\WR_BUS_inst/RAM_out[17] ,\WR_BUS_inst/RAM_out[16] ,\WR_BUS_inst/RAM_out[15] ,\WR_BUS_inst/RAM_out[14] ,\WR_BUS_inst/RAM_out[13] ,\WR_BUS_inst/RAM_out[12] ,\WR_BUS_inst/RAM_out[11] ,\WR_BUS_inst/RAM_out[10] ,\WR_BUS_inst/RAM_out[9] ,\WR_BUS_inst/RAM_out[8] ,\WR_BUS_inst/RAM_out[7] ,\WR_BUS_inst/RAM_out[6] ,\WR_BUS_inst/RAM_out[5] ,\WR_BUS_inst/RAM_out[4] ,\WR_BUS_inst/RAM_out[3] ,\WR_BUS_inst/RAM_out[2] ,\WR_BUS_inst/RAM_out[1] ,\WR_BUS_inst/RAM_out[0] ,\WR_BUS_inst/wr_out[31] ,\WR_BUS_inst/wr_out[30] ,\WR_BUS_inst/wr_out[29] ,\WR_BUS_inst/wr_out[28] ,\WR_BUS_inst/wr_out[27] ,\WR_BUS_inst/wr_out[26] ,\WR_BUS_inst/wr_out[25] ,\WR_BUS_inst/wr_out[24] ,\WR_BUS_inst/wr_out[23] ,\WR_BUS_inst/wr_out[22] ,\WR_BUS_inst/wr_out[21] ,\WR_BUS_inst/wr_out[20] ,\WR_BUS_inst/wr_out[19] ,\WR_BUS_inst/wr_out[18] ,\WR_BUS_inst/wr_out[17] ,\WR_BUS_inst/wr_out[16] ,\WR_BUS_inst/wr_out[15] ,\WR_BUS_inst/wr_out[14] ,\WR_BUS_inst/wr_out[13] ,\WR_BUS_inst/wr_out[12] ,\WR_BUS_inst/wr_out[11] ,\WR_BUS_inst/wr_out[10] ,\WR_BUS_inst/wr_out[9] ,\WR_BUS_inst/wr_out[8] ,\WR_BUS_inst/wr_out[7] ,\WR_BUS_inst/wr_out[6] ,\WR_BUS_inst/wr_out[5] ,\WR_BUS_inst/wr_out[4] ,\WR_BUS_inst/wr_out[3] ,\WR_BUS_inst/wr_out[2] ,\WR_BUS_inst/wr_out[1] ,\WR_BUS_inst/wr_out[0] ,\WR_BUS_inst/mux_1 }),
+    .data_i({clk_in,\clk_inst/clk_mod[1] ,\clk_inst/clk_mod[0] ,\PC_Liet2_0/pc_out[25] ,\PC_Liet2_0/pc_out[24] ,\PC_Liet2_0/pc_out[23] ,\PC_Liet2_0/pc_out[22] ,\PC_Liet2_0/pc_out[21] ,\PC_Liet2_0/pc_out[20] ,\PC_Liet2_0/pc_out[19] ,\PC_Liet2_0/pc_out[18] ,\PC_Liet2_0/pc_out[17] ,\PC_Liet2_0/pc_out[16] ,\PC_Liet2_0/pc_out[15] ,\PC_Liet2_0/pc_out[14] ,\PC_Liet2_0/pc_out[13] ,\PC_Liet2_0/pc_out[12] ,\PC_Liet2_0/pc_out[11] ,\PC_Liet2_0/pc_out[10] ,\PC_Liet2_0/pc_out[9] ,\PC_Liet2_0/pc_out[8] ,\PC_Liet2_0/pc_out[7] ,\PC_Liet2_0/pc_out[6] ,\PC_Liet2_0/pc_out[5] ,\PC_Liet2_0/pc_out[4] ,\PC_Liet2_0/pc_out[3] ,\PC_Liet2_0/pc_out[2] ,\PC_Liet2_0/pc_out[1] ,\PC_Liet2_0/pc_out[0] ,\Mode[1] ,\Mode[0] ,\Opcode[3] ,\Opcode[2] ,\Opcode[1] ,\Opcode[0] ,\Destination[4] ,\Destination[3] ,\Destination[2] ,\Destination[1] ,\Destination[0] ,\Argument_A[4] ,\Argument_A[3] ,\Argument_A[2] ,\Argument_A[1] ,\Argument_A[0] ,\Argument_B[4] ,\Argument_B[3] ,\Argument_B[2] ,\Argument_B[1] ,\Argument_B[0] ,Is_Immedia,\Immediate[15] ,\Immediate[14] ,\Immediate[13] ,\Immediate[12] ,\Immediate[11] ,\Immediate[10] ,\Immediate[9] ,\Immediate[8] ,\Immediate[7] ,\Immediate[6] ,\Immediate[5] ,\Immediate[4] ,\Immediate[3] ,\Immediate[2] ,\Immediate[1] ,\Immediate[0] ,\INSTR[31] ,\INSTR[30] ,\INSTR[29] ,\INSTR[28] ,\INSTR[27] ,\INSTR[26] ,\INSTR[25] ,\INSTR[24] ,\INSTR[23] ,\INSTR[22] ,\INSTR[21] ,\INSTR[20] ,\INSTR[19] ,\INSTR[18] ,\INSTR[17] ,\INSTR[16] ,\INSTR[15] ,\INSTR[14] ,\INSTR[13] ,\INSTR[12] ,\INSTR[11] ,\INSTR[10] ,\INSTR[9] ,\INSTR[8] ,\INSTR[7] ,\INSTR[6] ,\INSTR[5] ,\INSTR[4] ,\INSTR[3] ,\INSTR[2] ,\INSTR[1] ,\INSTR[0] ,\RegFiles_inst/registers[0][31] ,\RegFiles_inst/registers[0][30] ,\RegFiles_inst/registers[0][29] ,\RegFiles_inst/registers[0][28] ,\RegFiles_inst/registers[0][27] ,\RegFiles_inst/registers[0][26] ,\RegFiles_inst/registers[0][25] ,\RegFiles_inst/registers[0][24] ,\RegFiles_inst/registers[0][23] ,\RegFiles_inst/registers[0][22] ,\RegFiles_inst/registers[0][21] ,\RegFiles_inst/registers[0][20] ,\RegFiles_inst/registers[0][19] ,\RegFiles_inst/registers[0][18] ,\RegFiles_inst/registers[0][17] ,\RegFiles_inst/registers[0][16] ,\RegFiles_inst/registers[0][15] ,\RegFiles_inst/registers[0][14] ,\RegFiles_inst/registers[0][13] ,\RegFiles_inst/registers[0][12] ,\RegFiles_inst/registers[0][11] ,\RegFiles_inst/registers[0][10] ,\RegFiles_inst/registers[0][9] ,\RegFiles_inst/registers[0][8] ,\RegFiles_inst/registers[0][7] ,\RegFiles_inst/registers[0][6] ,\RegFiles_inst/registers[0][5] ,\RegFiles_inst/registers[0][4] ,\RegFiles_inst/registers[0][3] ,\RegFiles_inst/registers[0][2] ,\RegFiles_inst/registers[0][1] ,\RegFiles_inst/registers[0][0] ,\RegFiles_inst/registers[1][31] ,\RegFiles_inst/registers[1][30] ,\RegFiles_inst/registers[1][29] ,\RegFiles_inst/registers[1][28] ,\RegFiles_inst/registers[1][27] ,\RegFiles_inst/registers[1][26] ,\RegFiles_inst/registers[1][25] ,\RegFiles_inst/registers[1][24] ,\RegFiles_inst/registers[1][23] ,\RegFiles_inst/registers[1][22] ,\RegFiles_inst/registers[1][21] ,\RegFiles_inst/registers[1][20] ,\RegFiles_inst/registers[1][19] ,\RegFiles_inst/registers[1][18] ,\RegFiles_inst/registers[1][17] ,\RegFiles_inst/registers[1][16] ,\RegFiles_inst/registers[1][15] ,\RegFiles_inst/registers[1][14] ,\RegFiles_inst/registers[1][13] ,\RegFiles_inst/registers[1][12] ,\RegFiles_inst/registers[1][11] ,\RegFiles_inst/registers[1][10] ,\RegFiles_inst/registers[1][9] ,\RegFiles_inst/registers[1][8] ,\RegFiles_inst/registers[1][7] ,\RegFiles_inst/registers[1][6] ,\RegFiles_inst/registers[1][5] ,\RegFiles_inst/registers[1][4] ,\RegFiles_inst/registers[1][3] ,\RegFiles_inst/registers[1][2] ,\RegFiles_inst/registers[1][1] ,\RegFiles_inst/registers[1][0] ,\RegFiles_inst/registers[2][31] ,\RegFiles_inst/registers[2][30] ,\RegFiles_inst/registers[2][29] ,\RegFiles_inst/registers[2][28] ,\RegFiles_inst/registers[2][27] ,\RegFiles_inst/registers[2][26] ,\RegFiles_inst/registers[2][25] ,\RegFiles_inst/registers[2][24] ,\RegFiles_inst/registers[2][23] ,\RegFiles_inst/registers[2][22] ,\RegFiles_inst/registers[2][21] ,\RegFiles_inst/registers[2][20] ,\RegFiles_inst/registers[2][19] ,\RegFiles_inst/registers[2][18] ,\RegFiles_inst/registers[2][17] ,\RegFiles_inst/registers[2][16] ,\RegFiles_inst/registers[2][15] ,\RegFiles_inst/registers[2][14] ,\RegFiles_inst/registers[2][13] ,\RegFiles_inst/registers[2][12] ,\RegFiles_inst/registers[2][11] ,\RegFiles_inst/registers[2][10] ,\RegFiles_inst/registers[2][9] ,\RegFiles_inst/registers[2][8] ,\RegFiles_inst/registers[2][7] ,\RegFiles_inst/registers[2][6] ,\RegFiles_inst/registers[2][5] ,\RegFiles_inst/registers[2][4] ,\RegFiles_inst/registers[2][3] ,\RegFiles_inst/registers[2][2] ,\RegFiles_inst/registers[2][1] ,\RegFiles_inst/registers[2][0] ,\RegFiles_inst/registers[3][31] ,\RegFiles_inst/registers[3][30] ,\RegFiles_inst/registers[3][29] ,\RegFiles_inst/registers[3][28] ,\RegFiles_inst/registers[3][27] ,\RegFiles_inst/registers[3][26] ,\RegFiles_inst/registers[3][25] ,\RegFiles_inst/registers[3][24] ,\RegFiles_inst/registers[3][23] ,\RegFiles_inst/registers[3][22] ,\RegFiles_inst/registers[3][21] ,\RegFiles_inst/registers[3][20] ,\RegFiles_inst/registers[3][19] ,\RegFiles_inst/registers[3][18] ,\RegFiles_inst/registers[3][17] ,\RegFiles_inst/registers[3][16] ,\RegFiles_inst/registers[3][15] ,\RegFiles_inst/registers[3][14] ,\RegFiles_inst/registers[3][13] ,\RegFiles_inst/registers[3][12] ,\RegFiles_inst/registers[3][11] ,\RegFiles_inst/registers[3][10] ,\RegFiles_inst/registers[3][9] ,\RegFiles_inst/registers[3][8] ,\RegFiles_inst/registers[3][7] ,\RegFiles_inst/registers[3][6] ,\RegFiles_inst/registers[3][5] ,\RegFiles_inst/registers[3][4] ,\RegFiles_inst/registers[3][3] ,\RegFiles_inst/registers[3][2] ,\RegFiles_inst/registers[3][1] ,\RegFiles_inst/registers[3][0] ,\RegFiles_inst/registers[4][31] ,\RegFiles_inst/registers[4][30] ,\RegFiles_inst/registers[4][29] ,\RegFiles_inst/registers[4][28] ,\RegFiles_inst/registers[4][27] ,\RegFiles_inst/registers[4][26] ,\RegFiles_inst/registers[4][25] ,\RegFiles_inst/registers[4][24] ,\RegFiles_inst/registers[4][23] ,\RegFiles_inst/registers[4][22] ,\RegFiles_inst/registers[4][21] ,\RegFiles_inst/registers[4][20] ,\RegFiles_inst/registers[4][19] ,\RegFiles_inst/registers[4][18] ,\RegFiles_inst/registers[4][17] ,\RegFiles_inst/registers[4][16] ,\RegFiles_inst/registers[4][15] ,\RegFiles_inst/registers[4][14] ,\RegFiles_inst/registers[4][13] ,\RegFiles_inst/registers[4][12] ,\RegFiles_inst/registers[4][11] ,\RegFiles_inst/registers[4][10] ,\RegFiles_inst/registers[4][9] ,\RegFiles_inst/registers[4][8] ,\RegFiles_inst/registers[4][7] ,\RegFiles_inst/registers[4][6] ,\RegFiles_inst/registers[4][5] ,\RegFiles_inst/registers[4][4] ,\RegFiles_inst/registers[4][3] ,\RegFiles_inst/registers[4][2] ,\RegFiles_inst/registers[4][1] ,\RegFiles_inst/registers[4][0] ,\RegFiles_inst/registers[5][31] ,\RegFiles_inst/registers[5][30] ,\RegFiles_inst/registers[5][29] ,\RegFiles_inst/registers[5][28] ,\RegFiles_inst/registers[5][27] ,\RegFiles_inst/registers[5][26] ,\RegFiles_inst/registers[5][25] ,\RegFiles_inst/registers[5][24] ,\RegFiles_inst/registers[5][23] ,\RegFiles_inst/registers[5][22] ,\RegFiles_inst/registers[5][21] ,\RegFiles_inst/registers[5][20] ,\RegFiles_inst/registers[5][19] ,\RegFiles_inst/registers[5][18] ,\RegFiles_inst/registers[5][17] ,\RegFiles_inst/registers[5][16] ,\RegFiles_inst/registers[5][15] ,\RegFiles_inst/registers[5][14] ,\RegFiles_inst/registers[5][13] ,\RegFiles_inst/registers[5][12] ,\RegFiles_inst/registers[5][11] ,\RegFiles_inst/registers[5][10] ,\RegFiles_inst/registers[5][9] ,\RegFiles_inst/registers[5][8] ,\RegFiles_inst/registers[5][7] ,\RegFiles_inst/registers[5][6] ,\RegFiles_inst/registers[5][5] ,\RegFiles_inst/registers[5][4] ,\RegFiles_inst/registers[5][3] ,\RegFiles_inst/registers[5][2] ,\RegFiles_inst/registers[5][1] ,\RegFiles_inst/registers[5][0] ,\RegFiles_inst/registers[6][31] ,\RegFiles_inst/registers[6][30] ,\RegFiles_inst/registers[6][29] ,\RegFiles_inst/registers[6][28] ,\RegFiles_inst/registers[6][27] ,\RegFiles_inst/registers[6][26] ,\RegFiles_inst/registers[6][25] ,\RegFiles_inst/registers[6][24] ,\RegFiles_inst/registers[6][23] ,\RegFiles_inst/registers[6][22] ,\RegFiles_inst/registers[6][21] ,\RegFiles_inst/registers[6][20] ,\RegFiles_inst/registers[6][19] ,\RegFiles_inst/registers[6][18] ,\RegFiles_inst/registers[6][17] ,\RegFiles_inst/registers[6][16] ,\RegFiles_inst/registers[6][15] ,\RegFiles_inst/registers[6][14] ,\RegFiles_inst/registers[6][13] ,\RegFiles_inst/registers[6][12] ,\RegFiles_inst/registers[6][11] ,\RegFiles_inst/registers[6][10] ,\RegFiles_inst/registers[6][9] ,\RegFiles_inst/registers[6][8] ,\RegFiles_inst/registers[6][7] ,\RegFiles_inst/registers[6][6] ,\RegFiles_inst/registers[6][5] ,\RegFiles_inst/registers[6][4] ,\RegFiles_inst/registers[6][3] ,\RegFiles_inst/registers[6][2] ,\RegFiles_inst/registers[6][1] ,\RegFiles_inst/registers[6][0] ,\RegFiles_inst/registers[7][31] ,\RegFiles_inst/registers[7][30] ,\RegFiles_inst/registers[7][29] ,\RegFiles_inst/registers[7][28] ,\RegFiles_inst/registers[7][27] ,\RegFiles_inst/registers[7][26] ,\RegFiles_inst/registers[7][25] ,\RegFiles_inst/registers[7][24] ,\RegFiles_inst/registers[7][23] ,\RegFiles_inst/registers[7][22] ,\RegFiles_inst/registers[7][21] ,\RegFiles_inst/registers[7][20] ,\RegFiles_inst/registers[7][19] ,\RegFiles_inst/registers[7][18] ,\RegFiles_inst/registers[7][17] ,\RegFiles_inst/registers[7][16] ,\RegFiles_inst/registers[7][15] ,\RegFiles_inst/registers[7][14] ,\RegFiles_inst/registers[7][13] ,\RegFiles_inst/registers[7][12] ,\RegFiles_inst/registers[7][11] ,\RegFiles_inst/registers[7][10] ,\RegFiles_inst/registers[7][9] ,\RegFiles_inst/registers[7][8] ,\RegFiles_inst/registers[7][7] ,\RegFiles_inst/registers[7][6] ,\RegFiles_inst/registers[7][5] ,\RegFiles_inst/registers[7][4] ,\RegFiles_inst/registers[7][3] ,\RegFiles_inst/registers[7][2] ,\RegFiles_inst/registers[7][1] ,\RegFiles_inst/registers[7][0] ,\RegFiles_inst/registers[8][31] ,\RegFiles_inst/registers[8][30] ,\RegFiles_inst/registers[8][29] ,\RegFiles_inst/registers[8][28] ,\RegFiles_inst/registers[8][27] ,\RegFiles_inst/registers[8][26] ,\RegFiles_inst/registers[8][25] ,\RegFiles_inst/registers[8][24] ,\RegFiles_inst/registers[8][23] ,\RegFiles_inst/registers[8][22] ,\RegFiles_inst/registers[8][21] ,\RegFiles_inst/registers[8][20] ,\RegFiles_inst/registers[8][19] ,\RegFiles_inst/registers[8][18] ,\RegFiles_inst/registers[8][17] ,\RegFiles_inst/registers[8][16] ,\RegFiles_inst/registers[8][15] ,\RegFiles_inst/registers[8][14] ,\RegFiles_inst/registers[8][13] ,\RegFiles_inst/registers[8][12] ,\RegFiles_inst/registers[8][11] ,\RegFiles_inst/registers[8][10] ,\RegFiles_inst/registers[8][9] ,\RegFiles_inst/registers[8][8] ,\RegFiles_inst/registers[8][7] ,\RegFiles_inst/registers[8][6] ,\RegFiles_inst/registers[8][5] ,\RegFiles_inst/registers[8][4] ,\RegFiles_inst/registers[8][3] ,\RegFiles_inst/registers[8][2] ,\RegFiles_inst/registers[8][1] ,\RegFiles_inst/registers[8][0] ,\ALU_inst/Result[31] ,\ALU_inst/Result[30] ,\ALU_inst/Result[29] ,\ALU_inst/Result[28] ,\ALU_inst/Result[27] ,\ALU_inst/Result[26] ,\ALU_inst/Result[25] ,\ALU_inst/Result[24] ,\ALU_inst/Result[23] ,\ALU_inst/Result[22] ,\ALU_inst/Result[21] ,\ALU_inst/Result[20] ,\ALU_inst/Result[19] ,\ALU_inst/Result[18] ,\ALU_inst/Result[17] ,\ALU_inst/Result[16] ,\ALU_inst/Result[15] ,\ALU_inst/Result[14] ,\ALU_inst/Result[13] ,\ALU_inst/Result[12] ,\ALU_inst/Result[11] ,\ALU_inst/Result[10] ,\ALU_inst/Result[9] ,\ALU_inst/Result[8] ,\ALU_inst/Result[7] ,\ALU_inst/Result[6] ,\ALU_inst/Result[5] ,\ALU_inst/Result[4] ,\ALU_inst/Result[3] ,\ALU_inst/Result[2] ,\ALU_inst/Result[1] ,\ALU_inst/Result[0] ,\RegFiles_inst/Write_Address[4] ,\RegFiles_inst/Write_Address[3] ,\RegFiles_inst/Write_Address[2] ,\RegFiles_inst/Write_Address[1] ,\RegFiles_inst/Write_Address[0] ,\WR_BUS[31] ,\WR_BUS[30] ,\WR_BUS[29] ,\WR_BUS[28] ,\WR_BUS[27] ,\WR_BUS[26] ,\WR_BUS[25] ,\WR_BUS[24] ,\WR_BUS[23] ,\WR_BUS[22] ,\WR_BUS[21] ,\WR_BUS[20] ,\WR_BUS[19] ,\WR_BUS[18] ,\WR_BUS[17] ,\WR_BUS[16] ,\WR_BUS[15] ,\WR_BUS[14] ,\WR_BUS[13] ,\WR_BUS[12] ,\WR_BUS[11] ,\WR_BUS[10] ,\WR_BUS[9] ,\WR_BUS[8] ,\WR_BUS[7] ,\WR_BUS[6] ,\WR_BUS[5] ,\WR_BUS[4] ,\WR_BUS[3] ,\WR_BUS[2] ,\WR_BUS[1] ,\WR_BUS[0] ,jump,\RAM_ADDR[31] ,\RAM_ADDR[30] ,\RAM_ADDR[29] ,\RAM_ADDR[28] ,\RAM_ADDR[27] ,\RAM_ADDR[26] ,\RAM_ADDR[25] ,\RAM_ADDR[24] ,\RAM_ADDR[23] ,\RAM_ADDR[22] ,\RAM_ADDR[21] ,\RAM_ADDR[20] ,\RAM_ADDR[19] ,\RAM_ADDR[18] ,\RAM_ADDR[17] ,\RAM_ADDR[16] ,\RAM_ADDR[15] ,\RAM_ADDR[14] ,\RAM_ADDR[13] ,\RAM_ADDR[12] ,\RAM_ADDR[11] ,\RAM_ADDR[10] ,\RAM_ADDR[9] ,\RAM_ADDR[8] ,\RAM_ADDR[7] ,\RAM_ADDR[6] ,\RAM_ADDR[5] ,\RAM_ADDR[4] ,\RAM_ADDR[3] ,\RAM_ADDR[2] ,\RAM_ADDR[1] ,\RAM_ADDR[0] ,\RAM_IN_DATA[31] ,\RAM_IN_DATA[30] ,\RAM_IN_DATA[29] ,\RAM_IN_DATA[28] ,\RAM_IN_DATA[27] ,\RAM_IN_DATA[26] ,\RAM_IN_DATA[25] ,\RAM_IN_DATA[24] ,\RAM_IN_DATA[23] ,\RAM_IN_DATA[22] ,\RAM_IN_DATA[21] ,\RAM_IN_DATA[20] ,\RAM_IN_DATA[19] ,\RAM_IN_DATA[18] ,\RAM_IN_DATA[17] ,\RAM_IN_DATA[16] ,\RAM_IN_DATA[15] ,\RAM_IN_DATA[14] ,\RAM_IN_DATA[13] ,\RAM_IN_DATA[12] ,\RAM_IN_DATA[11] ,\RAM_IN_DATA[10] ,\RAM_IN_DATA[9] ,\RAM_IN_DATA[8] ,\RAM_IN_DATA[7] ,\RAM_IN_DATA[6] ,\RAM_IN_DATA[5] ,\RAM_IN_DATA[4] ,\RAM_IN_DATA[3] ,\RAM_IN_DATA[2] ,\RAM_IN_DATA[1] ,\RAM_IN_DATA[0] ,\DP_inst/adb[9] ,\DP_inst/adb[8] ,\DP_inst/adb[7] ,\DP_inst/adb[6] ,\DP_inst/adb[5] ,\DP_inst/adb[4] ,\DP_inst/adb[3] ,\DP_inst/adb[2] ,\DP_inst/adb[1] ,\DP_inst/adb[0] ,\RAM_inst/RAM_RE ,\RAM_inst/RAM_WE ,JUMP_MODE,\RAM_inst/data_out[31] ,\RAM_inst/data_out[30] ,\RAM_inst/data_out[29] ,\RAM_inst/data_out[28] ,\RAM_inst/data_out[27] ,\RAM_inst/data_out[26] ,\RAM_inst/data_out[25] ,\RAM_inst/data_out[24] ,\RAM_inst/data_out[23] ,\RAM_inst/data_out[22] ,\RAM_inst/data_out[21] ,\RAM_inst/data_out[20] ,\RAM_inst/data_out[19] ,\RAM_inst/data_out[18] ,\RAM_inst/data_out[17] ,\RAM_inst/data_out[16] ,\RAM_inst/data_out[15] ,\RAM_inst/data_out[14] ,\RAM_inst/data_out[13] ,\RAM_inst/data_out[12] ,\RAM_inst/data_out[11] ,\RAM_inst/data_out[10] ,\RAM_inst/data_out[9] ,\RAM_inst/data_out[8] ,\RAM_inst/data_out[7] ,\RAM_inst/data_out[6] ,\RAM_inst/data_out[5] ,\RAM_inst/data_out[4] ,\RAM_inst/data_out[3] ,\RAM_inst/data_out[2] ,\RAM_inst/data_out[1] ,\RAM_inst/data_out[0] ,\RAM_inst/addr_in[31] ,\RAM_inst/addr_in[30] ,\RAM_inst/addr_in[29] ,\RAM_inst/addr_in[28] ,\RAM_inst/addr_in[27] ,\RAM_inst/addr_in[26] ,\RAM_inst/addr_in[25] ,\RAM_inst/addr_in[24] ,\RAM_inst/addr_in[23] ,\RAM_inst/addr_in[22] ,\RAM_inst/addr_in[21] ,\RAM_inst/addr_in[20] ,\RAM_inst/addr_in[19] ,\RAM_inst/addr_in[18] ,\RAM_inst/addr_in[17] ,\RAM_inst/addr_in[16] ,\RAM_inst/addr_in[15] ,\RAM_inst/addr_in[14] ,\RAM_inst/addr_in[13] ,\RAM_inst/addr_in[12] ,\RAM_inst/addr_in[11] ,\RAM_inst/addr_in[10] ,\RAM_inst/addr_in[9] ,\RAM_inst/addr_in[8] ,\RAM_inst/addr_in[7] ,\RAM_inst/addr_in[6] ,\RAM_inst/addr_in[5] ,\RAM_inst/addr_in[4] ,\RAM_inst/addr_in[3] ,\RAM_inst/addr_in[2] ,\RAM_inst/addr_in[1] ,\RAM_inst/addr_in[0] ,\RAM_OUT_DATA[31] ,\RAM_OUT_DATA[30] ,\RAM_OUT_DATA[29] ,\RAM_OUT_DATA[28] ,\RAM_OUT_DATA[27] ,\RAM_OUT_DATA[26] ,\RAM_OUT_DATA[25] ,\RAM_OUT_DATA[24] ,\RAM_OUT_DATA[23] ,\RAM_OUT_DATA[22] ,\RAM_OUT_DATA[21] ,\RAM_OUT_DATA[20] ,\RAM_OUT_DATA[19] ,\RAM_OUT_DATA[18] ,\RAM_OUT_DATA[17] ,\RAM_OUT_DATA[16] ,\RAM_OUT_DATA[15] ,\RAM_OUT_DATA[14] ,\RAM_OUT_DATA[13] ,\RAM_OUT_DATA[12] ,\RAM_OUT_DATA[11] ,\RAM_OUT_DATA[10] ,\RAM_OUT_DATA[9] ,\RAM_OUT_DATA[8] ,\RAM_OUT_DATA[7] ,\RAM_OUT_DATA[6] ,\RAM_OUT_DATA[5] ,\RAM_OUT_DATA[4] ,\RAM_OUT_DATA[3] ,\RAM_OUT_DATA[2] ,\RAM_OUT_DATA[1] ,\RAM_OUT_DATA[0] ,\WR_BUS_inst/ALU_Result[31] ,\WR_BUS_inst/ALU_Result[30] ,\WR_BUS_inst/ALU_Result[29] ,\WR_BUS_inst/ALU_Result[28] ,\WR_BUS_inst/ALU_Result[27] ,\WR_BUS_inst/ALU_Result[26] ,\WR_BUS_inst/ALU_Result[25] ,\WR_BUS_inst/ALU_Result[24] ,\WR_BUS_inst/ALU_Result[23] ,\WR_BUS_inst/ALU_Result[22] ,\WR_BUS_inst/ALU_Result[21] ,\WR_BUS_inst/ALU_Result[20] ,\WR_BUS_inst/ALU_Result[19] ,\WR_BUS_inst/ALU_Result[18] ,\WR_BUS_inst/ALU_Result[17] ,\WR_BUS_inst/ALU_Result[16] ,\WR_BUS_inst/ALU_Result[15] ,\WR_BUS_inst/ALU_Result[14] ,\WR_BUS_inst/ALU_Result[13] ,\WR_BUS_inst/ALU_Result[12] ,\WR_BUS_inst/ALU_Result[11] ,\WR_BUS_inst/ALU_Result[10] ,\WR_BUS_inst/ALU_Result[9] ,\WR_BUS_inst/ALU_Result[8] ,\WR_BUS_inst/ALU_Result[7] ,\WR_BUS_inst/ALU_Result[6] ,\WR_BUS_inst/ALU_Result[5] ,\WR_BUS_inst/ALU_Result[4] ,\WR_BUS_inst/ALU_Result[3] ,\WR_BUS_inst/ALU_Result[2] ,\WR_BUS_inst/ALU_Result[1] ,\WR_BUS_inst/ALU_Result[0] ,\WR_BUS_inst/RAM_out[31] ,\WR_BUS_inst/RAM_out[30] ,\WR_BUS_inst/RAM_out[29] ,\WR_BUS_inst/RAM_out[28] ,\WR_BUS_inst/RAM_out[27] ,\WR_BUS_inst/RAM_out[26] ,\WR_BUS_inst/RAM_out[25] ,\WR_BUS_inst/RAM_out[24] ,\WR_BUS_inst/RAM_out[23] ,\WR_BUS_inst/RAM_out[22] ,\WR_BUS_inst/RAM_out[21] ,\WR_BUS_inst/RAM_out[20] ,\WR_BUS_inst/RAM_out[19] ,\WR_BUS_inst/RAM_out[18] ,\WR_BUS_inst/RAM_out[17] ,\WR_BUS_inst/RAM_out[16] ,\WR_BUS_inst/RAM_out[15] ,\WR_BUS_inst/RAM_out[14] ,\WR_BUS_inst/RAM_out[13] ,\WR_BUS_inst/RAM_out[12] ,\WR_BUS_inst/RAM_out[11] ,\WR_BUS_inst/RAM_out[10] ,\WR_BUS_inst/RAM_out[9] ,\WR_BUS_inst/RAM_out[8] ,\WR_BUS_inst/RAM_out[7] ,\WR_BUS_inst/RAM_out[6] ,\WR_BUS_inst/RAM_out[5] ,\WR_BUS_inst/RAM_out[4] ,\WR_BUS_inst/RAM_out[3] ,\WR_BUS_inst/RAM_out[2] ,\WR_BUS_inst/RAM_out[1] ,\WR_BUS_inst/RAM_out[0] ,\WR_BUS_inst/mux_1 ,\IO_inst/DIO_OUT_EN ,\DIO_OUT[7] ,\DIO_OUT[6] ,\DIO_OUT[5] ,\DIO_OUT[4] ,\DIO_OUT[3] ,\DIO_OUT[2] ,\DIO_OUT[1] ,\DIO_OUT[0] }),
     .clk_i(sys_clk)
 );
 

@@ -60,6 +60,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\Assembly&nbspline&nbsplevel&nbsp5.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\COND.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2_Top.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CU.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\IO.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\PC.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RAM&nbspcontroller.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\RegFile.v<br>
@@ -70,8 +71,10 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_dpb\gowin_dpb.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_osc\gowin_osc.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_prom\gowin_prom.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v<br>
-F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart_rx.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\spi_master\spi_master.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart_fifo.v<br>
+F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uart_rx.v<br>
 F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart\uatr_tx.v<br>
 F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v<br>
 F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
@@ -104,7 +107,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Thu Jun 18 00:16:41 2026
+<td>Fri Jun 19 20:20:13 2026
 </td>
 </tr>
 <tr>
@@ -120,11 +123,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.656s, Elapsed time = 0h 0m 0.731s, Peak memory usage = 358.781MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.186s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.071s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.194s, Peak memory usage = 358.781MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.063s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.005s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.015s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 358.781MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.182s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.04s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.031s, Peak memory usage = 358.781MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 373.242MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.145s, Peak memory usage = 373.242MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.216s, Peak memory usage = 373.242MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.671s, Elapsed time = 0h 0m 0.688s, Peak memory usage = 575.656MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.203s, Elapsed time = 0h 0m 0.208s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.071s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.187s, Peak memory usage = 575.656MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.058s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.004s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.013s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.006s, Peak memory usage = 575.656MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.187s, Elapsed time = 0h 0m 0.183s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.04s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.029s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 575.656MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.166s, Peak memory usage = 575.656MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.203s, Elapsed time = 0h 0m 0.21s, Peak memory usage = 575.656MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 373.242MB</td>
+<td>CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s, Peak memory usage = 575.656MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -136,11 +139,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label"><b>I/O Port </b></td>
-<td>16</td>
+<td>25</td>
 </tr>
 <tr>
 <td class="label"><b>I/O Buf </b></td>
-<td>16</td>
+<td>25</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
@@ -148,7 +151,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
-<td>9</td>
+<td>18</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
@@ -156,11 +159,15 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>3912</td>
+<td>3899</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
-<td>1403</td>
+<td>1293</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
@@ -168,43 +175,43 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
-<td>512</td>
+<td>513</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
-<td>29</td>
+<td>30</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
-<td>33</td>
+<td>34</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
-<td>59</td>
+<td>72</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
-<td>1695</td>
+<td>1765</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDLC</td>
-<td>33</td>
+<td>36</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>2567</td>
+<td>2719</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>147</td>
+<td>161</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>963</td>
+<td>1111</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>1457</td>
+<td>1447</td>
 </tr>
 <tr>
 <td class="label"><b>MUX </b></td>
@@ -224,19 +231,19 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label"><b>BSRAM </b></td>
-<td>45</td>
+<td>42</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
-<td>43</td>
+<td>40</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDPB</td>
@@ -272,28 +279,28 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>2807(2582 LUT, 225 ALU) / 20736</td>
-<td>14%</td>
+<td>2960(2735 LUT, 225 ALU) / 20736</td>
+<td>15%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>3912 / 15750</td>
+<td>3899 / 15750</td>
 <td>25%</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as Latch</td>
-<td>33 / 15750</td>
+<td>36 / 15750</td>
 <td><1%</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>3879 / 15750</td>
+<td>3863 / 15750</td>
 <td>25%</td>
 </tr>
 <tr>
 <td class="label">BSRAM</td>
-<td>45 / 46</td>
-<td>98%</td>
+<td>42 / 46</td>
+<td>92%</td>
 </tr>
 </table>
 <h1><a name="timing">Timing</a></h1>
@@ -361,6 +368,18 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td>5</td>
+<td>IO_inst/spi/u_spi_master/n627_13</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>IO_inst/spi/u_spi_master/n627_s6/F </td>
+</tr>
+<tr>
+<td>6</td>
 <td>ALU_inst/n555_21</td>
 <td>Base</td>
 <td>10.000</td>
@@ -372,7 +391,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>ALU_inst/n555_s16/F </td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>ALU_inst/n642_21</td>
 <td>Base</td>
 <td>10.000</td>
@@ -384,7 +403,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>ALU_inst/n642_s16/F </td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>cond_inst/n114_7</td>
 <td>Base</td>
 <td>10.000</td>
@@ -396,7 +415,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>cond_inst/n114_s3/F </td>
 </tr>
 <tr>
-<td>8</td>
+<td>9</td>
 <td>clk_inst/HighClk/rpll_inst/CLKOUT.default_gen_clk</td>
 <td>Generated</td>
 <td>2.511</td>
@@ -408,7 +427,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>clk_inst/HighClk/rpll_inst/CLKOUT </td>
 </tr>
 <tr>
-<td>9</td>
+<td>10</td>
 <td>clk_inst/HighClk/rpll_inst/CLKOUTP.default_gen_clk</td>
 <td>Generated</td>
 <td>2.511</td>
@@ -420,7 +439,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>clk_inst/HighClk/rpll_inst/CLKOUTP </td>
 </tr>
 <tr>
-<td>10</td>
+<td>11</td>
 <td>clk_inst/HighClk/rpll_inst/CLKOUTD.default_gen_clk</td>
 <td>Generated</td>
 <td>5.022</td>
@@ -432,7 +451,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>clk_inst/HighClk/rpll_inst/CLKOUTD </td>
 </tr>
 <tr>
-<td>11</td>
+<td>12</td>
 <td>clk_inst/HighClk/rpll_inst/CLKOUTD3.default_gen_clk</td>
 <td>Generated</td>
 <td>7.533</td>
@@ -474,8 +493,8 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>3</td>
 <td>clk_inst/n66_4</td>
 <td>100.000(MHz)</td>
-<td>69.943(MHz)</td>
-<td>5</td>
+<td>73.598(MHz)</td>
+<td>4</td>
 <td>TOP</td>
 </tr>
 </table>
@@ -485,11 +504,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-0.170</td>
+<td>1.684</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.574</td>
+<td>13.720</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -501,7 +520,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>PC_Liet2_0/pc_out_15_s1</td>
+<td>PC_Liet2_0/pc_out_11_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -647,7 +666,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
-<td>7</td>
+<td>8</td>
 <td>PC_Liet2_0/n58_s5/F</td>
 </tr>
 <tr>
@@ -663,7 +682,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
+<td>3</td>
 <td>PC_Liet2_0/n52_s4/F</td>
 </tr>
 <tr>
@@ -672,55 +691,23 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/n50_s3/I2</td>
+<td>PC_Liet2_0/n51_s3/I1</td>
 </tr>
 <tr>
-<td>13.144</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>3</td>
-<td>PC_Liet2_0/n50_s3/F</td>
-</tr>
-<tr>
-<td>13.618</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n48_s4/I2</td>
-</tr>
-<tr>
-<td>14.071</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>12</td>
-<td>PC_Liet2_0/n48_s4/F</td>
-</tr>
-<tr>
-<td>14.545</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n47_s3/I1</td>
-</tr>
-<tr>
-<td>15.100</td>
+<td>13.246</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
 <td>2</td>
-<td>PC_Liet2_0/n47_s3/F</td>
+<td>PC_Liet2_0/n51_s3/F</td>
 </tr>
 <tr>
-<td>15.574</td>
+<td>13.720</td>
 <td>0.474</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s1/D</td>
+<td>PC_Liet2_0/pc_out_11_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -746,7 +733,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>2223</td>
+<td>2314</td>
 <td>clk_inst/n66_s2/O</td>
 </tr>
 <tr>
@@ -755,7 +742,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s1/CLK</td>
+<td>PC_Liet2_0/pc_out_11_s1/CLK</td>
 </tr>
 <tr>
 <td>15.439</td>
@@ -763,7 +750,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>PC_Liet2_0/pc_out_15_s1</td>
+<td>PC_Liet2_0/pc_out_11_s1</td>
 </tr>
 <tr>
 <td>15.404</td>
@@ -771,7 +758,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s1</td>
+<td>PC_Liet2_0/pc_out_11_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -786,12 +773,12 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.654, 46.079%; route: 5.214, 51.624%; tC2Q: 0.232, 2.297%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.748, 45.452%; route: 4.266, 51.735%; tC2Q: 0.232, 2.813%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 </table>
@@ -801,11 +788,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-0.170</td>
+<td>1.684</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.574</td>
+<td>13.720</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -817,7 +804,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>PC_Liet2_0/pc_out_15_s0</td>
+<td>PC_Liet2_0/pc_out_11_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -963,7 +950,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
-<td>7</td>
+<td>8</td>
 <td>PC_Liet2_0/n58_s5/F</td>
 </tr>
 <tr>
@@ -979,7 +966,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
+<td>3</td>
 <td>PC_Liet2_0/n52_s4/F</td>
 </tr>
 <tr>
@@ -988,55 +975,23 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/n50_s3/I2</td>
+<td>PC_Liet2_0/n51_s3/I1</td>
 </tr>
 <tr>
-<td>13.144</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>3</td>
-<td>PC_Liet2_0/n50_s3/F</td>
-</tr>
-<tr>
-<td>13.618</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n48_s4/I2</td>
-</tr>
-<tr>
-<td>14.071</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>12</td>
-<td>PC_Liet2_0/n48_s4/F</td>
-</tr>
-<tr>
-<td>14.545</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n47_s3/I1</td>
-</tr>
-<tr>
-<td>15.100</td>
+<td>13.246</td>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
 <td>2</td>
-<td>PC_Liet2_0/n47_s3/F</td>
+<td>PC_Liet2_0/n51_s3/F</td>
 </tr>
 <tr>
-<td>15.574</td>
+<td>13.720</td>
 <td>0.474</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s0/D</td>
+<td>PC_Liet2_0/pc_out_11_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1062,7 +1017,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>2223</td>
+<td>2314</td>
 <td>clk_inst/n66_s2/O</td>
 </tr>
 <tr>
@@ -1071,7 +1026,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s0/CLK</td>
+<td>PC_Liet2_0/pc_out_11_s0/CLK</td>
 </tr>
 <tr>
 <td>15.439</td>
@@ -1079,7 +1034,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>PC_Liet2_0/pc_out_15_s0</td>
+<td>PC_Liet2_0/pc_out_11_s0</td>
 </tr>
 <tr>
 <td>15.404</td>
@@ -1087,7 +1042,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_15_s0</td>
+<td>PC_Liet2_0/pc_out_11_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1102,12 +1057,12 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.654, 46.079%; route: 5.214, 51.624%; tC2Q: 0.232, 2.297%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.748, 45.452%; route: 4.266, 51.735%; tC2Q: 0.232, 2.813%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 </table>
@@ -1117,11 +1072,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-0.170</td>
+<td>1.786</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.574</td>
+<td>13.618</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1133,7 +1088,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>PC_Liet2_0/pc_out_18_s1</td>
+<td>PC_Liet2_0/pc_out_12_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1279,7 +1234,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
-<td>7</td>
+<td>8</td>
 <td>PC_Liet2_0/n58_s5/F</td>
 </tr>
 <tr>
@@ -1295,7 +1250,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
+<td>3</td>
 <td>PC_Liet2_0/n52_s4/F</td>
 </tr>
 <tr>
@@ -1311,7 +1266,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.453</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
+<td>2</td>
 <td>PC_Liet2_0/n50_s3/F</td>
 </tr>
 <tr>
@@ -1320,39 +1275,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/n48_s4/I2</td>
-</tr>
-<tr>
-<td>14.071</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>12</td>
-<td>PC_Liet2_0/n48_s4/F</td>
-</tr>
-<tr>
-<td>14.545</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n44_s3/I1</td>
-</tr>
-<tr>
-<td>15.100</td>
-<td>0.555</td>
-<td>tINS</td>
-<td>FF</td>
-<td>2</td>
-<td>PC_Liet2_0/n44_s3/F</td>
-</tr>
-<tr>
-<td>15.574</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/pc_out_18_s1/D</td>
+<td>PC_Liet2_0/pc_out_12_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1378,7 +1301,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>2223</td>
+<td>2314</td>
 <td>clk_inst/n66_s2/O</td>
 </tr>
 <tr>
@@ -1387,7 +1310,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_18_s1/CLK</td>
+<td>PC_Liet2_0/pc_out_12_s1/CLK</td>
 </tr>
 <tr>
 <td>15.439</td>
@@ -1395,7 +1318,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>PC_Liet2_0/pc_out_18_s1</td>
+<td>PC_Liet2_0/pc_out_12_s1</td>
 </tr>
 <tr>
 <td>15.404</td>
@@ -1403,7 +1326,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_18_s1</td>
+<td>PC_Liet2_0/pc_out_12_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1418,12 +1341,12 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.654, 46.079%; route: 5.214, 51.624%; tC2Q: 0.232, 2.297%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.646, 44.769%; route: 4.266, 52.382%; tC2Q: 0.232, 2.849%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 </table>
@@ -1433,11 +1356,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-0.170</td>
+<td>1.786</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.574</td>
+<td>13.618</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1449,7 +1372,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>PC_Liet2_0/pc_out_18_s0</td>
+<td>PC_Liet2_0/pc_out_12_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1595,7 +1518,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
-<td>7</td>
+<td>8</td>
 <td>PC_Liet2_0/n58_s5/F</td>
 </tr>
 <tr>
@@ -1611,7 +1534,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
+<td>3</td>
 <td>PC_Liet2_0/n52_s4/F</td>
 </tr>
 <tr>
@@ -1627,7 +1550,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.453</td>
 <td>tINS</td>
 <td>FF</td>
-<td>3</td>
+<td>2</td>
 <td>PC_Liet2_0/n50_s3/F</td>
 </tr>
 <tr>
@@ -1636,39 +1559,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/n48_s4/I2</td>
-</tr>
-<tr>
-<td>14.071</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>12</td>
-<td>PC_Liet2_0/n48_s4/F</td>
-</tr>
-<tr>
-<td>14.545</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n44_s3/I1</td>
-</tr>
-<tr>
-<td>15.100</td>
-<td>0.555</td>
-<td>tINS</td>
-<td>FF</td>
-<td>2</td>
-<td>PC_Liet2_0/n44_s3/F</td>
-</tr>
-<tr>
-<td>15.574</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/pc_out_18_s0/D</td>
+<td>PC_Liet2_0/pc_out_12_s0/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -1694,7 +1585,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>2223</td>
+<td>2314</td>
 <td>clk_inst/n66_s2/O</td>
 </tr>
 <tr>
@@ -1703,7 +1594,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_18_s0/CLK</td>
+<td>PC_Liet2_0/pc_out_12_s0/CLK</td>
 </tr>
 <tr>
 <td>15.439</td>
@@ -1711,7 +1602,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>PC_Liet2_0/pc_out_18_s0</td>
+<td>PC_Liet2_0/pc_out_12_s0</td>
 </tr>
 <tr>
 <td>15.404</td>
@@ -1719,7 +1610,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_18_s0</td>
+<td>PC_Liet2_0/pc_out_12_s0</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -1734,12 +1625,12 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.654, 46.079%; route: 5.214, 51.624%; tC2Q: 0.232, 2.297%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.646, 44.769%; route: 4.266, 52.382%; tC2Q: 0.232, 2.849%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 </table>
@@ -1749,11 +1640,11 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-0.170</td>
+<td>1.868</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.574</td>
+<td>13.536</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -1765,7 +1656,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>PC_Liet2_0/pc_out_19_s1</td>
+<td>PC_Liet2_0/pc_out_10_s1</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1911,7 +1802,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
-<td>7</td>
+<td>8</td>
 <td>PC_Liet2_0/n58_s5/F</td>
 </tr>
 <tr>
@@ -1927,7 +1818,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.555</td>
 <td>tINS</td>
 <td>FF</td>
-<td>4</td>
+<td>3</td>
 <td>PC_Liet2_0/n52_s4/F</td>
 </tr>
 <tr>
@@ -1936,55 +1827,23 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/n50_s3/I2</td>
+<td>PC_Liet2_0/n52_s5/I3</td>
 </tr>
 <tr>
-<td>13.144</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>3</td>
-<td>PC_Liet2_0/n50_s3/F</td>
-</tr>
-<tr>
-<td>13.618</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n48_s4/I2</td>
-</tr>
-<tr>
-<td>14.071</td>
-<td>0.453</td>
-<td>tINS</td>
-<td>FF</td>
-<td>12</td>
-<td>PC_Liet2_0/n48_s4/F</td>
-</tr>
-<tr>
-<td>14.545</td>
-<td>0.474</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>PC_Liet2_0/n43_s3/I1</td>
-</tr>
-<tr>
-<td>15.100</td>
-<td>0.555</td>
+<td>13.062</td>
+<td>0.371</td>
 <td>tINS</td>
 <td>FF</td>
 <td>2</td>
-<td>PC_Liet2_0/n43_s3/F</td>
+<td>PC_Liet2_0/n52_s5/F</td>
 </tr>
 <tr>
-<td>15.574</td>
+<td>13.536</td>
 <td>0.474</td>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_19_s1/D</td>
+<td>PC_Liet2_0/pc_out_10_s1/D</td>
 </tr>
 </table>
 <b>Data Required Path:</b>
@@ -2010,7 +1869,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>0.000</td>
 <td>tCL</td>
 <td>FF</td>
-<td>2223</td>
+<td>2314</td>
 <td>clk_inst/n66_s2/O</td>
 </tr>
 <tr>
@@ -2019,7 +1878,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tNET</td>
 <td>FF</td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_19_s1/CLK</td>
+<td>PC_Liet2_0/pc_out_10_s1/CLK</td>
 </tr>
 <tr>
 <td>15.439</td>
@@ -2027,7 +1886,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tUnc</td>
 <td> </td>
 <td> </td>
-<td>PC_Liet2_0/pc_out_19_s1</td>
+<td>PC_Liet2_0/pc_out_10_s1</td>
 </tr>
 <tr>
 <td>15.404</td>
@@ -2035,7 +1894,7 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 <td>tSu</td>
 <td> </td>
 <td>1</td>
-<td>PC_Liet2_0/pc_out_19_s1</td>
+<td>PC_Liet2_0/pc_out_10_s1</td>
 </tr>
 </table>
 <b>Path Statistics:</b>
@@ -2050,12 +1909,12 @@ F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\gwsynthesis\RTL_GAO\gw_gao_top.v<br>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>11</td>
+<td>9</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 4.654, 46.079%; route: 5.214, 51.624%; tC2Q: 0.232, 2.297%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.564, 44.207%; route: 4.266, 52.915%; tC2Q: 0.232, 2.878%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.474, 100.000%</td></tr>
 </table>

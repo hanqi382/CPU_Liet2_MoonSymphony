@@ -4,7 +4,11 @@ module CPU_Liet2_Top(
     input rst,
     //input [0:2] clk_mod,
     output reg clk_out,
-    output [7:0] OUT
+    output [7:0] OUT,
+
+    output DIO_OUT_EN,
+    output [7:0]DIO_OUT
+
 );
     wire [31:0] INSTR;
     //指令
@@ -30,6 +34,7 @@ module CPU_Liet2_Top(
     wire [31:0] RAM_ADDR;
     wire [31:0] RAM_OUT_DATA;
     wire [31:0] RAM_IN_DATA;
+    wire [31:0] IO_WR_BUS;
     wire RAM_RE;
     wire RAM_WE;
     wire High_CLK;
@@ -86,7 +91,7 @@ module CPU_Liet2_Top(
         .cea(1'b1),
         .reseta(1'b0),        // 高电平复位，直接接rst
         .wrea(1'b0),         // 强制写使能为0，纯读模式
-        .ada(PC_ADDR[2:0]),  // PC地址线
+        .ada(PC_ADDR),  // PC地址线
         .dina(32'b0),        // 写端口没用，接0即可
         .douta(INSTR),       // 指令输出
 
@@ -218,11 +223,24 @@ module CPU_Liet2_Top(
 
 WR_BUS WR_BUS_inst(
     .mux_1(RAM_RE),
+    .mux_2(IO_MODE),
     .ALU_Result(WR_BUS_ALU),
+    .IO_Wr(IO_WR_BUS),
     .RAM_out(RAM_OUT_DATA),
     .wr_out(WR_BUS)
     );
 
-
+IO IO_inst(
+    .clk(sys_clk),
+    .rst(rst),
+    .EN(IO_MODE),
+    .Opcode(Opcode),
+    .IN_CPU(IO_WR_BUS),
+    .OUT_CPU(B_DBUS),
+    .DIO_OUT(DIO_OUT),
+    .DIO_OUT_EN(DIO_OUT_EN),
+    .immediate(Immediate),
+    .Is_Immedia(Is_Immedia)
+    );
 
 endmodule
