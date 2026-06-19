@@ -210,7 +210,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     {
       poini = 0;
     }
-    // 消抖在主循环中处理，不要在中断中使用 HAL_Delay
+    // 消抖在主循环中处理，不要在中断中使用 jHAL_Delay
     if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_9) == GPIO_PIN_SET)
     {
       input_dio[2] = GPIOA->IDR & 0x00ff;// 中断确实被触�??????
