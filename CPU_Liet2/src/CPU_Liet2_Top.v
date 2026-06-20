@@ -7,8 +7,8 @@ module CPU_Liet2_Top(
     output [7:0] OUT,
 
     output DIO_OUT_EN,
-    output [7:0]DIO_OUT
-
+    output [7:0]DIO_OUT,
+    output tx
 );
     wire [31:0] INSTR;
     //指令
@@ -38,6 +38,8 @@ module CPU_Liet2_Top(
     wire RAM_RE;
     wire RAM_WE;
     wire High_CLK;
+
+
     reg IO_MODE;
     reg ALU_MODE;
     reg JUMP_MODE;
@@ -240,7 +242,9 @@ IO IO_inst(
     .DIO_OUT(DIO_OUT),
     .DIO_OUT_EN(DIO_OUT_EN),
     .immediate(Immediate),
-    .Is_Immedia(Is_Immedia)
+    .Is_Immedia(Is_Immedia),
+    .tx(tx),
+    .Highclk(High_CLK)
     );
 
 endmodule

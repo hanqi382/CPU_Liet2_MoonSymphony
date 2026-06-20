@@ -26,8 +26,9 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-uint8_t input_dio[2] = {0};
+uint8_t input_dio[8] = {0};
 int poini = 0;
+int start=0;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -96,7 +97,7 @@ int main(void)
   while (1)
   {
 
-    //input_dio = GPIOA->IDR & 0x00ff;// 中断确实被触�??????
+    //input_dio = GPIOA->IDR & 0x00ff;// 中断确实被触�????????
 
     /* USER CODE END WHILE */
 
@@ -182,13 +183,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3
                           |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PB9 */
   GPIO_InitStruct.Pin = GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;  // 下降沿触发（按键接地）
-  GPIO_InitStruct.Pull = GPIO_PULLUP;            // 上拉电阻
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
@@ -202,29 +203,26 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
+  int input = GPIOA->IDR & 0x00ff;
   if(GPIO_Pin == GPIO_PIN_9)
   {
-    input_dio[poini] = GPIOA->IDR & 0x00ff;
-    poini++;
-    if (poini >= 2)
+    if(input == 1 && start == 0)
     {
-      poini = 0;
+      start=1;
     }
-    // 消抖在主循环中处理，不要在中断中使用 jHAL_Delay
-    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_9) == GPIO_PIN_SET)
+    if (start == 1)
     {
-      input_dio[2] = GPIOA->IDR & 0x00ff;// 中断确实被触�??????
-      if(input_dio[2] == 4)
+
+      input_dio[poini] = input;
+      poini++;
+      if (poini >= 8)
       {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-      }
-      else
-      {
-        HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+        poini = 0;
+        start=0;
       }
     }
+
   }
-  __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_9);
 }
 /* USER CODE END 4 */
 

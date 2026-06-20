@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 53,
+    "InstLine" : 55,
     "InstName" : "clk_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/SYS_CLK.v",
     "ModuleLine" : 1,
@@ -35,7 +35,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 62,
+    "InstLine" : 64,
     "InstName" : "PC_Liet2_0",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/PC.v",
     "ModuleLine" : 1,
@@ -43,7 +43,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 73,
+    "InstLine" : 75,
     "InstName" : "CU_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CU.v",
     "ModuleLine" : 1,
@@ -51,7 +51,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 87,
+    "InstLine" : 89,
     "InstName" : "DP_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_dp/gowin_dp.v",
     "ModuleLine" : 10,
@@ -59,7 +59,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 167,
+    "InstLine" : 169,
     "InstName" : "ALU_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/ALU.v",
     "ModuleLine" : 1,
@@ -67,7 +67,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 178,
+    "InstLine" : 180,
     "InstName" : "RegFiles_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RegFile.v",
     "ModuleLine" : 1,
@@ -75,7 +75,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 193,
+    "InstLine" : 195,
     "InstName" : "cond_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/COND.v",
     "ModuleLine" : 1,
@@ -83,7 +83,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 204,
+    "InstLine" : 206,
     "InstName" : "RAM_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RAM controller.v",
     "ModuleLine" : 1,
@@ -91,7 +91,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 224,
+    "InstLine" : 226,
     "InstName" : "WR_BUS_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/WR_BUS.v",
     "ModuleLine" : 1,
@@ -99,7 +99,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 233,
+    "InstLine" : 235,
     "InstName" : "IO_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/IO.v",
     "ModuleLine" : 2,
@@ -107,7 +107,7 @@
     "SubInsts" : [
      {
       "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/IO.v",
-      "InstLine" : 65,
+      "InstLine" : 71,
       "InstName" : "spi",
       "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/spi_master/spi_master.v",
       "ModuleLine" : 945,
@@ -120,6 +120,56 @@
         "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/spi_master/spi_master.v",
         "ModuleLine" : 10,
         "ModuleName" : "~spi_master.SPI_MASTER_Top"
+       }
+      ]
+     },
+     {
+      "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/IO.v",
+      "InstLine" : 91,
+      "InstName" : "uart_inst",
+      "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "uart_top",
+      "SubInsts" : [
+       {
+        "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+        "InstLine" : 29,
+        "InstName" : "u_bg",
+        "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tick.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "baud_gen"
+       },
+       {
+        "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+        "InstLine" : 34,
+        "InstName" : "u_rx",
+        "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_rx.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "uart_rx"
+       },
+       {
+        "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+        "InstLine" : 39,
+        "InstName" : "u_rx_fifo",
+        "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/fifo.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "fifo"
+       },
+       {
+        "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+        "InstLine" : 73,
+        "InstName" : "u_tx_fifo",
+        "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/fifo.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "fifo"
+       },
+       {
+        "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+        "InstLine" : 80,
+        "InstName" : "u_tx",
+        "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tx.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "uart_tx"
        }
       ]
      }
@@ -142,73 +192,5 @@
   "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/gowin_prom/gowin_prom.v",
   "ModuleLine" : 10,
   "ModuleName" : "Gowin_pROM"
- },
- {
-  "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
-  "InstLine" : 1,
-  "InstName" : "uart",
-  "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "uart",
-  "SubInsts" : [
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
-    "InstLine" : 30,
-    "InstName" : "tx_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uatr_tx.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "uart_tx"
-   },
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart.v",
-    "InstLine" : 41,
-    "InstName" : "rx_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "uart_rx"
-   }
-  ]
- },
- {
-  "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-  "InstLine" : 2,
-  "InstName" : "uart_fifo",
-  "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-  "ModuleLine" : 2,
-  "ModuleName" : "uart_fifo",
-  "SubInsts" : [
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "InstLine" : 35,
-    "InstName" : "tx_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uatr_tx.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "uart_tx"
-   },
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "InstLine" : 47,
-    "InstName" : "rx_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_rx.v",
-    "ModuleLine" : 1,
-    "ModuleName" : "uart_rx"
-   },
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "InstLine" : 62,
-    "InstName" : "rx_fifo_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "ModuleLine" : 95,
-    "ModuleName" : "fifo"
-   },
-   {
-    "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "InstLine" : 77,
-    "InstName" : "tx_fifo_inst",
-    "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart/uart_fifo.v",
-    "ModuleLine" : 95,
-    "ModuleName" : "fifo"
-   }
-  ]
  }
 ]

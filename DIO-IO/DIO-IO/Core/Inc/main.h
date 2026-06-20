@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-extern uint8_t input_dio[2];
+extern uint8_t input_dio[8];
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

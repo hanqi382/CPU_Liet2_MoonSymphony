@@ -21,10 +21,13 @@ module IO(
     output reg [7:0]DIO_OUT,
     output    reg   DIO_OUT_EN,
 
+    input Highclk,
     input        miso,            // SPI MISO
     output       mosi,            // SPI MOSI
     output       ss_n,            // SPI 片选
-    output       sclk             // SPI 时钟
+    output       sclk,             // SPI 时钟
+    output       tx            // UART 发送
+
 );
 
 localparam SPI_CTRL_REG    = 3'b000;  // 控制寄存器
@@ -49,6 +52,9 @@ wire        tx_fifo_full;
 reg  [7:0]  tx_fifo_data;
 reg         tx_fifo_write;
 
+
+reg txen;
+reg  [7:0] txout;
 // 状态寄存器
 reg [7:0] uart_status;  // bit0: rx_empty, bit1: tx_full
 
@@ -82,9 +88,20 @@ SPI_MASTER_Top spi(
     .SCLK_SLAVE(1'b0)
 );
 
+uart_top uart_inst(
+    .clk(clk),
+    .rst_n(~rst),
+    .tx(tx),
+    .tx_din(txout),
+    .tx_wr_en(txen),
+    .tx_full(tx_fifo_full)
+);
+
+
 // 主逻辑
-always @(posedge clk or posedge rst) begin
+always @(negedge clk or posedge rst) begin
     if (rst) begin
+        txen <= 1'b0;
         OUT_IO <= 32'd0;
         IN_CPU <= 32'd0;
         rx_fifo_read <= 1'b0;
@@ -95,6 +112,7 @@ always @(posedge clk or posedge rst) begin
         spi_rx_en <= 1'b0;
         spi_init_state <= INIT_IDLE;
     end else begin
+        txen <= 1'b0;
         rx_fifo_read <= 1'b0;
         tx_fifo_write <= 1'b0;
         spi_tx_en <= 1'b0;
@@ -124,12 +142,32 @@ always @(posedge clk or posedge rst) begin
                         end
 
                         4'b1000: begin  // DIO输出
-                            if(Is_Immedia) begin
-                                DIO_OUT <= immediate[7:0];
+                            //if(Is_Immedia) begin
+                            //    DIO_OUT <= immediate[7:0];
+                            //end else begin
+                            //    DIO_OUT <= OUT_CPU;
+                            //end
+                            //DIO_OUT_EN <= 1'b1;
+                            if (!tx_fifo_full) begin
+                                tx_fifo_write <= 1'b1;
+                                tx_fifo_data <= immediate[7:0];
+                                txen <= 1'b1;
                             end else begin
-                                DIO_OUT <= OUT_CPU;
+
                             end
-                            DIO_OUT_EN <= 1'b1;
+                            if (Is_Immedia) begin
+                                txout <= immediate[7:0];
+                            end else begin
+                                txout <= OUT_CPU[7:0];
+                            end
+                        end
+
+                        4'b1001: begin  //
+                            if (Is_Immedia) begin
+                                txout <= immediate[7:0];
+                            end else begin
+                                txout <= OUT_CPU[7:0];
+                            end
                         end
 
                         4'b1001: begin  //
@@ -148,6 +186,7 @@ always @(posedge clk or posedge rst) begin
             default: begin
                 spi_init_state <= INIT_IDLE;
                 DIO_OUT_EN <= 1'b0;
+                //txen <= 1'b0;
             end
         endcase
     end
