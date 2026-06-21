@@ -17,4 +17,4 @@ nop
 outdio [0x0D]
 
 
-jmpi 0x0;
+jmpi 0x0E;

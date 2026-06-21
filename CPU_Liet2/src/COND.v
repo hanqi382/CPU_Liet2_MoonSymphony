@@ -5,15 +5,21 @@ module cond(
     input [31:0] DATA_B,
     input [31:0] wr_data,
     input [3:0] Condition,
+    input  imm,
+    input [31:0] Immediate,
     output reg jump,
-    output reg jump_addr
+    output reg [31:0] jump_addr
 
 );
     always @(*) begin
-        if (Mode==0) begin
-            jump_addr <= DATA_B;
-        end else begin
+        if (Mode==1) begin
             jump_addr <= wr_data;
+        end else begin
+            if (imm==1) begin
+                jump_addr <= Immediate;
+            end else begin
+                jump_addr <= wr_data;
+            end
         end
         if (jump_en==1) begin
             if (Mode==0) begin

@@ -83,7 +83,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 206,
+    "InstLine" : 208,
     "InstName" : "RAM_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/RAM controller.v",
     "ModuleLine" : 1,
@@ -91,7 +91,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 226,
+    "InstLine" : 228,
     "InstName" : "WR_BUS_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/WR_BUS.v",
     "ModuleLine" : 1,
@@ -99,7 +99,7 @@
    },
    {
     "InstFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/CPU_Liet2_Top.v",
-    "InstLine" : 235,
+    "InstLine" : 237,
     "InstName" : "IO_inst",
     "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/IO.v",
     "ModuleLine" : 2,
@@ -168,7 +168,7 @@
         "InstLine" : 80,
         "InstName" : "u_tx",
         "ModuleFile" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tx.v",
-        "ModuleLine" : 1,
+        "ModuleLine" : 2,
         "ModuleName" : "uart_tx"
        }
       ]

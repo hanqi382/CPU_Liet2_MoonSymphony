@@ -70,7 +70,7 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tick.v",
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/fifo.v",
    "Type" : "verilog"
   },
   {
@@ -78,15 +78,15 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tx.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/fifo.v",
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tick.v",
    "Type" : "verilog"
   },
   {
    "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "F:/project/FPGA/CPU_Liet2/CPU_Liet2/src/uart_y/uart_tx.v",
    "Type" : "verilog"
   }
  ],

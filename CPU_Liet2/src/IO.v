@@ -91,11 +91,15 @@ SPI_MASTER_Top spi(
 uart_top uart_inst(
     .clk(clk),
     .rst_n(~rst),
-    .tx(tx),
-    .tx_din(txout),
+
+    .tx_din(tx_fifo_data),
     .tx_wr_en(txen),
-    .tx_full(tx_fifo_full)
-);
+    .tx_full(tx_fifo_full),
+    .tx(tx)
+    );
+
+
+
 
 
 // 主逻辑

@@ -46,7 +46,7 @@ module uart_rx (
             n_cnt <= n_cnt_next;
             b_reg <= b_reg_next;
             rx_done_tick <= (state == STOP && s_cnt == 15 && s_tick); // 完成标志
-            if (state == STOP && s_cnt == 15 && s_tick) 
+            if (state == STOP && s_cnt == 15 && s_tick)
                 dout <= b_reg; // 输出数据
         end
     end
@@ -65,7 +65,7 @@ module uart_rx (
                     s_cnt_next = 0;
                 end
             end
-            
+
             START: begin
                 if (s_tick) begin
                     if (s_cnt == 7) begin // 走到中心点
@@ -77,7 +77,7 @@ module uart_rx (
                     end
                 end
             end
-            
+
             DATA: begin
                 if (s_tick) begin
                     if (s_cnt == 15) begin // 走到数据位中心
@@ -92,7 +92,7 @@ module uart_rx (
                     end
                 end
             end
-            
+
             STOP: begin
                 if (s_tick) begin
                     if (s_cnt == 15) begin // 等待停止位结束

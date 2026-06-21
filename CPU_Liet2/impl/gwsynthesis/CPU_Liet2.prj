@@ -21,11 +21,11 @@
         <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_prom\gowin_prom.v" type="verilog"/>
         <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\gowin_rpll\gowin_rpll.v" type="verilog"/>
         <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\spi_master\spi_master.v" type="verilog"/>
-        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_tick.v" type="verilog"/>
-        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_rx.v" type="verilog"/>
-        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_tx.v" type="verilog"/>
         <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\fifo.v" type="verilog"/>
+        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_rx.v" type="verilog"/>
+        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_tick.v" type="verilog"/>
         <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_top.v" type="verilog"/>
+        <File path="F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\uart_y\uart_tx.v" type="verilog"/>
         <File path="F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v" type="gao"/>
         <File path="F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v" type="gao"/>
         <File path="F:\IDE\Gowin_S\Gowin\Gowin_V1.9.11.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>

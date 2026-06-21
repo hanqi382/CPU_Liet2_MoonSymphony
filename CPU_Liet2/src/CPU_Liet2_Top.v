@@ -200,7 +200,9 @@ module CPU_Liet2_Top(
         .Condition(Opcode),
         .jump(jump),
         .wr_data(J_wr_data_inst),
-        .jump_addr(jump_addr)
+        .jump_addr(jump_addr),
+        .imm(Is_Immedia),
+        .Immediate(Immediate)
     );
 
         RAM_controller RAM_inst(

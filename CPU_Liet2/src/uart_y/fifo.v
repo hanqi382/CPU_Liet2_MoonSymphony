@@ -25,7 +25,7 @@ module fifo #(
         end else begin
             // 写入
             if (wr_en && !full) begin
-                mem[w_ptr] <= w_data;
+                mem[w_ptr+1] <= w_data;
                 w_ptr <= w_ptr + 1;
             end
             // 读取

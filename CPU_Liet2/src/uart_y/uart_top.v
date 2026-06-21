@@ -80,7 +80,7 @@ module uart_top #(
     uart_tx u_tx (
         .clk(clk), .rst_n(rst_n),
         .tx_start(tx_fifo_rd), // 使用读信号作为启动信号(需确保数据也就位)
-        .s_tick(tick), .din(tx_fifo_out),
+         .din(tx_fifo_out),
         .tx_done_tick(tx_done_tick), .tx(tx)
     );
 
