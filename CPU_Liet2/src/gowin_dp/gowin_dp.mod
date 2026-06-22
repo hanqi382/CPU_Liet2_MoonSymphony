@@ -19,7 +19,7 @@
 -width_1 32
 -read_mode_0 bypass
 -read_mode_1 bypass
--write_mode_0 normal
+-write_mode_0 write-through
 -write_mode_1 normal
 -reset_mode sync
 -init_file F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\Project.mi

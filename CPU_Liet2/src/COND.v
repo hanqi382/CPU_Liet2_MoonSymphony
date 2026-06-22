@@ -24,10 +24,10 @@ module cond(
         end
         if (jump_en==1) begin
             if (Mode==0) begin
-                if (Flags[3] == 1) begin
-                    jump <= ~(Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2]|Flags[3]&Condition[3]);
+                if (Condition[3] == 1) begin
+                    jump <= ~(Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2]);
                 end else begin
-                    jump <= Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2]|Flags[3]&Condition[3];
+                    jump <= Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2];
                 end
             end else begin
                 case (Condition)

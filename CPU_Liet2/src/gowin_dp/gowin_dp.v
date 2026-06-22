@@ -5,7 +5,7 @@
 //Part Number: GW2AR-LV18QN88C8/I7
 //Device: GW2AR-18
 //Device Version: C
-//Created Time: Tue Jun 23 00:10:22 2026
+//Created Time: Tue Jun 23 00:39:47 2026
 
 module Gowin_DP (douta, doutb, clka, ocea, cea, reseta, wrea, clkb, oceb, ceb, resetb, wreb, ada, dina, adb, dinb);
 
@@ -55,7 +55,7 @@ DPB dpb_inst_0 (
 
 defparam dpb_inst_0.READ_MODE0 = 1'b0;
 defparam dpb_inst_0.READ_MODE1 = 1'b0;
-defparam dpb_inst_0.WRITE_MODE0 = 2'b00;
+defparam dpb_inst_0.WRITE_MODE0 = 2'b01;
 defparam dpb_inst_0.WRITE_MODE1 = 2'b00;
 defparam dpb_inst_0.BIT_WIDTH_0 = 16;
 defparam dpb_inst_0.BIT_WIDTH_1 = 16;
@@ -102,7 +102,7 @@ DPB dpb_inst_1 (
 
 defparam dpb_inst_1.READ_MODE0 = 1'b0;
 defparam dpb_inst_1.READ_MODE1 = 1'b0;
-defparam dpb_inst_1.WRITE_MODE0 = 2'b00;
+defparam dpb_inst_1.WRITE_MODE0 = 2'b01;
 defparam dpb_inst_1.WRITE_MODE1 = 2'b00;
 defparam dpb_inst_1.BIT_WIDTH_0 = 16;
 defparam dpb_inst_1.BIT_WIDTH_1 = 16;
