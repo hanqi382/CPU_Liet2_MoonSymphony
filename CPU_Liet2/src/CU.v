@@ -2,9 +2,9 @@ module CU(
     input [31:0]Instructio,
     output reg [2:0]Mode,
     output reg [3:0]Opcode,
-    output reg [4:0] Destination,
-    output reg [4:0] Argument_A,
-    output reg [4:0] Argument_B,
+    output reg [3:0] Destination,
+    output reg [3:0] Argument_A,
+    output reg [3:0] Argument_B,
     output reg Is_Immedia,
     output reg [15:0] Immediate
 );

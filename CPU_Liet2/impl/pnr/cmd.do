@@ -3,7 +3,8 @@
 -pn GW2AR-LV18QN88C8/I7
 -cst F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2.cst
 -cfg F:\project\FPGA\CPU_Liet2\CPU_Liet2\impl\pnr\device.cfg
--gao_crc 1010010111111111
+-sdc F:\project\FPGA\CPU_Liet2\CPU_Liet2\src\CPU_Liet2.sdc
+-gao_crc 0011010101000111
 -bit
 -tr
 -ph

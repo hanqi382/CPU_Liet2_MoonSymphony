@@ -13,11 +13,10 @@ module IO(
     input  [31:0] IN,             // 外部输入数据
     output reg [31:0] IN_CPU,      // 输入到CPU
 
-    // UART物理接口
-    input        uart_rx,
-    output       uart_tx,
 
-    // SPI物理接口（主模式）
+
+
+
     output reg [7:0]DIO_OUT,
     output    reg   DIO_OUT_EN,
 
@@ -26,8 +25,9 @@ module IO(
     output       mosi,            // SPI MOSI
     output       ss_n,            // SPI 片选
     output       sclk,             // SPI 时钟
-    output       tx            // UART 发送
-
+        // UART物理接口
+    output       tx,            // UART 发送
+    input        rx            // UART 接收
 );
 
 localparam SPI_CTRL_REG    = 3'b000;  // 控制寄存器
@@ -51,7 +51,9 @@ wire        tx_fifo_empty;
 wire        tx_fifo_full;
 reg  [7:0]  tx_fifo_data;
 reg         tx_fifo_write;
-
+reg [7:0]  rx_data_out;
+reg        rx_rd_en;
+wire        rx_empty;
 
 reg txen;
 reg  [7:0] txout;
@@ -95,7 +97,12 @@ uart_top uart_inst(
     .tx_din(tx_fifo_data),
     .tx_wr_en(txen),
     .tx_full(tx_fifo_full),
-    .tx(tx)
+    .tx(tx),
+
+    .rx(rx),
+    .rx_dout(rx_data_out),
+    .rx_rd_en(rx_rd_en),
+    .rx_empty(rx_empty)
     );
 
 
@@ -166,19 +173,24 @@ always @(negedge clk or posedge rst) begin
                             end
                         end
 
-                        4'b1001: begin  //
-                            if (Is_Immedia) begin
-                                txout <= immediate[7:0];
-                            end else begin
-                                txout <= OUT_CPU[7:0];
+                        4'b1001: begin  // UART输入
+                            if (rx_empty) begin
+                                rx_rd_en <= 1'b1;
+                                IN_CPU <= rx_data_out;
                             end
                         end
 
-                        4'b1001: begin  //
-                            spi_raddr <= SPI_RX_DATA_REG;
-                            spi_rx_en <= 1'b1;
-                            IN_CPU <= spi_rdata;
+                        4'b1010:begin
+
+                            if(Is_Immedia) begin
+                                DIO_OUT <= immediate[7:0];
+                            end else begin
+                                DIO_OUT <= OUT_CPU;
+                            end
+                            DIO_OUT_EN <= 1'b1;
                         end
+
+
 
                         default: begin
                             DIO_OUT_EN <= 1'b0;

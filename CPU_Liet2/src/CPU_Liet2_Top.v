@@ -8,7 +8,8 @@ module CPU_Liet2_Top(
 
     output DIO_OUT_EN,
     output [7:0]DIO_OUT,
-    output tx
+    output tx,
+    input rx
 );
     wire [31:0] INSTR;
     //指令
@@ -19,9 +20,9 @@ module CPU_Liet2_Top(
     //
     wire [2:0] Mode;
     wire [3:0]Opcode;
-    wire [4:0] Destination;
-    wire [4:0] Argument_A;
-    wire [4:0] Argument_B;
+    wire [3:0] Destination;
+    wire [3:0] Argument_A;
+    wire [3:0] Argument_B;
     wire Is_Immedia;
     wire [15:0] Immediate;
 
@@ -193,6 +194,7 @@ module CPU_Liet2_Top(
         );
 
     cond cond_inst(
+        .clk(sys_clk),
         .Mode(Mode),
         .jump_en(JUMP_MODE),
         .Flags(A_DBUS),
@@ -246,7 +248,8 @@ IO IO_inst(
     .immediate(Immediate),
     .Is_Immedia(Is_Immedia),
     .tx(tx),
-    .Highclk(High_CLK)
+    .Highclk(High_CLK),
+    .rx(rx)
     );
 
 endmodule

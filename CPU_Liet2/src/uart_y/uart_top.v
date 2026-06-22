@@ -32,7 +32,7 @@ module uart_top #(
 
     // 2. 接收通道
     uart_rx u_rx (
-        .clk(clk), .rst_n(rst_n), .rx(rx), .s_tick(tick),
+        .clk(clk), .rst_n(rst_n), .rx(rx),
         .dout(rx_data_out), .rx_done_tick(rx_done_tick)
     );
 

@@ -30,9 +30,9 @@ module ALU(
                 4'd8: Result <= A >> BD[4:0];   // LSR (逻辑右移) - 使用B的低5位作为移位量
                 4'd9: Result <= A >>> BD[4:0];  // ASR (算术右移) - 使用B的低5位作为移位量
                 4'd10: begin
-                    Result[0] <= A==BD;
-                    Result[1] <= A<BD;
-                    Result[2] <= ($signed(A)<$signed(BD));
+                    Result[0] = A==BD;
+                    Result[1] = A<BD;
+                    Result[2] = ($signed(A)<$signed(BD));
                 end
             endcase
         end

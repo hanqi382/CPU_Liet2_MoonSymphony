@@ -1,4 +1,5 @@
 module cond(
+    input clk,
     input  Mode,
     input  jump_en,
     input [31:0] Flags,
@@ -23,7 +24,7 @@ module cond(
         end
         if (jump_en==1) begin
             if (Mode==0) begin
-                if (Flags[3] != 1) begin
+                if (Flags[3] == 1) begin
                     jump <= ~(Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2]|Flags[3]&Condition[3]);
                 end else begin
                     jump <= Flags[0]&Condition[0]|Flags[1]&Condition[1]|Flags[2]&Condition[2]|Flags[3]&Condition[3];

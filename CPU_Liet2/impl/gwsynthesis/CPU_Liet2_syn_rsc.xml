@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="CPU_Liet2_Top" Lut="10" T_Register="4100(0)" T_Alu="229(0)" T_Lut="3066(10)" T_Bsram="46(0)" T_Ssram="2(0)">
- <SubModule name="gw_gao_inst_0" Register="3418" Alu="13" Lut="1226" Bsram="44" T_Register="3418(3418)" T_Alu="13(13)" T_Lut="1226(1226)" T_Bsram="44(44)"/>
+<Module name="CPU_Liet2_Top" Lut="10" T_Register="4080(0)" T_Alu="225(0)" T_Lut="3139(10)" T_Bsram="45(0)" T_Ssram="4(0)">
+ <SubModule name="gw_gao_inst_0" Register="3334" Alu="13" Lut="1201" Bsram="43" T_Register="3334(3334)" T_Alu="13(13)" T_Lut="1201(1201)" T_Bsram="43(43)"/>
  <SubModule name="clk_inst" Register="25" Alu="22" Lut="5" T_Register="25(25)" T_Alu="22(22)" T_Lut="5(5)">
   <SubModule name="osc_inst"/>
   <SubModule name="HighClk"/>
  </SubModule>
  <SubModule name="PC_Liet2_0" Register="52" Lut="181" T_Register="52(52)" T_Lut="181(181)"/>
  <SubModule name="DP_inst" Lut="1" Bsram="2" T_Lut="1(1)" T_Bsram="2(2)"/>
- <SubModule name="ALU_inst" Register="32" Alu="64" Lut="540" T_Register="32(32)" T_Alu="64(64)" T_Lut="540(540)"/>
+ <SubModule name="ALU_inst" Register="32" Alu="64" Lut="551" T_Register="32(32)" T_Alu="64(64)" T_Lut="551(551)"/>
  <SubModule name="RegFiles_inst" Register="512" Lut="816" T_Register="512(512)" T_Lut="816(816)"/>
  <SubModule name="cond_inst" Register="1" Alu="126" Lut="30" T_Register="1(1)" T_Alu="126(126)" T_Lut="30(30)"/>
- <SubModule name="RAM_inst" Lut="104" T_Lut="104(104)"/>
- <SubModule name="WR_BUS_inst" Lut="66" T_Lut="66(66)"/>
- <SubModule name="IO_inst" Register="19" Lut="6" T_Register="60(19)" T_Alu="4(0)" T_Lut="87(6)" T_Ssram="2(0)">
-  <SubModule name="uart_inst" Register="2" Lut="3" T_Register="41(2)" T_Alu="4(0)" T_Lut="81(3)" T_Ssram="2(0)">
-   <SubModule name="u_tx_fifo" Register="19" Alu="4" Lut="39" Ssram="2" T_Register="19(19)" T_Alu="4(4)" T_Lut="39(39)" T_Ssram="2(2)"/>
+ <SubModule name="RAM_inst" Lut="107" T_Lut="107(107)"/>
+ <SubModule name="WR_BUS_inst" Lut="42" T_Lut="42(42)"/>
+ <SubModule name="IO_inst" Register="28" Lut="21" T_Register="124(28)" T_Lut="195(21)" T_Ssram="4(0)">
+  <SubModule name="uart_inst" Register="2" Lut="3" T_Register="96(2)" T_Lut="174(3)" T_Ssram="4(0)">
+   <SubModule name="u_rx" Register="40" Lut="60" T_Register="40(40)" T_Lut="60(60)"/>
+   <SubModule name="u_rx_fifo" Register="17" Lut="29" Ssram="2" T_Register="17(17)" T_Lut="29(29)" T_Ssram="2(2)"/>
+   <SubModule name="u_tx_fifo" Register="17" Lut="43" Ssram="2" T_Register="17(17)" T_Lut="43(43)" T_Ssram="2(2)"/>
    <SubModule name="u_tx" Register="20" Lut="39" T_Register="20(20)" T_Lut="39(39)"/>
   </SubModule>
  </SubModule>
