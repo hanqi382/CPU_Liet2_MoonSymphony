@@ -114,6 +114,228 @@
 4. **FPGA友好**: 针对Gowin FPGA架构优化设计
 5. **受Turing Complete游戏启发**: 架构设计受到Turing Complete游戏中的Overture/LEG/Symphony架构启发
 
+## 结构
+```mermaid
+flowchart TB
+subgraph CPU_Liet2_Top[CPU_Liet2_Top - 顶层模块]
+direction TB
+
+        subgraph 时钟与控制
+            SYS_CLK[SYS_CLK\n系统时钟模块]
+            PC[PC\n程序计数器]
+            CU[CU\n控制单元/指令译码器]
+        end
+        
+        subgraph 存储系统
+            Gowin_DP[Gowin_DP\n双端口RAM\n指令+数据存储]
+        end
+        
+        subgraph 运算核心
+            ALU[ALU\n算术逻辑单元]
+            RegFiles[RegFiles\n寄存器文件\n16×32位]
+        end
+        
+        subgraph 控制与跳转
+            cond[cond\n条件判断模块]
+            RAM_controller[RAM_controller\nRAM控制器]
+        end
+        
+        subgraph 输入输出
+            WR_BUS[WR_BUS\n写总线多路选择器]
+            IO[IO\n输入输出模块]
+            uart_y[uart_y\nUART模块]
+        end
+    end
+    
+    %% 连接关系
+    SYS_CLK -->|sys_clk| PC
+    SYS_CLK -->|sys_clk| CU
+    SYS_CLK -->|sys_clk| ALU
+    SYS_CLK -->|sys_clk| RegFiles
+    SYS_CLK -->|sys_clk| cond
+    SYS_CLK -->|sys_clk| RAM_controller
+    SYS_CLK -->|sys_clk| WR_BUS
+    SYS_CLK -->|sys_clk| IO
+    
+    PC -->|PC_ADDR| Gowin_DP
+    Gowin_DP -->|INSTR| CU
+    
+    CU -->|Mode/Opcode/Dest/A/B/Immediate| ALU
+    CU -->|Mode/Opcode/Dest/A/B/Immediate| RegFiles
+    CU -->|Mode/Opcode/Dest/A/B/Immediate| cond
+    CU -->|Mode/Opcode/Dest/A/B/Immediate| RAM_controller
+    CU -->|Mode/Opcode/Dest/A/B/Immediate| IO
+    
+    RegFiles -->|A_DBUS| ALU
+    RegFiles -->|B_DBUS| ALU
+    RegFiles -->|A_DBUS| cond
+    RegFiles -->|B_DBUS| cond
+    RegFiles -->|A_DBUS| RAM_controller
+    RegFiles -->|B_DBUS| RAM_controller
+    RegFiles -->|B_DBUS| IO
+    
+    ALU -->|WR_BUS_ALU| WR_BUS
+    RAM_controller -->|RAM_OUT_DATA| WR_BUS
+    IO -->|IO_WR_BUS| WR_BUS
+    
+    WR_BUS -->|WR_BUS| RegFiles
+    
+    cond -->|jump| PC
+    cond -->|jump_addr| PC
+    
+    RAM_controller -->|RAM_ADDR| Gowin_DP
+    RAM_controller -->|RAM_IN_DATA| Gowin_DP
+    RAM_controller -->|RAM_WE| Gowin_DP
+    Gowin_DP -->|WR_BUS_RAM| RAM_controller
+    
+    IO -->|tx/rx| uart_y
+    
+    %% 指令格式
+    subgraph 指令格式[指令格式 32位]
+        direction LR
+        Mode_field[31:29 Mode\n000=IO 001=ALU 010=JUMP 011=RAM 100=CFG]
+        IsImmediate_field[28 Is_Immedia]
+        Opcode_field[27:24 Opcode]
+        Dest_field[23:20 Destination]
+        ArgA_field[19:16 Argument_A]
+        Immediate_field[15:0 Immediate/Argument_B]
+    end
+    
+    %% ALU操作
+    subgraph ALU操作[ALU操作码]
+        direction LR
+        op0[NAND]
+        op1[OR]
+        op2[AND]
+        op3[NOR]
+        op4[ADD]
+        op5[SUB]
+        op6[XOR]
+        op7[LSL]
+        op8[LSR]
+        op9[ASR]
+        op10[CMP]
+    end
+```
+
+```mermaid
+    graph TD
+    subgraph CPU_Liet2["CPU_Liet2 处理器架构"]
+        direction TB
+
+    %% 时钟模块
+        SYS_CLK["SYS_CLK\n时钟生成器"]
+
+    %% 控制路径
+        subgraph ControlPath["控制路径"]
+            PC["PC\n程序计数器"]
+            CU["CU\n指令译码器"]
+            cond["cond\n条件判断"]
+        end
+
+    %% 数据路径
+        subgraph DataPath["数据路径"]
+            RegFiles["RegFiles\n寄存器堆\n16×32位"]
+            ALU["ALU\n算术逻辑单元"]
+            WR_BUS["WR_BUS\n写总线MUX"]
+        end
+
+    %% 存储系统
+        subgraph MemorySystem["存储系统"]
+            Gowin_DP["Gowin_DP\n双端口RAM"]
+        end
+
+    %% 内存控制器
+        RAM_controller["RAM_controller\n内存控制器"]
+
+    %% IO模块
+        IO["IO\n输入输出模块"]
+        uart["UART\n串行接口"]
+
+    %% 总线表示
+        address_bus["地址总线<br>(32位)"]
+        data_bus["数据总线<br>(32位)"]
+        control_bus["控制总线"]
+
+    %% 时钟连接
+        SYS_CLK -->|sys_clk| PC
+        SYS_CLK -->|sys_clk| CU
+        SYS_CLK -->|sys_clk| RegFiles
+        SYS_CLK -->|sys_clk| ALU
+        SYS_CLK -->|sys_clk| cond
+        SYS_CLK -->|sys_clk| RAM_controller
+        SYS_CLK -->|sys_clk| IO
+
+    %% 地址总线连接
+        PC -->|PC_ADDR| address_bus
+        address_bus --> Gowin_DP
+        RAM_controller -->|RAM_ADDR| address_bus
+
+    %% 数据总线连接
+        subgraph DataBusConnections["数据总线连接"]
+            direction LR
+            Gowin_DP -->|INSTR| CU
+            Gowin_DP -->|WR_BUS_RAM| RAM_controller
+            RAM_controller -->|RAM_OUT_DATA| data_bus
+            RegFiles -->|A_DBUS| data_bus
+            RegFiles -->|B_DBUS| data_bus
+            ALU -->|WR_BUS_ALU| data_bus
+            IO -->|IO_WR_BUS| data_bus
+            data_bus -->|WR_BUS| RegFiles
+            data_bus --> ALU
+            data_bus --> cond
+            data_bus --> RAM_controller
+            data_bus --> IO
+        end
+
+    %% 控制总线连接
+        subgraph ControlBusConnections["控制总线连接"]
+            CU -->|Mode| control_bus
+            CU -->|Opcode| control_bus
+            CU -->|Destination| control_bus
+            CU -->|Argument_A| control_bus
+            CU -->|Argument_B| control_bus
+            CU -->|Is_Immedia| control_bus
+            CU -->|Immediate| control_bus
+
+            control_bus --> ALU
+            control_bus --> RegFiles
+            control_bus --> cond
+            control_bus --> RAM_controller
+            control_bus --> IO
+
+            cond -->|jump| PC
+            cond -->|jump_addr| PC
+        end
+
+    %% IO连接
+        IO -->|tx/rx| uart
+
+    %% 外部接口
+        subgraph ExternalInterface["外部接口"]
+            input_rx["输入: rx"]
+            output_tx["输出: tx"]
+            output_dio["输出: DIO_OUT"]
+            output_en["输出: DIO_OUT_EN"]
+        end
+
+        input_rx --> IO
+        IO --> output_tx
+        IO --> output_dio
+        IO --> output_en
+    end
+
+%% 样式定义
+    style CPU_Liet2 fill:#ffffff,stroke:#2c3e50,stroke-width:3px
+    style ControlPath fill:#3498db,color:#ffffff,stroke:#2980b9
+    style DataPath fill:#2ecc71,color:#ffffff,stroke:#27ae60
+    style MemorySystem fill:#f39c12,color:#ffffff,stroke:#e67e22
+    style DataBusConnections fill:#1abc9c,color:#ffffff,stroke:#16a085
+    style ControlBusConnections fill:#9b59b6,color:#ffffff,stroke:#8e44ad
+    style ExternalInterface fill:#e74c3c,color:#ffffff,stroke:#c0392b
+```
+
+
 ## 使用方法
 
 ### 环境要求
