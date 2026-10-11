@@ -63,7 +63,7 @@ if __name__ == '__main__':
     else:
         # 默认参数
         hex_file = 'text.hex'
-        mi_file = '../CPU_Liet2/src/Project.mi'
+        mi_file = '../CPU_Liet2_138K/src/Project.mi'
         depth = 256
 
     hex_to_mi(hex_file, mi_file, depth)

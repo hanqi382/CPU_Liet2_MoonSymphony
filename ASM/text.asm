@@ -2,6 +2,7 @@
 
 
 uart_put r6
+uart_puct r6
 outdio r6
 
 

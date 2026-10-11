@@ -1,0 +1,18 @@
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/SYS_CLK.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/PC.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/CU.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/gowin_dp/gowin_dp.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/ALU.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/RegFile.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/COND.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/RAM controller.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/WR_BUS.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/IO.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/uart_y/uart_top.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/uart_y/uart_tick.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/uart_y/uart_rx.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/uart_y/fifo.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/uart_y/uart_tx.v
+read_verilog -sv -formal -overwrite {workspace}/CPU_Liet2_138K/src/CPU_Liet2_Top.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/CPU_Liet2_Top.json
